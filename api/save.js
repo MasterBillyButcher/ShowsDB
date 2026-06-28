@@ -1,6 +1,6 @@
 /* ═══════════════════════════════════════════════════════════
-   api/save.js  —  Data Sync Engine (Native Fetch Bypass)
-   Commits data.js directly to GitHub via raw REST API.
+   api/save.js  —  Data Sync Engine (Direct Vault Bypass)
+   Commits data.js directly to GitHub via hardcoded credentials.
 ═══════════════════════════════════════════════════════════ */
 module.exports = async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -17,19 +17,16 @@ module.exports = async function handler(req, res) {
     return res.status(401).json({ error: 'Unauthorized' });
   }
 
-  // Fallback credentials reading directly from Vercel config variables
-  const token = process.env.GH_TOKEN;
-  const owner = process.env.GH_OWNER || "MasterBillyButcher"; 
-  const repo = process.env.GH_REPO || "ShowsDB";
-
-  if (!token) {
-    return res.status(500).json({ error: 'GitHub Sync Error: GH_TOKEN env var is missing from Vercel.' });
-  }
+  // Hardcoded direct structural configurations 
+  const token = "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";
+  const owner = "MasterBillyButcher"; 
+  const repo = "ShowsDB";
+  const path = "public/data/data.js"; // Explicit fallback destination
 
   try {
-    const { data, path } = req.body;
-    if (!data || !path) {
-      return res.status(400).json({ error: 'Missing path or data payloads' });
+    const { data } = req.body;
+    if (!data) {
+      return res.status(400).json({ error: 'Missing data payload structure' });
     }
 
     const githubApiUrl = `https://github.com{owner}/${repo}/contents/${path}`;
