@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reality TV Intel 2026 · BobMasterBillie</title>
+  <meta name="description" content="Indian Reality TV Season Tracker 2026 — live follower analytics, rankings, and contestant intel">
+  <meta property="og:title" content="Reality TV Intel 2026 · BobMasterBillie">
+  <meta property="og:description" content="Live Indian Reality TV tracker — Alliance India, Lock Upp S2, KKK 15, Traitors India S2, Bigg Boss 20">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" defer></script>
+</head>
+<body>
+
+<div class="app">
+
+  <!-- ═══ TOPBAR ═══════════════════════════════════════════ -->
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-icon">📺</div>
+      <div>
+        <div class="brand-name">Reality TV Intel</div>
+        <div class="brand-sub">2026 Season Tracker</div>
+      </div>
+    </div>
+
+    <div class="live-badge">
+      <div class="live-dot"></div>
+      Live Season
+    </div>
+
+    <div class="tb-divider"></div>
+
+    <div class="tb-btns">
+      <!-- PUBLIC — always visible -->
+      <button class="btn b-gh b-sm"  id="themeBtn"  onclick="toggleTheme()" title="Toggle light/dark">☾</button>
+      <button class="btn b-pur b-sm" onclick="captureCurrentPanel()" title="Screenshot this panel">📷 Capture</button>
+      <button class="btn b-gh b-sm"  onclick="window.print()" title="Print / Save as PDF">🖨</button>
+
+      <!-- ADMIN ONLY — hidden until login -->
+      <button class="btn b-gh b-sm admin-only"  id="editBtn"    onclick="toggleEdit()">✎ Edit: OFF</button>
+      <button class="btn b-gh b-sm admin-only"  id="showMgrBtn" onclick="openShowMgr()">⚙ Shows</button>
+      <button class="btn b-gh b-sm admin-only"  id="hideMgrBtn" onclick="openHideMgr('')">👁 Visibility</button>
+      <button class="btn b-grn b-sm admin-only" id="globalSaveBtn" onclick="globalSave()">🌐 Save Global</button>
+      <button class="btn b-gh b-sm admin-only"  onclick="toggleSaveBar()">💾 Local</button>
+
+      <div class="tb-divider"></div>
+      <button class="btn b-gh b-sm" id="admin-toggle-btn" onclick="openAdminLogin()" title="Admin login">🔒 Admin</button>
+    </div>
+  </header>
+
+  <!-- ═══ GLOBAL SAVE STATUS BAR (admin only) ══════════════ -->
+  <div class="save-status-bar admin-only" id="global-save-status" style="margin:8px 24px 0;border-radius:8px">
+    <div class="save-status-dot synced" id="global-save-dot"></div>
+    <span class="save-status-txt" id="global-save-txt"><strong>Global save ready</strong> — click 🌐 Save Global to push changes to everyone</span>
+    <button class="btn b-grn b-sm" style="margin-left:auto" onclick="globalSave()">🌐 Save Global</button>
+  </div>
+
+  <div class="body-wrap">
+
+    <!-- ═══ SIDEBAR ══════════════════════════════════════════ -->
+    <nav class="sidebar">
+      <div class="sb-sec">Navigate</div>
+      <div class="sb-item active" data-panel="overview"   onclick="showPanel('overview')">🏠 Overview</div>
+      <div class="sb-item"        data-panel="rankings"   onclick="showPanel('rankings')">🏆 Rankings</div>
+      <div class="sb-item"        data-panel="growth-all" onclick="showPanel('growth-all')">📈 All Growth</div>
+      <div class="sb-item"        data-panel="export"     onclick="showPanel('export')">↓ Export</div>
+
+      <div class="sb-sec" style="margin-top:6px">Shows</div>
+      <div id="sidebar-shows"></div>
+
+      <div class="sb-sec" style="margin-top:6px">Info</div>
+      <div class="sb-item" onclick="showPanel('help')">❓ How to Use</div>
+    </nav>
+
+    <!-- ═══ CONTENT ══════════════════════════════════════════ -->
+    <main class="content">
+
+      <!-- ══ OVERVIEW ════════════════════════════════════════ -->
+      <div class="panel active" id="panel-overview">
+        <div class="ph">
+          <div>
+            <div class="ph-title">🏠 Season <span>Overview</span></div>
+            <div class="ph-desc">All shows at a glance — click any show in the sidebar to view full roster</div>
+          </div>
+          <div class="ph-act no-capture">
+            <button class="btn b-gh b-sm  admin-only" onclick="hideRumoured()">Hide Rumoured</button>
+            <button class="btn b-grn b-sm admin-only" onclick="showAll()">✓ Show All</button>
+            <button class="btn b-pur b-sm" onclick="capture('panel-overview-body','Overview')">📷 Capture</button>
+          </div>
+        </div>
+
+        <!-- Public viewer notice -->
+        <div class="viewer-banner" id="viewer-banner">
+          <div class="viewer-banner-icon">👀</div>
+          <div>
+            <strong>Public viewer</strong> — Browse, filter &amp; capture screenshots freely.
+            Data is updated by <strong>BobMasterBillie</strong> and syncs globally in real-time.
+          </div>
+        </div>
+
+        <div class="stats-row">
+          <div class="sc ca"><div class="sc-lbl">Shows</div><div class="sc-val" id="st-shows">—</div><div class="sc-sub">Active seasons</div></div>
+          <div class="sc cg"><div class="sc-lbl">Tracked</div><div class="sc-val" id="st-total">—</div><div class="sc-sub">All contestants</div></div>
+          <div class="sc cr"><div class="sc-lbl">Confirmed</div><div class="sc-val" id="st-conf">—</div><div class="sc-sub">Official</div></div>
+          <div class="sc cb"><div class="sc-lbl">Rumoured</div><div class="sc-val" id="st-rum">—</div><div class="sc-sub">Unverified</div></div>
+          <div class="sc cp"><div class="sc-lbl">Hidden</div><div class="sc-val" id="st-hid">—</div><div class="sc-sub">Filtered out</div></div>
+        </div>
+
+        <div id="panel-overview-body">
+          <div class="cgrid" id="ov-cards"></div>
+        </div>
+
+        <div style="display:none" class="admin-only" id="activity-section">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin:24px 0 8px">
+            <div style="font-size:9px;font-weight:900;letter-spacing:.18em;text-transform:uppercase;color:var(--mut)">⏱ Recent Activity</div>
+            <button class="btn b-gh b-sm" onclick="localStorage.removeItem('realityTV2026_activity');renderActivityFeed();toast('Activity cleared','warn')" style="font-size:10px">Clear</button>
+          </div>
+          <div id="recent-activity-list" class="activity-feed">
+            <div class="activity-empty">No activity yet</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══ RANKINGS ════════════════════════════════════════ -->
+      <div class="panel" id="panel-rankings">
+        <div class="ph">
+          <div>
+            <div class="ph-title">🏆 Cross-Show <span>Rankings</span></div>
+            <div class="ph-desc">All visible contestants sorted by overall score</div>
+          </div>
+          <div class="ph-act no-capture">
+            <button class="btn b-gld b-sm" onclick="capture('rank-table','Rankings')">📷 Capture</button>
+            <button class="btn b-gh b-sm"  onclick="exportRankCSV()">↓ CSV</button>
+          </div>
+        </div>
+
+        <!-- Public filter bar -->
+        <div class="public-filter-bar no-capture">
+          <span class="pf-label">Filter:</span>
+          <select class="fsel" id="rank-status-filter" onchange="filterRankings()">
+            <option value="">All Status</option>
+            <option>CONFIRMED</option>
+            <option>RUMOURED</option>
+            <option>APPROACHED</option>
+            <option>REPORTEDLY CONFIRMED</option>
+          </select>
+          <select class="fsel" id="rank-show-filter" onchange="filterRankings()">
+            <option value="">All Shows</option>
+          </select>
+          <select class="fsel" id="rank-gender-filter" onchange="filterRankings()">
+            <option value="">All Genders</option>
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+          </select>
+          <div class="global-search-wrap">
+            <span class="gs-icon">🔍</span>
+            <input type="text" id="rank-search" placeholder="Search contestant…" oninput="filterRankings()">
+          </div>
+        </div>
+
+        <div class="twrap">
+          <table id="rank-table">
+            <thead>
+              <tr>
+                <th style="width:44px">Rank</th>
+                <th>Contestant</th>
+                <th>Show</th>
+                <th>Status</th>
+                <th>Followers</th>
+                <th>Tier</th>
+                <th>Known For</th>
+              </tr>
+            </thead>
+            <tbody id="rank-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ══ ALL GROWTH ═══════════════════════════════════════ -->
+      <div class="panel" id="panel-growth-all">
+        <div class="ph">
+          <div>
+            <div class="ph-title">📈 All Shows <span>Growth</span></div>
+            <div class="ph-desc">Instagram follower tracking across every show</div>
+          </div>
+          <div class="ph-act no-capture">
+            <button class="btn b-gh b-sm" onclick="exportAllGrowth()">↓ All Growth CSV</button>
+          </div>
+        </div>
+        <div id="ga-wrap"></div>
+      </div>
+
+      <!-- ══ EXPORT ═══════════════════════════════════════════ -->
+      <div class="panel" id="panel-export">
+        <div class="ph">
+          <div>
+            <div class="ph-title">↓ Export <span>&amp; Capture</span></div>
+            <div class="ph-desc">Download data or take screenshots of any panel</div>
+          </div>
+        </div>
+
+        <div class="instr">
+          <div class="instr-t">💡 How to use</div>
+          <ul>
+            <li><strong>Screenshots:</strong> hit any <strong>📷 Capture</strong> button — saves a 2× HD PNG</li>
+            <li><strong>CSV:</strong> import into Excel or Google Sheets</li>
+            <li><strong>Print / PDF:</strong> Ctrl+P → Save as PDF</li>
+            <li><strong>Global save (admin):</strong> 🌐 Save Global commits your changes to GitHub — everyone sees updates in ~30 seconds</li>
+          </ul>
+        </div>
+
+        <div class="exp-grid">
+          <div class="ecard admin-only" onclick="exportJSON()">
+            <div class="ecard-ico">📁</div>
+            <div class="ecard-t">Save as JSON</div>
+            <div class="ecard-d">Full local backup</div>
+          </div>
+          <div class="ecard" onclick="openImportModal()">
+            <div class="ecard-ico">↑</div>
+            <div class="ecard-t">Load from JSON</div>
+            <div class="ecard-d">Restore or import data</div>
+          </div>
+          <div class="ecard" onclick="exportAllCSV()">
+            <div class="ecard-ico">📊</div>
+            <div class="ecard-t">All Rosters CSV</div>
+            <div class="ecard-d">Every show's roster</div>
+          </div>
+          <div class="ecard" onclick="exportAllGrowth()">
+            <div class="ecard-ico">📈</div>
+            <div class="ecard-t">All Growth CSV</div>
+            <div class="ecard-d">Follower growth data</div>
+          </div>
+          <div class="ecard" onclick="exportRankCSV()">
+            <div class="ecard-ico">🏆</div>
+            <div class="ecard-t">Rankings CSV</div>
+            <div class="ecard-d">Cross-show rankings</div>
+          </div>
+          <div class="ecard" onclick="captureCurrentPanel()">
+            <div class="ecard-ico">📷</div>
+            <div class="ecard-t">Screenshot</div>
+            <div class="ecard-d">2× HD PNG of current panel</div>
+          </div>
+          <div class="ecard" onclick="window.print()">
+            <div class="ecard-ico">🖨</div>
+            <div class="ecard-t">Print / PDF</div>
+            <div class="ecard-d">Browser print dialog</div>
+          </div>
+        </div>
+
+        <div style="margin-top:20px">
+          <div style="font-size:9px;font-weight:900;letter-spacing:.18em;text-transform:uppercase;color:var(--mut);margin-bottom:10px">Per-Show Captures</div>
+          <div style="display:flex;gap:7px;flex-wrap:wrap" id="per-show-exp"></div>
+        </div>
+      </div>
+
+      <!-- ══ HELP ═════════════════════════════════════════════ -->
+      <div class="panel" id="panel-help">
+        <div class="ph">
+          <div>
+            <div class="ph-title">❓ How to <span>Use</span></div>
+            <div class="ph-desc">Everything you need to know as a viewer or admin</div>
+          </div>
+        </div>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px">
+          <div class="msec">
+            <div class="msec-t">👀 Public Viewers</div>
+            <div style="font-size:11px;color:var(--txt2);line-height:1.9">
+              • Browse all shows and rosters<br>
+              • Filter by status, show, gender<br>
+              • Search any contestant by name<br>
+              • 📷 Capture screenshots of any panel<br>
+              • Download data as CSV<br>
+              • Toggle light / dark mode (☾ button)<br>
+              • Print any page (🖨 button)
+            </div>
+          </div>
+          <div class="msec">
+            <div class="msec-t">🔒 Admin (BobMasterBillie)</div>
+            <div style="font-size:11px;color:var(--txt2);line-height:1.9">
+              • Click <strong style="color:var(--txt)">🔒 Admin</strong> → enter password<br>
+              • <strong style="color:var(--txt)">✎ Edit: OFF</strong> → toggles inline editing<br>
+              • <strong style="color:var(--txt)">⚙ Shows</strong> → add/rename/delete shows<br>
+              • <strong style="color:var(--txt)">👁 Visibility</strong> → hide/show contestants<br>
+              • <strong style="color:var(--txt)">🌐 Save Global</strong> → commits to GitHub, everyone sees updates in ~30s<br>
+              • <strong style="color:var(--txt)">💾 Local</strong> → local browser backup only
+            </div>
+          </div>
+        </div>
+
+        <div class="clarify-box">
+          <h3>🌐 How Global Save Works</h3>
+          <p>When you click <strong>🌐 Save Global</strong>, the site sends your updated data to a Vercel serverless function, which commits it to GitHub as <code style="background:var(--bdr);padding:1px 5px;border-radius:3px;font-size:10px">public/data/data.js</code>. Vercel detects the commit and rebuilds the site. Within ~30 seconds, every visitor in the world sees your updates automatically — no manual uploads needed.</p>
+          <div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap">
+            <span class="verdict verdict-yes">✓ Changes visible globally in ~30 seconds</span>
+            <span class="verdict verdict-yes">✓ No server to manage</span>
+            <span class="verdict verdict-yes">✓ Full version history on GitHub</span>
+          </div>
+        </div>
+
+        <div class="dnote">
+          <strong>Note on follower auto-fetch:</strong> Instagram and Social Blade block browser-based API calls (CORS). Follower counts must be entered manually via Edit Mode. This is a platform limitation, not a bug.
+        </div>
+      </div>
+
+      <!-- Dynamic show panels injected by JS -->
+      <div id="dynamic-panels"></div>
+
+    </main>
+  </div>
+</div>
+
+<!-- ═══ TOAST ════════════════════════════════════════════════ -->
+<div class="toast" id="toast"><span id="toast-msg"></span></div>
+
+<!-- ═══ SAVE BAR (admin local backup) ═══════════════════════ -->
+<div class="save-bar" id="save-bar">
+  <div class="save-bar-title">💾 Local Backup</div>
+  <div class="save-section">
+    <span class="save-section-lbl">Browser</span>
+    <span class="ls-dot" id="ls-dot"></span>
+    <label class="autosave-toggle">
+      <input type="checkbox" id="autosave-chk" onchange="toggleAutosave(this.checked)">
+      <div class="toggle-track"><div class="toggle-thumb"></div></div>
+      <span id="autosave-lbl">Auto-save OFF</span>
+    </label>
+    <button class="btn b-grn b-sm" onclick="saveToLocalStorage(true)">💾 Save Now</button>
+    <button class="btn b-gh b-sm"  onclick="loadFromLocalStorage()">↺ Restore</button>
+    <button class="btn b-red b-sm" onclick="clearLocalStorage()">🗑 Clear</button>
+  </div>
+  <div class="save-section">
+    <span class="save-section-lbl">File</span>
+    <button class="btn b-gld b-sm" onclick="exportJSON()">↓ JSON</button>
+    <button class="btn b-gh b-sm"  onclick="openImportModal()">↑ Import</button>
+    <button class="btn b-gh b-sm"  onclick="exportAllCSV()">↓ CSV</button>
+  </div>
+  <button class="save-bar-close" onclick="toggleSaveBar()">✕</button>
+</div>
+
+<!-- ═══ CONTESTANT MODAL ════════════════════════════════════ -->
+<div class="mbg" id="modal-c">
+  <div class="modal">
+    <div class="mhdr">
+      <div class="mtitle" id="mc-title">Add Contestant</div>
+      <button class="mclose" onclick="closeModal('modal-c')">✕</button>
+    </div>
+    <div class="msec">
+      <div class="msec-t">Basic Info</div>
+      <div class="fg">
+        <div class="fi full">
+          <label class="fl">Show</label>
+          <select class="fsel-modal" id="f-show"></select>
+        </div>
+        <div class="fi">
+          <label class="fl">Name <em>required</em></label>
+          <input class="finp" id="f-name" placeholder="Full name">
+        </div>
+        <div class="fi">
+          <label class="fl">Gender</label>
+          <select class="fsel-modal" id="f-gender">
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+            <option value="NB">Non-Binary</option>
+          </select>
+        </div>
+        <div class="fi">
+          <label class="fl">Status</label>
+          <select class="fsel-modal" id="f-status">
+            <option>CONFIRMED</option>
+            <option>RUMOURED</option>
+            <option>APPROACHED</option>
+            <option>REPORTEDLY CONFIRMED</option>
+            <option>WITHDRAWN</option>
+          </select>
+        </div>
+        <div class="fi">
+          <label class="fl">Tier / Label</label>
+          <input class="finp" id="f-tier" placeholder="CHAMPION / CHALLENGER…">
+        </div>
+        <div class="fi">
+          <label class="fl">Profession</label>
+          <input class="finp" id="f-profession" placeholder="Actor / Creator…">
+        </div>
+        <div class="fi">
+          <label class="fl">Instagram Handle</label>
+          <input class="finp" id="f-ig" placeholder="@handle or N/V">
+        </div>
+      </div>
+    </div>
+    <div class="msec">
+      <div class="msec-t">Follower Data</div>
+      <div class="fg">
+        <div class="fi"><label class="fl">Before Show</label><input class="finp" id="f-fb"  placeholder="e.g. 1.2M"></div>
+        <div class="fi"><label class="fl">Before Date</label><input class="finp" id="f-fbd" placeholder="e.g. Oct 2025"></div>
+        <div class="fi"><label class="fl">Last Checked</label><input class="finp" id="f-fl"  placeholder="e.g. 2.5M"></div>
+        <div class="fi"><label class="fl">Last Date</label><input class="finp" id="f-fld"   placeholder="e.g. Jun 10 2026"></div>
+        <div class="fi"><label class="fl">Current <em>latest</em></label><input class="finp" id="f-fc" placeholder="e.g. 2.8M"></div>
+        <div class="fi"><label class="fl">Current Date</label><input class="finp" id="f-fcd" placeholder="e.g. Jun 22 2026"></div>
+      </div>
+    </div>
+    <div class="msec">
+      <div class="msec-t">Media &amp; Intel</div>
+      <div class="fg">
+        <div class="fi full"><label class="fl">Photo URL</label><input class="finp" id="f-photo" placeholder="https://…"></div>
+        <div class="fi full"><label class="fl">Known For</label><textarea class="finp fta" id="f-kf" placeholder="Shows, movies, accolades…"></textarea></div>
+        <div class="fi full"><label class="fl">History / Past Shows</label><textarea class="finp fta" id="f-his" placeholder="Prior reality TV appearances…"></textarea></div>
+      </div>
+    </div>
+    <div class="mftr">
+      <button class="btn b-gh"  onclick="closeModal('modal-c')">Cancel</button>
+      <button class="btn b-acc" onclick="saveContestant()">✓ Save</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ HIDE MANAGER ════════════════════════════════════════ -->
+<div class="mbg" id="modal-hide">
+  <div class="modal" style="width:660px">
+    <div class="mhdr">
+      <div class="mtitle">👁 Show / Hide Contestants</div>
+      <button class="mclose" onclick="closeModal('modal-hide')">✕</button>
+    </div>
+    <div style="display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap;align-items:center">
+      <select class="fsel" id="hm-show-filter" onchange="renderHideMgr()"><option value="">All Shows</option></select>
+      <input class="finp" id="hm-search" placeholder="Search name…" style="width:150px;padding:5px 9px;font-size:11px" oninput="renderHideMgr()">
+      <button class="btn b-grn b-sm"  onclick="showAll()">✓ Show All</button>
+      <button class="btn b-warn b-sm" onclick="hideRumoured()">Hide Rumoured</button>
+      <button class="btn b-gh b-sm"   onclick="hideAllVisible()">Hide All</button>
+    </div>
+    <div class="dnote" style="margin-bottom:12px">Tick = visible · Untick = hidden from tables, growth, rankings, and screenshots.</div>
+    <div id="hm-grid" class="hm-grid"></div>
+    <div class="mftr">
+      <span style="font-size:11px;color:var(--mut)">Hidden: <strong id="hm-count" style="color:var(--gld)">0</strong></span>
+      <button class="btn b-gh" onclick="closeModal('modal-hide')">Done</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ SHOW MANAGER ════════════════════════════════════════ -->
+<div class="mbg" id="modal-shows">
+  <div class="modal" style="width:620px">
+    <div class="mhdr">
+      <div class="mtitle">⚙ Manage Shows</div>
+      <button class="mclose" onclick="closeModal('modal-shows')">✕</button>
+    </div>
+    <div id="show-list"></div>
+    <div class="msec" style="margin-top:16px">
+      <div class="msec-t">Add New Show</div>
+      <div class="fg">
+        <div class="fi"><label class="fl">Show Name <em>required</em></label><input class="finp" id="ns-name" placeholder="e.g. Bigg Boss OTT 4"></div>
+        <div class="fi"><label class="fl">Unique Key <em>required</em></label><input class="finp" id="ns-key"  placeholder="e.g. bbott4"></div>
+        <div class="fi"><label class="fl">Platform</label><input class="finp" id="ns-platform" placeholder="e.g. JioHotstar"></div>
+        <div class="fi"><label class="fl">Host</label><input class="finp" id="ns-host" placeholder="e.g. Salman Khan"></div>
+        <div class="fi"><label class="fl">Premiere Date</label><input class="finp" id="ns-date" type="date"></div>
+        <div class="fi"><label class="fl">Emoji</label><input class="finp" id="ns-emoji" placeholder="📺" style="max-width:80px"></div>
+        <div class="fi"><label class="fl">Accent Colour</label><input type="color" id="ns-color" value="#4A9EFF" style="width:48px;height:34px;border:none;background:none;cursor:pointer;padding:0"></div>
+        <div class="fi full"><label class="fl">Description</label><input class="finp" id="ns-desc" placeholder="Short tagline…"></div>
+      </div>
+    </div>
+    <div class="mftr">
+      <button class="btn b-gh"  onclick="closeModal('modal-shows')">Close</button>
+      <button class="btn b-acc" onclick="addShow()">+ Create Show</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ IMPORT MODAL ════════════════════════════════════════ -->
+<div class="mbg" id="modal-import">
+  <div class="modal" style="width:540px">
+    <div class="mhdr">
+      <div class="mtitle">↑ Import / Load Data</div>
+      <button class="mclose" onclick="closeModal('modal-import')">✕</button>
+    </div>
+    <div class="clarify-box">
+      <h3>ℹ️ About Auto-Fetch</h3>
+      <p>Instagram and Social Blade block browser requests. Follower counts must be entered manually via Edit Mode. Use the Bulk Import below for fast batch updates.</p>
+      <span class="verdict verdict-no">❌ Auto-fetch: not possible</span>
+      <span class="verdict verdict-yes" style="margin-left:6px">✓ Manual via Edit: works</span>
+    </div>
+    <div style="margin-bottom:16px">
+      <div style="font-size:11px;font-weight:700;color:var(--txt);margin-bottom:6px">📊 Bulk Follower Import</div>
+      <div style="font-size:10px;color:var(--mut);margin-bottom:8px">One per line: <code style="background:var(--bdr);padding:1px 5px;border-radius:3px;font-size:10px">Contestant Name, showKey, newFollowers</code></div>
+      <textarea class="finp fta" id="bulk-import-txt" placeholder="Gaurav Khanna, kkk, 2.1M&#10;Rubina Dilaik, kkk, 8.6M" style="min-height:90px;font-family:var(--mo);font-size:11px"></textarea>
+      <button class="btn b-grn b-sm" style="margin-top:8px" onclick="bulkImportFollowers()">✓ Apply</button>
+    </div>
+    <div class="import-drop" id="import-drop"
+      onclick="document.getElementById('json-file-input').click()"
+      ondragover="event.preventDefault();this.classList.add('drag-over')"
+      ondragleave="this.classList.remove('drag-over')"
+      ondrop="handleJSONDrop(event)">
+      <div class="import-drop-ico">📁</div>
+      <div class="import-drop-txt">Drop a JSON backup here, or click to browse</div>
+      <div class="import-drop-sub">Restores all shows and contestant data</div>
+    </div>
+    <input type="file" id="json-file-input" accept=".json" style="display:none" onchange="handleJSONFile(this)">
+    <div class="mftr">
+      <button class="btn b-gh" onclick="closeModal('modal-import')">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ ADMIN LOGIN MODAL ════════════════════════════════════ -->
+<div class="mbg" id="admin-modal">
+  <div class="modal" style="max-width:380px">
+    <div class="mhdr">
+      <div class="mtitle">Admin Access</div>
+      <button class="mclose" onclick="closeAdminLogin()">✕</button>
+    </div>
+    <div>
+      <div class="admin-modal-icon">🔐</div>
+      <div class="admin-modal-title">Admin Login</div>
+      <div class="admin-modal-sub">Unlocks editing, show management, and global save.<br>Public visitors can browse without logging in.</div>
+      <div class="admin-pw-wrap">
+        <input type="password" id="admin-pw-input" placeholder="Admin password" autocomplete="current-password">
+        <button class="admin-pw-eye" id="admin-pw-eye-btn" onclick="
+          const i=document.getElementById('admin-pw-input');
+          i.type=i.type==='password'?'text':'password';
+          this.textContent=i.type==='password'?'👁':'🙈'">👁</button>
+      </div>
+      <div id="admin-login-err"></div>
+      <button class="btn b-acc" id="admin-login-btn" style="width:100%;justify-content:center" onclick="submitAdminLogin()">Unlock Admin Mode</button>
+      <div class="admin-note">Session lasts 4 hours · Password verified server-side<br>Managed via Vercel Environment Variables</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ CAPTURE PREVIEW MODAL ════════════════════════════════ -->
+<div class="cap-modal-bg" id="cap-modal-bg">
+  <div class="cap-modal">
+    <div class="cap-modal-header">
+      <div class="cap-modal-title">📷 Screenshot Preview <span class="cap-badge">2× HD</span></div>
+      <button class="cap-modal-close" onclick="closeCaptureModal()">✕</button>
+    </div>
+    <div class="cap-preview-wrap" id="cap-preview-wrap">
+      <div class="cap-preview-spinner" id="cap-spinner">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4A9EFF" stroke-width="2.5" style="animation:spin 1s linear infinite;flex-shrink:0">
+          <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+        </svg>
+        Generating high-resolution preview…
+      </div>
+      <img class="cap-preview-img" id="cap-preview-img" src="" alt="" style="display:none">
+    </div>
+    <div class="cap-modal-footer">
+      <span class="cap-footer-lbl">Save as</span>
+      <button class="btn b-grn b-sm" id="cap-save-png" onclick="saveCapture('png')" disabled>↓ PNG</button>
+      <button class="btn b-gh b-sm"  id="cap-save-jpg" onclick="saveCapture('jpg')" disabled>↓ JPG</button>
+      <button class="btn b-blu b-sm" id="cap-copy"     onclick="copyCapture()"     disabled>⏸ Copy</button>
+      <button class="btn b-gh b-sm"  id="cap-print"    onclick="printCapture()"    disabled>🖨 Print</button>
+      <div class="cap-modal-info" id="cap-info">Generating…</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ SCRIPTS — load order matters ════════════════════════ -->
+<script src="data/data.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/app.js"></script>
+<script src="js/export.js"></script>
+<script src="js/persistence.js"></script>
+<script src="js/admin.js"></script>
+<script>
+/* ─── BOOT ───────────────────────────────────────────────── */
+document.addEventListener('DOMContentLoaded', () => {
+  // Build show panels + sidebar
+  Object.keys(window.SHOWS || {}).forEach(k => buildShowPanel(k));
+  rebuildSidebar();
+  renderAll();
+  renderOverview();
+  updateStats();
+  populateRankingFilters();
+  if (typeof renderActivityFeed === 'function') renderActivityFeed();
+  populatePerShowExport();
+});
+
+/* ─── PER-SHOW CAPTURE BUTTONS ───────────────────────────── */
+function populatePerShowExport() {
+  const wrap = document.getElementById('per-show-exp');
+  if (!wrap) return;
+  wrap.innerHTML = Object.keys(window.SHOWS || {}).map(k =>
+    `<button class="btn b-gh b-sm" onclick="capture('panel-show-${k}','${window.SHOWS[k].label}')">
+      📷 ${window.SHOWS[k].label}
+    </button>`
+  ).join('');
+}
+
+/* ─── RANKING FILTERS ────────────────────────────────────── */
+function populateRankingFilters() {
+  const sel = document.getElementById('rank-show-filter');
+  if (!sel) return;
+  sel.innerHTML = '<option value="">All Shows</option>' +
+    Object.keys(window.SHOWS || {}).map(k =>
+      `<option value="${k}">${window.SHOWS[k].label}</option>`
+    ).join('');
+}
+
+function filterRankings() {
+  const status = (document.getElementById('rank-status-filter')?.value || '').toLowerCase();
+  const show   = document.getElementById('rank-show-filter')?.value || '';
+  const gender = (document.getElementById('rank-gender-filter')?.value || '').toLowerCase();
+  const q      = (document.getElementById('rank-search')?.value || '').toLowerCase();
+
+  document.querySelectorAll('#rank-tbody tr').forEach(tr => {
+    const ds = (tr.dataset.status || '').toLowerCase();
+    const dk = tr.dataset.show   || '';
+    const dg = (tr.dataset.gender || '').toLowerCase();
+    const dn = (tr.dataset.name   || '').toLowerCase();
+
+    const ok = (!status || ds.includes(status))
+            && (!show   || dk === show)
+            && (!gender || dg === gender)
+            && (!q      || dn.includes(q));
+
+    tr.style.display = ok ? '' : 'none';
+  });
+}
+
+/* Patch renderRankings to tag rows with filter data */
+const _origRR = window.renderRankings;
+if (typeof _origRR === 'function') {
+  window.renderRankings = function() {
+    _origRR();
+    const all = [];
+    Object.keys(window.DB || {}).forEach(k =>
+      (window.DB[k] || []).filter(c => !isH(k, c.id)).forEach(c =>
+        all.push({ ...c, _k: k })
+      )
+    );
+    all.sort((a, b) => (b.overall || 0) - (a.overall || 0));
+    document.querySelectorAll('#rank-tbody tr').forEach((tr, i) => {
+      const c = all[i];
+      if (c) {
+        tr.dataset.status = (c.status || '').toLowerCase();
+        tr.dataset.show   = c._k;
+        tr.dataset.gender = (c.gender || '').toLowerCase();
+        tr.dataset.name   = (c.name   || '').toLowerCase();
+      }
+    });
+    populateRankingFilters();
+  };
+}
+
+/* ─── THEME ──────────────────────────────────────────────── */
+function toggleTheme() {
+  const light = document.body.classList.toggle('theme-light');
+  const btn = document.getElementById('themeBtn');
+  if (btn) btn.textContent = light ? '☀ Light' : '☾ Dark';
+  try { localStorage.setItem('realityTV2026_theme', light ? 'light' : 'dark'); } catch {}
+}
+// Restore saved theme
+try {
+  if (localStorage.getItem('realityTV2026_theme') === 'light') {
+    document.body.classList.add('theme-light');
+    const btn = document.getElementById('themeBtn');
+    if (btn) btn.textContent = '☀ Light';
+  }
+} catch {}
+</script>
+
+</body>
+</html>

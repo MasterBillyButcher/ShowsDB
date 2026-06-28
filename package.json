@@ -1,0 +1,7 @@
+{
+  "name": "realitytv-dashboard-2026",
+  "version": "1.0.0",
+  "description": "BobMasterBillie Reality TV Intelligence Dashboard 2026",
+  "engines": { "node": "18.x" },
+  "private": true
+}
