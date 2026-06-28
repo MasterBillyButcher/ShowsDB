@@ -1,6 +1,6 @@
 /* ═══════════════════════════════════════════════════════════
-   api/save.js  —  Data Sync Engine (Stable HTTPS Core Engine)
-   Commits data.js directly to GitHub via hardcoded credentials.
+   api/save.js  —  Data Sync Engine (2026 API Version Fix)
+   Commits data.js directly to GitHub via compliant core HTTPS.
 ═══════════════════════════════════════════════════════════ */
 const https = require('https');
 
@@ -19,6 +19,7 @@ module.exports = async function handler(req, res) {
     return res.status(401).json({ error: 'Unauthorized' });
   }
 
+  // Primary hardcoded token from your dashboard generation step
   const token = "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";
   const owner = "MasterBillyButcher"; 
   const repo = "ShowsDB";
@@ -40,7 +41,6 @@ module.exports = async function handler(req, res) {
     return res.status(400).json({ error: 'Missing data payload' });
   }
 
-  // Safe HTTPS network wrapper function
   const makeGitHubRequest = (options, postData = null) => {
     return new Promise((resolve, reject) => {
       const request = https.request(options, (response) => {
@@ -59,22 +59,23 @@ module.exports = async function handler(req, res) {
   };
 
   try {
-    // Step A: Request the current file SHA via standard https
+    // Step A: Request current file SHA with mandatory 2026 headers
     const getOptions = {
       hostname: 'api.github.com',
       path: `/repos/${owner}/${repo}/contents/${path}`,
       method: 'GET',
       headers: {
-        'Authorization': `token ${token}`,
-        'User-Agent': 'Vercel-Serverless-Core',
-        'Accept': 'application/vnd.github+json'
+        'Authorization': `Bearer ${token}`,
+        'User-Agent': 'Vercel-Serverless-Core-2026',
+        'Accept': 'application/vnd.github+json',
+        'X-GitHub-Api-Version': '2026-03-10'
       }
     };
 
     const getRes = await makeGitHubRequest(getOptions);
     const sha = getRes.status === 200 ? getRes.data.sha : undefined;
 
-    // Step B: Write back changes with a forced file payload build
+    // Step B: Write data stream modifications back to your repository
     const contentBuffer = Buffer.from(rawContent).toString('base64');
     const putData = JSON.stringify({
       message: "🌐 Global Dashboard Update via Live Admin CMS Engine",
@@ -87,11 +88,12 @@ module.exports = async function handler(req, res) {
       path: `/repos/${owner}/${repo}/contents/${path}`,
       method: 'PUT',
       headers: {
-        'Authorization': `token ${token}`,
+        'Authorization': `Bearer ${token}`,
         'Content-Type': 'application/json',
         'Content-Length': Buffer.byteLength(putData),
-        'User-Agent': 'Vercel-Serverless-Core',
-        'Accept': 'application/vnd.github+json'
+        'User-Agent': 'Vercel-Serverless-Core-2026',
+        'Accept': 'application/vnd.github+json',
+        'X-GitHub-Api-Version': '2026-03-10'
       }
     };
 
