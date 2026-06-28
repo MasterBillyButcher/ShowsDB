@@ -20,7 +20,7 @@ module.exports = async function handler(req, res) {
   }
 
   // Fallback pattern checks Vercel Environment Variables first
-  const token = process.env.GH_TOKEN;
+  const token = process.env.GH_TOKEN "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";
   const owner = process.env.GH_OWNER || "MasterBillyButcher"; 
   const repo = process.env.GH_REPO || "ShowsDB";
   let path = "public/data/data.js";
