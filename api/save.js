@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════
-   api/save.js  —  Data Sync Engine (Direct Vault Bypass)
+   api/save.js  —  Data Sync Engine (Multi-Format Payload Fix)
    Commits data.js directly to GitHub via hardcoded credentials.
 ═══════════════════════════════════════════════════════════ */
 module.exports = async function handler(req, res) {
@@ -21,14 +21,28 @@ module.exports = async function handler(req, res) {
   const token = "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";
   const owner = "MasterBillyButcher"; 
   const repo = "ShowsDB";
-  const path = "public/data/data.js"; // Explicit fallback destination
+  
+  // Detect if frontend is sending raw text data or wrapped inside an object
+  let rawContent = "";
+  let path = "public/data/data.js"; // Standard default fallback path
+
+  if (req.body) {
+    if (typeof req.body === 'string') {
+      rawContent = req.body;
+    } else if (req.body.data) {
+      rawContent = req.body.data;
+      if (req.body.path) path = req.body.path;
+    } else {
+      // Fallback: convert entire body back to string if it doesn't match keys
+      rawContent = JSON.stringify(req.body, null, 2);
+    }
+  }
+
+  if (!rawContent) {
+    return res.status(400).json({ error: 'Missing data payload structure: No text content received.' });
+  }
 
   try {
-    const { data } = req.body;
-    if (!data) {
-      return res.status(400).json({ error: 'Missing data payload structure' });
-    }
-
     const githubApiUrl = `https://github.com{owner}/${repo}/contents/${path}`;
 
     // Step A: Fetch current file data from GitHub to extract its unique tracking SHA
@@ -47,7 +61,7 @@ module.exports = async function handler(req, res) {
     }
 
     // Step B: Commit the raw base64 data string straight to GitHub
-    const contentBuffer = Buffer.from(data).toString('base64');
+    const contentBuffer = Buffer.from(rawContent).toString('base64');
     const updateResponse = await fetch(githubApiUrl, {
       method: 'PUT',
       headers: {
