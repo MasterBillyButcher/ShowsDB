@@ -2,10 +2,11 @@
    Reality TV Intel 2026 — styles.css
    Design System: Cinematic dark with neon accent language
    Fonts: Montserrat (brand) + Inter (body)
+   FULL VERSION: Includes Table Text Improvements & Edit Mode Fix
 ═══════════════════════════════════════════════════════════ */
 
 /* ─── GOOGLE FONTS ──────────────────────────────────────── */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 /* ─── CSS TOKENS — DARK (default) ──────────────────────── */
 :root {
@@ -38,7 +39,7 @@
   --pink:  #EC4899;
   --teal:  #14B8A6;
 
-  /* Growth table — exact pixel-sampled from reference */
+  /* Growth table — Exact color preservation with text fixes */
   --gtbl-bg:          #0E0E1A;
   --gtbl-hdr:         #0F0F1C;
   --gtbl-row:         #00FFFF;
@@ -74,7 +75,7 @@
   --tr2: .3s ease;
 
   /* Font */
-  --ff: 'Montserrat', 'Inter', system-ui, sans-serif;
+  --ff: 'Inter', 'Montserrat', system-ui, sans-serif;
   --mo: 'Consolas', 'Fira Code', monospace;
 }
 
@@ -808,9 +809,7 @@ tr.row-hidden td { opacity: .3; }
   overflow: hidden;
   flex-shrink: 0;
   background: var(--card2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: flex; align-items: center; justify-content: center;
   border: 1.5px solid var(--bdr2);
 }
 
@@ -1103,26 +1102,11 @@ body.theme-light .filter-select:focus {
 .tab-pane         { display: none; }
 .tab-pane.active  { display: block; animation: fadeIn .18s ease; }
 
-/* ─── GROWTH TABLE ──────────────────────────────────────── */
-.growth-sort-bar {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 12px;
-  flex-wrap: wrap;
-}
-.growth-sort-bar label {
-  font-size: 10px;
-  font-weight: 700;
-  color: var(--mut);
-  letter-spacing: .08em;
-  text-transform: uppercase;
-}
-
+/* ─── GROWTH TABLE (STYLING REPAIRED) ───────────────────── */
 .gtbl-wrap {
   overflow-x: auto;
   border-radius: var(--r2);
-  border: none;
+  border: 1px solid var(--bdr);
   background: transparent;
 }
 
@@ -1168,7 +1152,7 @@ body.theme-light .filter-select:focus {
 .gtbl-wrap thead th:hover { opacity: .8; }
 .gtbl-wrap thead th.srtd  { color: #00C5B5; }
 
-/* Body rows — solid teal */
+/* Body rows — solid teal backgrounds */
 .gtbl-wrap tbody tr {
   background: var(--gtbl-row) !important;
   border-bottom: 1px solid var(--gtbl-row-bdr);
@@ -1182,45 +1166,70 @@ body.theme-light .filter-select:focus {
 }
 .gtbl-wrap tbody tr:last-child { border-bottom: none; }
 
-/* All body cells — BLACK text on cyan bg, matching reference exactly */
+/* Table Cells: Forced Black Text for Contrast */
 .gtbl-wrap td {
   background: transparent;
-  color: #000000;
+  color: #000000 !important; /* FORCED BLACK TEXT FOR CONTRAST */
   text-align: left;
   padding: 10px 14px;
   vertical-align: middle;
   border: none;
-  font-size: 12px;
-  font-weight: 400;
+  font-size: 13px;
+  font-weight: 700; /* Medium-bold for readability */
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-/* Name column — bold black */
-.gtbl-wrap td:nth-child(1) {
-  font-weight: 700;
-  color: #000000;
-  width: 20%;
+/* Typography Enhancements */
+.gtbl-wrap td:first-child { 
+  font-family: var(--ff-brand); 
+  width: 20%; 
+  font-weight: 800; 
 }
-.gtbl-wrap td:nth-child(n+2) {
-  width: 11.43%;
-  text-align: center;
+.gtbl-wrap td:nth-child(n+2) { 
+  font-family: var(--mo); 
+  text-align: center; 
+  font-size: 12px; 
+  width: 11.43%; 
 }
 .gtbl-wrap thead th:nth-child(n+2) {
   text-align: center;
 }
 
-/* Growth colour classes — dark tones visible on cyan bg */
-.gtbl-wrap tbody td.hi  { color: #005500 !important; font-weight: 800; }
-.gtbl-wrap tbody td.neg { color: #880000 !important; }
+/* Growth indicator colors (Dark variants to show up clearly on Cyan) */
+.gtbl-wrap tbody td.hi  { color: #005500 !important; font-weight: 900; }
+.gtbl-wrap tbody td.neg { color: #880000 !important; font-weight: 900; }
 .gtbl-wrap tbody td.md  { color: #004400 !important; }
 
 /* Drag reorder */
 tr.drag-over { outline: 2px dashed rgba(255,255,255,.5) !important; }
 tr[draggable="true"] { cursor: grab; }
 tr[draggable="true"]:active { cursor: grabbing; }
+
+/* ─── EDIT MODE VISIBILITY FIX ─────────────────────────── */
+body.edit-on [contenteditable="true"] {
+  outline: 1px dashed rgba(74,158,255,.5);
+  background: rgba(74,158,255,.05);
+  border-radius: 3px;
+  padding: 1px 3px;
+  cursor: text;
+  color: var(--txt);
+  transition: all var(--tr);
+}
+body.edit-on [contenteditable="true"]:hover { outline-color: var(--acc); background: rgba(74,158,255,.1); }
+body.edit-on [contenteditable="true"]:focus { outline: 1.5px solid var(--acc); background: rgba(74,158,255,.15); }
+
+/* FIX FOR CYAN CELLS: Force text to stay black when clicking to edit */
+body.edit-on .gtbl-wrap [contenteditable="true"] {
+  color: #000000 !important;
+  background: rgba(0,0,0,0.06);
+  outline-color: #000000;
+}
+body.edit-on .gtbl-wrap [contenteditable="true"]:focus {
+  background: rgba(0,0,0,0.1);
+}
 
 /* ─── HIDE NOTICE ───────────────────────────────────────── */
 .hid-notice {
@@ -1263,7 +1272,7 @@ tr[draggable="true"]:active { cursor: grabbing; }
 .sbf  { height: 100%; border-radius: 999px; transition: width .4s ease; }
 .sbn  { font-size: 11px; font-weight: 700; flex-shrink: 0; }
 
-/* ─── MODALS ────────────────────────────────────────────── */
+/* ─── MODALS & DARK THEME INPUT FIX ────────────────────── */
 .mbg {
   display: none;
   position: fixed;
@@ -1340,6 +1349,20 @@ tr[draggable="true"]:active { cursor: grabbing; }
 .fi.full { grid-column: 1/-1; }
 .fl { font-size: 10px; font-weight: 700; color: var(--txt2); }
 .fl em { color: var(--red); font-style: normal; }
+
+/* Fixed Inputs Visibility in Dark Mode */
+.finp, .fta, .fsel-modal {
+  width: 100%;
+  background: var(--card2) !important;
+  border: 1px solid var(--bdr3) !important;
+  color: var(--txt) !important;
+  border-radius: var(--r1);
+  padding: 9px 12px;
+  font-size: 13px;
+  outline: none;
+  transition: border-color var(--tr);
+}
+.finp:focus { border-color: var(--acc) !important; background: var(--sur) !important; }
 
 /* ─── ADMIN MODAL ───────────────────────────────────────── */
 .admin-modal-icon  { text-align: center; font-size: 36px; margin: 20px 0 8px; }
@@ -1678,19 +1701,6 @@ tr[draggable="true"]:active { cursor: grabbing; }
 .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 .toast.err  { border-color: rgba(239,68,68,.5);  color: var(--red); }
 .toast.warn { border-color: rgba(245,158,11,.5); color: var(--gld); }
-
-/* ─── EDIT MODE ─────────────────────────────────────────── */
-body.edit-on [contenteditable="true"] {
-  outline: 1px dashed rgba(74,158,255,.5);
-  background: rgba(74,158,255,.05);
-  border-radius: 3px;
-  padding: 1px 3px;
-  cursor: text;
-  color: var(--txt);
-  transition: all var(--tr);
-}
-body.edit-on [contenteditable="true"]:hover { outline-color: var(--acc); background: rgba(74,158,255,.1); }
-body.edit-on [contenteditable="true"]:focus { outline: 1.5px solid var(--acc); background: rgba(74,158,255,.15); }
 
 /* ─── PRINT ─────────────────────────────────────────────── */
 @media print {
