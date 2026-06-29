@@ -25,11 +25,12 @@ function setLSDot(state) {
 function saveToLocalStorage(showToast = false) {
   try {
     const payload = JSON.stringify({
-      shows:  window.SHOWS,
-      db:     window.DB,
-      hidden: [...HIDDEN],
-      theme:  typeof getCurrentTheme === 'function' ? getCurrentTheme() : 'dark',
-      ts:     Date.now(),
+      shows:       window.SHOWS,
+      db:          window.DB,
+      hidden:      [...HIDDEN],
+      hiddenShows: [...(typeof HIDDEN_SHOWS !== 'undefined' ? HIDDEN_SHOWS : [])],
+      theme:       typeof getCurrentTheme === 'function' ? getCurrentTheme() : 'dark',
+      ts:          Date.now(),
     });
     localStorage.setItem(LS_KEY, payload);
     setLSDot('saved');
@@ -102,6 +103,10 @@ function checkSavedData() {
       HIDDEN.clear();
       data.hidden.forEach(h => HIDDEN.add(h));
     }
+    if (data.hiddenShows && typeof HIDDEN_SHOWS !== 'undefined') {
+      HIDDEN_SHOWS.clear();
+      data.hiddenShows.forEach(k => HIDDEN_SHOWS.add(k));
+    }
     console.log('[Persistence] Auto-restored saved data');
   } catch (e) {
     console.warn('[Persistence] Auto-restore skipped:', e.message);
@@ -114,6 +119,10 @@ function _applyImport(data) {
   if (data.db)    window.DB    = data.db;
   else if (data.contestants) window.DB = data.contestants;
   if (data.hidden) { HIDDEN.clear(); data.hidden.forEach(h => HIDDEN.add(h)); }
+  if (data.hiddenShows && typeof HIDDEN_SHOWS !== 'undefined') {
+    HIDDEN_SHOWS.clear();
+    data.hiddenShows.forEach(k => HIDDEN_SHOWS.add(k));
+  }
   if (typeof setTheme === 'function') {
     setTheme(data.theme || localStorage.getItem('realityTV2026_theme') || 'dark', false);
   }

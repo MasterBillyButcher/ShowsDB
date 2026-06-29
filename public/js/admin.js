@@ -2,35 +2,17 @@
    admin.js  —  Reality TV Intel 2026
    Client-side admin auth. SHA-256 hashed password.
    Session stored in sessionStorage (8-hour expiry).
-
-   TO SET/CHANGE PASSWORD:
-   Run in console:  adminHash('yournewpassword')
-   Then replace ADMIN_HASH below with the output.
 ═══════════════════════════════════════════════════════════ */
 
-/* ── Current hashed password ─────────────────────────────
-   Default password: "realitytv2026"
-   To change: adminHash('newpassword') in console → paste here
-─────────────────────────────────────────────────────────── */
-const ADMIN_HASH = 'a3d7f2e1b8c4a9e6f5d2b1c8e4a7f3d9a2b5c6e8f1a4d7b3c9e2a6f5d8b1c4e7a';
-
+const ADMIN_HASH        = '3735cf4bc639bebada2d3a5e56bf8da27741e2566cb8883ea1587f9251066922';
 const ADMIN_SESSION_KEY = 'rtv_admin_session';
 const SESSION_HOURS     = 8;
 
-/* ── Hash helper (SHA-256 via Web Crypto) ─────────────────── */
 async function sha256(message) {
-  const msgBuf = new TextEncoder().encode(message);
+  const msgBuf  = new TextEncoder().encode(message);
   const hashBuf = await crypto.subtle.digest('SHA-256', msgBuf);
   return Array.from(new Uint8Array(hashBuf)).map(b => b.toString(16).padStart(2,'0')).join('');
 }
-
-/** Utility: hash a password and log the result for copy-paste. */
-async function adminHash(password) {
-  const h = await sha256(password);
-  console.log('%cAdmin hash for "' + password + '":\n' + h, 'font-family:monospace;font-size:13px;color:#4A9EFF');
-  return h;
-}
-window.adminHash = adminHash;
 
 /* ── Session management ───────────────────────────────────── */
 function saveAdminSession() {
@@ -64,7 +46,6 @@ function activateAdmin() {
     btn.style.color       = 'var(--gld)';
     btn.style.borderColor = 'rgba(245,166,35,.4)';
   }
-  // Show save workflow banner
   const sw = document.getElementById('save-workflow');
   if (sw) sw.style.display = 'flex';
   toast('🔓 Admin mode active', 'warn');
@@ -110,14 +91,13 @@ async function submitAdminLogin() {
 
   if (!pw) { err.textContent = 'Password required.'; return; }
 
-  btn.disabled = true;
+  btn.disabled    = true;
   btn.textContent = 'Checking…';
   err.textContent = '';
 
   try {
-    const hash = await sha256(pw);
-    // Compare against hardcoded hash OR any valid prefix (for dev without real hash)
-    const isValid = hash === ADMIN_HASH || pw === 'realitytv2026';
+    const hash    = await sha256(pw);
+    const isValid = hash === ADMIN_HASH;
 
     if (isValid) {
       saveAdminSession();
@@ -131,7 +111,7 @@ async function submitAdminLogin() {
   } catch (e) {
     err.textContent = 'Auth error: ' + e.message;
   } finally {
-    btn.disabled = false;
+    btn.disabled    = false;
     btn.textContent = 'Unlock Admin Mode';
   }
 }
@@ -142,7 +122,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.key === 'Enter') submitAdminLogin();
   });
 
-  // Auto-restore session on page load
   if (isAdminSessionValid()) {
     activateAdmin();
   }

@@ -61,6 +61,12 @@ async function bootApp() {
 
   if (typeof getShowKeys !== 'function') return;
 
+  /* Restore hidden shows from data.js if present */
+  if (Array.isArray(window.HIDDEN_SHOWS_INIT) && typeof HIDDEN_SHOWS !== 'undefined') {
+    HIDDEN_SHOWS.clear();
+    window.HIDDEN_SHOWS_INIT.forEach(k => HIDDEN_SHOWS.add(k));
+  }
+
   /* Clear panels built from bundled data, rebuild with fresh data */
   const dp = document.getElementById('dynamic-panels');
   if (dp) dp.innerHTML = '';

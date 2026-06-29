@@ -4,13 +4,30 @@
 ═══════════════════════════════════════════════════════════ */
 
 /* ─── STATE ─────────────────────────────────────────────── */
-let HIDDEN     = new Set();
-let editMode   = false;
-let editTarget = null;
-let showEditKey = null;
+let HIDDEN       = new Set();
+let HIDDEN_SHOWS = new Set();   // show keys hidden from public view
+let editMode     = false;
+let editTarget   = null;
+let showEditKey  = null;
 
 window._growthOrder = window._growthOrder || {};
 window._growthSort  = window._growthSort  || {};
+
+/* ─── SHOW VISIBILITY HELPERS ───────────────────────────── */
+function isShowHidden(key) { return HIDDEN_SHOWS.has(key); }
+function toggleShowHidden(key) {
+  isShowHidden(key) ? HIDDEN_SHOWS.delete(key) : HIDDEN_SHOWS.add(key);
+  rebuildSidebar();
+  renderOverview();
+  updateStats();
+  renderShowList();
+  if (typeof _autoPersist === 'function') _autoPersist();
+  const nowHidden = isShowHidden(key);
+  toast(nowHidden
+    ? `👁 "${window.SHOWS[key]?.label}" hidden from public`
+    : `✓ "${window.SHOWS[key]?.label}" now visible`,
+    nowHidden ? 'warn' : '');
+}
 
 const THEME_KEY = 'realityTV2026_theme';
 
@@ -199,12 +216,18 @@ function toggleEdit() {
 function rebuildSidebar() {
   const el = document.getElementById('sidebar-shows');
   if (!el) return;
-  el.innerHTML = getShowKeys().map(k => `
-    <div class="sb-item" data-panel="show-${k}" onclick="showPanel('show-${k}')">
-      <span class="sb-dot" style="background:${window.SHOWS[k].color}"></span>
-      ${window.SHOWS[k].label}
-      <span class="sb-badge">${(window.DB[k] || []).length}</span>
-    </div>`).join('');
+  const isAdmin = document.body.classList.contains('admin-active');
+  el.innerHTML = getShowKeys()
+    .filter(k => isAdmin || !isShowHidden(k))
+    .map(k => {
+      const hidden = isShowHidden(k);
+      return `<div class="sb-item${hidden ? ' sb-show-hidden' : ''}" data-panel="show-${k}" onclick="showPanel('show-${k}')">
+        <span class="sb-dot" style="background:${window.SHOWS[k].color};${hidden ? 'opacity:.4' : ''}"></span>
+        <span style="${hidden ? 'opacity:.4' : ''}">${window.SHOWS[k].label}</span>
+        <span class="sb-badge"${hidden ? ' style="opacity:.4"' : ''}>${(window.DB[k] || []).length}</span>
+        ${hidden ? '<span style="font-size:9px;color:var(--mut);margin-left:auto">hidden</span>' : ''}
+      </div>`;
+    }).join('');
 }
 
 /* ─── BUILD SHOW PANEL ──────────────────────────────────── */
@@ -333,40 +356,47 @@ function switchTab(key, tab) {
 function renderOverview() {
   const el = document.getElementById('ov-cards');
   if (!el) return;
-  el.innerHTML = getShowKeys().map(k => {
-    const s   = window.SHOWS[k];
-    const rows = window.DB[k] || [];
-    const vis  = rows.filter(c => !isH(k, c.id));
-    const conf = vis.filter(c => (c.status || '').toUpperCase().includes('CONFIRMED')).length;
-    const rum  = vis.filter(c => (c.status || '').toUpperCase().includes('RUMOUR')).length;
-    return `<div class="ccard" onclick="showPanel('show-${k}')" style="cursor:pointer">
-      <div class="ccard-photo-wrap" style="aspect-ratio:2/1;border-top:3px solid ${s.color};background:linear-gradient(135deg,${s.color}22,${s.color}44);flex-direction:column;gap:6px">
-        <div style="font-size:32px">${s.emoji || '📺'}</div>
-        <div style="font-size:11px;font-weight:800;color:rgba(255,255,255,.75);letter-spacing:.06em;text-align:center;padding:0 8px">${s.label}</div>
-      </div>
-      <div class="ccard-body">
-        <div class="ccard-top-row">
-          <span style="font-size:9px;font-weight:800;color:${s.color};letter-spacing:.1em;text-transform:uppercase">${s.platform || 'TBC'}</span>
+  const isAdmin = document.body.classList.contains('admin-active');
+  el.innerHTML = getShowKeys()
+    .filter(k => isAdmin || !isShowHidden(k))
+    .map(k => {
+      const s    = window.SHOWS[k];
+      const rows = window.DB[k] || [];
+      const vis  = rows.filter(c => !isH(k, c.id));
+      const conf = vis.filter(c => (c.status || '').toUpperCase().includes('CONFIRMED')).length;
+      const rum  = vis.filter(c => (c.status || '').toUpperCase().includes('RUMOUR')).length;
+      const hiddenShow = isShowHidden(k);
+      return `<div class="ccard${hiddenShow ? ' show-card-hidden' : ''}" onclick="showPanel('show-${k}')" style="cursor:pointer">
+        <div class="ccard-photo-wrap" style="aspect-ratio:2/1;border-top:3px solid ${s.color};background:linear-gradient(135deg,${s.color}22,${s.color}44);flex-direction:column;gap:6px">
+          <div style="font-size:32px">${s.emoji || '📺'}</div>
+          <div style="font-size:11px;font-weight:800;color:rgba(255,255,255,.75);letter-spacing:.06em;text-align:center;padding:0 8px">${s.label}</div>
+          ${hiddenShow ? `<div style="position:absolute;top:6px;right:6px;background:rgba(0,0,0,.7);color:var(--mut);font-size:9px;font-weight:700;padding:2px 7px;border-radius:999px;letter-spacing:.06em">HIDDEN</div>` : ''}
         </div>
-        <div class="ccard-name" style="color:${s.color};margin-top:4px">${s.label}</div>
-        <div class="ccard-role">${showDateLabel(s)} · Host: ${s.host || 'TBC'}</div>
-        <div class="cdiv"></div>
-        <div class="crow"><span class="crow-l">Contestants</span><span class="crow-r tm" style="color:var(--blu)">${vis.length}</span></div>
-        <div class="crow"><span class="crow-l">Confirmed</span><span class="crow-r" style="color:var(--grn)">${conf}</span></div>
-        <div class="crow"><span class="crow-l">Rumoured</span><span class="crow-r" style="color:var(--gld)">${rum}</span></div>
-        <div class="ccard-footer">
-          <button class="btn b-acc b-sm" style="flex:1;justify-content:center" onclick="event.stopPropagation();showPanel('show-${k}')">View Roster →</button>
+        <div class="ccard-body">
+          <div class="ccard-top-row">
+            <span style="font-size:9px;font-weight:800;color:${s.color};letter-spacing:.1em;text-transform:uppercase">${s.platform || 'TBC'}</span>
+          </div>
+          <div class="ccard-name" style="color:${s.color};margin-top:4px">${s.label}</div>
+          <div class="ccard-role">${showDateLabel(s)} · Host: ${s.host || 'TBC'}</div>
+          <div class="cdiv"></div>
+          <div class="crow"><span class="crow-l">Contestants</span><span class="crow-r tm" style="color:var(--blu)">${vis.length}</span></div>
+          <div class="crow"><span class="crow-l">Confirmed</span><span class="crow-r" style="color:var(--grn)">${conf}</span></div>
+          <div class="crow"><span class="crow-l">Rumoured</span><span class="crow-r" style="color:var(--gld)">${rum}</span></div>
+          <div class="ccard-footer">
+            <button class="btn b-acc b-sm" style="flex:1;justify-content:center" onclick="event.stopPropagation();showPanel('show-${k}')">View Roster →</button>
+            ${isAdmin ? `<button class="btn ${hiddenShow ? 'b-grn' : 'b-warn'} b-sm no-capture" onclick="event.stopPropagation();toggleShowHidden('${k}')" title="${hiddenShow ? 'Publish show' : 'Hide show from public'}">${hiddenShow ? '✓ Publish' : '👁 Hide'}</button>` : ''}
+          </div>
         </div>
-      </div>
-    </div>`;
-  }).join('');
+      </div>`;
+    }).join('');
 }
 
 /* ─── STATS BAR ─────────────────────────────────────────── */
 function updateStats() {
-  const allC = Object.entries(window.DB).flatMap(([k, arr]) =>
-    arr.map(c => ({ ...c, _k: k })));
-  setText('st-shows', getShowKeys().length);
+  const isAdmin   = document.body.classList.contains('admin-active');
+  const visKeys   = getShowKeys().filter(k => isAdmin || !isShowHidden(k));
+  const allC      = visKeys.flatMap(k => (window.DB[k] || []).map(c => ({ ...c, _k: k })));
+  setText('st-shows', visKeys.length);
   setText('st-total', allC.length);
   setText('st-conf',  allC.filter(c => (c.status || '').toUpperCase().includes('CONFIRMED')).length);
   setText('st-rum',   allC.filter(c => (c.status || '').toUpperCase().includes('RUMOUR')).length);
@@ -787,7 +817,10 @@ function renderGrowth(key) {
 function renderGrowthAll() {
   const el = document.getElementById('ga-wrap');
   if (!el) return;
-  el.innerHTML = getShowKeys().map(k => `
+  const isAdmin = document.body.classList.contains('admin-active');
+  el.innerHTML = getShowKeys()
+    .filter(k => isAdmin || !isShowHidden(k))
+    .map(k => `
     <div style="margin-bottom:28px">
       <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;flex-wrap:wrap;gap:7px">
         <div style="font-size:13px;font-weight:800;color:${window.SHOWS[k].color}">${window.SHOWS[k].emoji || ''} ${window.SHOWS[k].label}</div>
@@ -802,12 +835,14 @@ function renderGrowthAll() {
 
 /* ─── RANKINGS ──────────────────────────────────────────── */
 function renderRankings() {
+  const isAdmin = document.body.classList.contains('admin-active');
   const all = [];
-  Object.keys(window.DB).forEach(k =>
+  Object.keys(window.DB).forEach(k => {
+    if (!isAdmin && isShowHidden(k)) return;
     (window.DB[k] || []).filter(c => !isH(k, c.id)).forEach(c =>
       all.push({ ...c, _k: k, _sl: window.SHOWS[k]?.label, _sc: window.SHOWS[k]?.color })
-    )
-  );
+    );
+  });
   // Sort by follower count (primary) then name (secondary)
   all.sort((a, b) => {
     const fa = parseF(a.follCur) ?? 0;
@@ -988,13 +1023,17 @@ function renderShowList() {
   const el = document.getElementById('show-list');
   if (!el) return;
   el.innerHTML = getShowKeys().map(k => {
-    const s = window.SHOWS[k];
-    return `<div class="show-item">
-      <span class="show-dot" style="background:${s.color}"></span>
-      <div style="flex:1">
+    const s      = window.SHOWS[k];
+    const hidden = isShowHidden(k);
+    return `<div class="show-item${hidden ? ' show-item-hidden' : ''}">
+      <span class="show-dot" style="background:${s.color};${hidden ? 'opacity:.4' : ''}"></span>
+      <div style="flex:1;${hidden ? 'opacity:.5' : ''}">
         <div class="show-name">${s.emoji || ''} ${sanitizeHTML(s.label)}</div>
-        <div class="show-meta-sm">${sanitizeHTML(s.platform || '')} · ${showDateLabel(s)} · ${(window.DB[k] || []).length} contestants</div>
+        <div class="show-meta-sm">${sanitizeHTML(s.platform || '')} · ${showDateLabel(s)} · ${(window.DB[k] || []).length} contestants${hidden ? ' · <span style="color:var(--warn)">hidden from public</span>' : ''}</div>
       </div>
+      <button class="btn ${hidden ? 'b-grn' : 'b-warn'} b-xs" onclick="toggleShowHidden('${k}')" title="${hidden ? 'Publish — make visible to public' : 'Hide from public view'}">
+        ${hidden ? '✓ Publish' : '👁 Hide'}
+      </button>
       <button class="btn b-gh b-xs" onclick="openShowEdit('${k}')">✎</button>
       ${getShowKeys().length > 1 ? `<button class="btn b-red b-xs" onclick="removeShow('${k}')">🗑</button>` : ''}
     </div>`;

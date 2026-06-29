@@ -1981,3 +1981,21 @@ body.admin-active .topbar::before {
   /* Hide desktop sidebar completely on mobile */
   .sidebar { display: none !important; }
 }
+
+/* ─── SHOW VISIBILITY (hide/publish) ────────────────────── */
+.show-item-hidden {
+  border-color: rgba(245,158,11,.2);
+  background: rgba(245,158,11,.04);
+}
+.show-card-hidden {
+  opacity: .55;
+  filter: grayscale(0.3);
+  border-style: dashed;
+}
+.show-card-hidden:hover {
+  opacity: .75;
+}
+.sb-show-hidden {
+  opacity: .6;
+  font-style: italic;
+}

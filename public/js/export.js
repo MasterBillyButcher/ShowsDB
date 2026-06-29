@@ -16,7 +16,7 @@ function exportJSON() {
    Everyone sees your changes on their next page load.
 ═══════════════════════════════════════════════════════════ */\n\n`;
 
-  const body = `window.SHOWS = ${JSON.stringify(window.SHOWS, null, 2)};\n\nwindow.DB = ${JSON.stringify(window.DB, null, 2)};\n`;
+  const body = `window.SHOWS = ${JSON.stringify(window.SHOWS, null, 2)};\n\nwindow.DB = ${JSON.stringify(window.DB, null, 2)};\n\nwindow.HIDDEN_SHOWS_INIT = ${JSON.stringify([...(typeof HIDDEN_SHOWS !== 'undefined' ? HIDDEN_SHOWS : [])])};\n`;
   const blob = new Blob([header + body], { type: 'application/javascript' });
   const a    = document.createElement('a');
   a.href     = URL.createObjectURL(blob);
