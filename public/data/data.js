@@ -1,6 +1,6 @@
 /* ═══════════════════════════════════════════════════════════
    data.js  —  Reality TV Intelligence Dashboard 2026
-   Last saved: 28 Jun 2026, 16:37
+   Last saved: 29 Jun 2026, 10:10
 
    HOW TO UPDATE EVERYONE:
    Upload this file to GitHub at:  public/data/data.js
@@ -494,7 +494,7 @@ window.DB = {
       "profession": "Actress, Influencer",
       "tier": "",
       "ig": "akankshagkhanna",
-      "photo": "https://knowlepedia.org/images/9/95/Akanksha_Chamola.jpg",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwdvPgTqUSdHDSmEbUx7jzU-M-bGmfoeOCxoFdlNBqUQ&s=10",
       "follBefore": "941.0K",
       "follBeforeDate": "June 27",
       "follLast": "N/V",
