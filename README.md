@@ -1,7 +1,7 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=cylinder&color=0:0d0221,40:1a0533,100:0d1b4b&height=260&section=header&text=Reality%20TV%20Intel%202026&fontSize=62&fontColor=ffffff&animation=scaleIn&fontAlignY=45&desc=%F0%9F%87%AE%F0%9F%87%B3%20India%27s%20Biggest%20Shows.%20One%20Dashboard.&descAlignY=65&descSize=19&descColor=c4b5fd&stroke=7c3aed&strokeWidth=3"/>
-  <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=cylinder&color=0:ede9fe,50:ddd6fe,100:c4b5fd&height=260&section=header&text=Reality%20TV%20Intel%202026&fontSize=62&fontColor=1e1b4b&animation=scaleIn&fontAlignY=45&desc=%F0%9F%87%AE%F0%9F%87%B3%20India%27s%20Biggest%20Shows.%20One%20Dashboard.&descAlignY=65&descSize=19&descColor=4c1d95&stroke=7c3aed&strokeWidth=3"/>
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=cylinder&color=0:0d0221,40:1a0533,100:0d1b4b&height=260&section=header&text=Reality%20TV%20Intel%202026&fontSize=62&fontColor=ffffff&animation=scaleIn&fontAlignY=45&desc=%F0%9F%87%AE%F0%9F%87%B3%20India%27s%20Biggest%20Shows.%20One%20Dashboard.&descAlignY=65&descSize=19&descColor=c4b5fd&stroke=7c3aed&strokeWidth=3" alt="Reality TV Intel 2026"/>
+  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=cylinder&color=0:0d0221,40:1a0533,100:0d1b4b&height=160&section=header&text=Reality%20TV%20Intel%202026&fontSize=44&fontColor=ffffff&animation=scaleIn&fontAlignY=45&desc=%F0%9F%87%AE%F0%9F%87%B3%20India%27s%20Biggest%20Shows.%20One%20Dashboard.&descAlignY=70&descSize=16&descColor=c4b5fd&stroke=7c3aed&strokeWidth=2"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=cylinder&color=0:ede9fe,50:ddd6fe,100:c4b5fd&height=160&section=header&text=Reality%20TV%20Intel%202026&fontSize=44&fontColor=1e1b4b&animation=scaleIn&fontAlignY=45&desc=%F0%9F%87%AE%F0%9F%87%B3%20India%27s%20Biggest%20Shows.%20One%20Dashboard.&descAlignY=70&descSize=16&descColor=4c1d95&stroke=7c3aed&strokeWidth=2"/>
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=cylinder&color=0:0d0221,40:1a0533,100:0d1b4b&height=160&section=header&text=Reality%20TV%20Intel%202026&fontSize=44&fontColor=ffffff&animation=scaleIn&fontAlignY=45&desc=%F0%9F%87%AE%F0%9F%87%B3%20India%27s%20Biggest%20Shows.%20One%20Dashboard.&descAlignY=70&descSize=16&descColor=c4b5fd&stroke=7c3aed&strokeWidth=2" alt="Reality TV Intel 2026"/>
 </picture>
 
 <br/>
@@ -121,6 +121,35 @@ open public/index.html
 > 💡 **Deploy to Vercel:** Go to [vercel.com/new](https://vercel.com/new) → import the repo → done. Zero config.
 
 ---
+
+## 📝 Updating Data
+
+All data lives in `public/data/data.js` — one file, no database, no migrations.
+
+```
+🔒 Admin Login  →  ✎ Edit Mode  →  click any cell to edit
+       ↓
+  💾 Save JSON  →  data.js downloads to your machine
+       ↓
+  📤 Push to GitHub at public/data/data.js
+       ↓
+  🌍 Everyone sees the update on next page load ✓
+```
+
+### ⚡ Bulk Follower Import
+
+Go to **Export → Bulk Follower Import** and paste:
+
+```
+Gaurav Khanna,   kkk,      2.1M
+Rubina Dilaik,   kkk,      8.6M
+Shivangi Joshi,  lockupp,  10.5M
+```
+
+> **Format:** `Name, showKey, followers` — accepts `430K` · `2.5M` · `9200000`
+
+---
+
 ## 👥 Permissions
 
 <div align="center">
