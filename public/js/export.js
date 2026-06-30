@@ -71,7 +71,8 @@ function exportAllCSV() {
   const hdrs = ['Show','#','Name','Gender','Status','Tier','Profession','Instagram',
     'Followers Before','Followers Last','Followers Current','Known For'];
   let out = csvRow(hdrs);
-  getShowKeys().forEach(k => {
+  const isAdmin = document.body.classList.contains('admin-active');
+  getShowKeys().filter(k => isAdmin || !isShowHidden(k)).forEach(k => {
     (window.DB[k] || []).filter(c => !isH(k, c.id)).forEach((c, i) => {
       out += csvRow([
         window.SHOWS[k]?.label || k,
@@ -108,7 +109,8 @@ function exportAllGrowth() {
   const hdrs = ['Show','#','Name','Before Show','Last Checked','Current',
     'Growth','Growth %','Total Growth','Total %'];
   let out = csvRow(hdrs);
-  getShowKeys().forEach(k => {
+  const isAdmin = document.body.classList.contains('admin-active');
+  getShowKeys().filter(k => isAdmin || !isShowHidden(k)).forEach(k => {
     (window.DB[k] || []).filter(c => !isH(k, c.id)).forEach((c, i) => {
       const g1 = calcGrowth(c.follLast,   c.follCur);
       const g2 = calcGrowth(c.follBefore, c.follCur);
@@ -125,8 +127,9 @@ function exportAllGrowth() {
 function exportRankCSV() {
   const hdrs = ['Rank','Name','Show','Status','Followers','Tier','Known For'];
   let out    = csvRow(hdrs);
+  const isAdmin = document.body.classList.contains('admin-active');
   const all  = [];
-  Object.keys(window.DB).forEach(k =>
+  Object.keys(window.DB).filter(k => isAdmin || !isShowHidden(k)).forEach(k =>
     (window.DB[k] || []).filter(c => !isH(k, c.id)).forEach(c =>
       all.push({ ...c, _k: k, _sl: window.SHOWS[k]?.label })
     )
@@ -187,16 +190,19 @@ async function capture(elId, filename) {
   bg.classList.add('open');
   _captureCanvas = null;
 
+  let wasHidden  = false;
+  let origStyle  = '';
+  let hiddenEls  = [];
+
   try {
-    const wasHidden = getComputedStyle(el).display === 'none' || el.offsetParent === null;
-    const origStyle = el.getAttribute('style') || '';
+    wasHidden = getComputedStyle(el).display === 'none' || el.offsetParent === null;
+    origStyle = el.getAttribute('style') || '';
 
     if (wasHidden) {
       el.style.cssText = 'position:fixed!important;left:-9999px!important;top:0!important;display:block!important;z-index:-1!important;min-width:1200px!important;background:var(--bg)!important;';
     }
 
     /* Hide UI chrome */
-    const hiddenEls = [];
     HIDE_IN_CAPTURE.forEach(sel => {
       el.querySelectorAll(sel).forEach(node => {
         if (getComputedStyle(node).display !== 'none') {
@@ -208,15 +214,23 @@ async function capture(elId, filename) {
 
     await new Promise(r => requestAnimationFrame(() => setTimeout(r, 200)));
 
+    /* Measure AFTER chrome is hidden and layout has settled, so the
+       width we snapshot at matches the width we crop to — prevents
+       html2canvas reflowing the responsive grid into extra columns
+       that then get sliced off. */
+    const fullWidth  = el.scrollWidth;
+    const fullHeight = el.scrollHeight;
+
     const canvas = await html2canvas(el, {
       backgroundColor: document.body.classList.contains('theme-light') ? '#F0F2F8' : '#08080F',
       scale:           2,
       useCORS:         true,
       allowTaint:      true,
       logging:         false,
-      width:           el.scrollWidth,
-      height:          el.scrollHeight,
-      windowWidth:     Math.max(el.scrollWidth + 120, 1400),
+      width:           fullWidth,
+      height:          fullHeight,
+      windowWidth:     fullWidth,
+      windowHeight:    fullHeight,
       ignoreElements:  node => {
         const tag = (node.tagName || '').toLowerCase();
         if (tag === 'button') return true;
@@ -228,9 +242,6 @@ async function capture(elId, filename) {
                cls.includes('sidebar');
       },
     });
-
-    hiddenEls.forEach(({ node, v }) => { node.style.visibility = v; });
-    if (wasHidden) el.setAttribute('style', origStyle);
 
     _captureCanvas = canvas;
     const dataURL  = canvas.toDataURL('image/png');
@@ -248,6 +259,13 @@ async function capture(elId, filename) {
     info.textContent = 'Failed: ' + e.message;
     toast('Capture failed: ' + e.message + '. Try Ctrl+P for PDF.', 'err');
     console.error('[Capture]', e);
+
+  } finally {
+    /* ALWAYS restore hidden chrome — even if html2canvas threw.
+       This is what was making tabs/buttons disappear permanently
+       after a failed capture. */
+    hiddenEls.forEach(({ node, v }) => { node.style.visibility = v; });
+    if (wasHidden) el.setAttribute('style', origStyle);
   }
 }
 

@@ -92,8 +92,33 @@ function normalizeFollowerInput(value) {
   const raw = String(value ?? '').trim();
   if (!raw) return 'N/V';
   if (/^n\/?v$/i.test(raw)) return 'N/V';
-  const p = parseF(raw);
-  return p === null ? raw : fmtF(p, p >= 1e6 ? 1 : 0);
+
+  /* Admin typed shorthand like "3.5M" or "420K" — that IS the precision
+     they intended, so format it consistently. */
+  if (/[KMBkmb]\s*$/.test(raw)) {
+    const p = parseF(raw);
+    return p === null ? raw : fmtF(p, p >= 1e6 ? 1 : 0);
+  }
+
+  /* Admin typed an exact number (e.g. "10123456" or "10,123,456") —
+     keep it EXACT. Rounding this to K/M at save time is what was
+     hiding single-follower changes in growth calculations. Display
+     functions format this for readability; storage stays precise. */
+  const cleaned = raw.replace(/,/g, '');
+  if (/^\d+(\.\d+)?$/.test(cleaned)) {
+    return String(Math.round(parseFloat(cleaned)));
+  }
+
+  return raw;
+}
+
+/** Display-only formatter: shows the stored value as K/M for readability
+    without touching what's actually saved. Use this anywhere a follower
+    count is rendered to the user (tables, cards, rankings). */
+function displayFollower(stored) {
+  if (!stored || stored === 'N/V') return 'N/V';
+  const n = parseF(stored);
+  return n === null ? stored : fmtF(n, n >= 1e6 ? 1 : 0);
 }
 function calcGrowth(last, cur) {
   const l = parseF(last), c = parseF(cur);
@@ -138,7 +163,11 @@ function toggleH(k, id) {
   if (typeof _autoPersist === 'function') _autoPersist();
 }
 function ed(val, k, id, f) {
-  if (!editMode) return `<span>${val || ''}</span>`;
+  const isFoll = /^foll(Before|Last|Cur)$/.test(f);
+  if (!editMode) {
+    const shown = isFoll ? displayFollower(val) : (val || '');
+    return `<span>${shown}</span>`;
+  }
   return `<span contenteditable="true" data-k="${k}" data-i="${id}" data-f="${f}" onblur="inlineSave(this)">${val || ''}</span>`;
 }
 function inlineSave(el) {
@@ -577,7 +606,7 @@ function renderCards(key) {
            <div class="ccard-no-photo-meta">
              <div class="ccard-no-photo-name">${sanitizeHTML(c.name)}</div>
              <div class="ccard-no-photo-sub">${sanitizeHTML(c.profession || '')} · ${c.gender || ''}</div>
-             ${c.follCur && c.follCur !== 'N/V' ? `<div class="ccard-no-photo-foll" style="color:${col}">${c.follCur} followers</div>` : ''}
+             ${c.follCur && c.follCur !== 'N/V' ? `<div class="ccard-no-photo-foll" style="color:${col}">${displayFollower(c.follCur)} followers</div>` : ''}
            </div>
          </div>`;
 
@@ -591,7 +620,7 @@ function renderCards(key) {
         <div class="ccard-name">${sanitizeHTML(c.name)}</div>
         <div class="ccard-role">${sanitizeHTML(c.profession || '')} · ${c.gender || ''}</div>
         <div class="cdiv"></div>
-        <div class="crow"><span class="crow-l">Followers</span><span class="crow-r tm" style="color:var(--blu)">${c.follCur || 'N/V'}</span></div>
+        <div class="crow"><span class="crow-l">Followers</span><span class="crow-r tm" style="color:var(--blu)">${displayFollower(c.follCur)}</span></div>
         <div class="crow"><span class="crow-l">Growth</span><span class="crow-r tm" style="color:${gcol}">${g.rate}</span></div>
         <div class="crow"><span class="crow-l">Total</span><span class="crow-r tm" style="color:var(--mut)">${g2.rate}</span></div>
         <div class="crow"><span class="crow-l">Instagram</span><span class="crow-r">${igLink(c.ig)}</span></div>
@@ -665,7 +694,8 @@ function buildGrowthHTML(key) {
                   g2.rateRaw !== null && g2.rateRaw < 0   ? '#880000' : '#000000';
 
     function eC(val, f) {
-      if (!editMode) return val || 'N/V';
+      const isFoll = /^foll(Before|Last|Cur)$/.test(f);
+      if (!editMode) return (isFoll ? displayFollower(val) : val) || 'N/V';
       return `<span contenteditable="true"
         onblur="saveGrowthCell('${key}',${c.id},'${f}',this.innerText)"
         style="min-width:55px;display:inline-block;text-align:center">${val || 'N/V'}</span>`;
@@ -874,7 +904,7 @@ function renderRankings() {
       </td>
       <td><span style="font-size:11px;font-weight:700;color:${c._sc}">${sanitizeHTML(c._sl || '')}</span></td>
       <td>${badge(c.status)}</td>
-      <td><span class="tm" style="color:var(--blu)">${c.follCur || 'N/V'}</span></td>
+      <td><span class="tm" style="color:var(--blu)">${displayFollower(c.follCur)}</span></td>
       <td><span style="font-size:11px;color:var(--mut)">${sanitizeHTML(c.tier || c.profession || '')}</span></td>
       <td style="font-size:10px;color:var(--mut);max-width:200px">${sanitizeHTML(c.knownFor || '')}</td>
     </tr>`;
@@ -886,10 +916,13 @@ function renderRankings() {
 function _populateRankFilters() {
   const sel = document.getElementById('rank-show-filter');
   if (!sel) return;
+  const isAdmin = document.body.classList.contains('admin-active');
   sel.innerHTML = '<option value="">All Shows</option>' +
-    Object.keys(window.SHOWS || {}).map(k =>
-      `<option value="${k}">${window.SHOWS[k].label}</option>`
-    ).join('');
+    Object.keys(window.SHOWS || {})
+      .filter(k => isAdmin || !isShowHidden(k))
+      .map(k =>
+        `<option value="${k}">${window.SHOWS[k].label}</option>`
+      ).join('');
 }
 
 function filterRankings() {
