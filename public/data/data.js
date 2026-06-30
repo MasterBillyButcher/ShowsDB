@@ -603,7 +603,7 @@ window.DB = {
       "profession": "Fashion Commentator, Social Media Influencer, Digital Creator",
       "tier": "",
       "ig": "sufimotiwala",
-      "photo": "https://m.media-amazon.com/images/M/MV5BZTExMTliYjAtZTUxNy00MWZlLTkzYzgtYjU1Y2RlOGM4ZGYyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "photo": "https://i.postimg.cc/rFc535jk/Sufi.jpg",
       "follBefore": "435.0K",
       "follBeforeDate": "June 27",
       "follLast": "435.0K",
