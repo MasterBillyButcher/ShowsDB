@@ -8,7 +8,7 @@
 ═══════════════════════════════════════════════════════════ */
 
 const DATA_CONFIG = {
-  owner:  'BobMasterBillie',
+  owner:  'MasterBillyButcher',
   repo:   'realitytv2026',
   file:   'public/data/data.js',
   branch: 'main',
