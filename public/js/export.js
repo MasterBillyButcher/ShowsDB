@@ -71,8 +71,7 @@ function exportAllCSV() {
   const hdrs = ['Show','#','Name','Gender','Status','Tier','Profession','Instagram',
     'Followers Before','Followers Last','Followers Current','Known For'];
   let out = csvRow(hdrs);
-  const isAdmin = document.body.classList.contains('admin-active');
-  getShowKeys().filter(k => isAdmin || !isShowHidden(k)).forEach(k => {
+  getShowKeys().filter(k => !isShowHidden(k)).forEach(k => {
     (window.DB[k] || []).filter(c => !isH(k, c.id)).forEach((c, i) => {
       out += csvRow([
         window.SHOWS[k]?.label || k,
@@ -109,8 +108,7 @@ function exportAllGrowth() {
   const hdrs = ['Show','#','Name','Before Show','Last Checked','Current',
     'Growth','Growth %','Total Growth','Total %'];
   let out = csvRow(hdrs);
-  const isAdmin = document.body.classList.contains('admin-active');
-  getShowKeys().filter(k => isAdmin || !isShowHidden(k)).forEach(k => {
+  getShowKeys().filter(k => !isShowHidden(k)).forEach(k => {
     (window.DB[k] || []).filter(c => !isH(k, c.id)).forEach((c, i) => {
       const g1 = calcGrowth(c.follLast,   c.follCur);
       const g2 = calcGrowth(c.follBefore, c.follCur);
@@ -127,9 +125,8 @@ function exportAllGrowth() {
 function exportRankCSV() {
   const hdrs = ['Rank','Name','Show','Status','Followers','Tier','Known For'];
   let out    = csvRow(hdrs);
-  const isAdmin = document.body.classList.contains('admin-active');
   const all  = [];
-  Object.keys(window.DB).filter(k => isAdmin || !isShowHidden(k)).forEach(k =>
+  Object.keys(window.DB).filter(k => !isShowHidden(k)).forEach(k =>
     (window.DB[k] || []).filter(c => !isH(k, c.id)).forEach(c =>
       all.push({ ...c, _k: k, _sl: window.SHOWS[k]?.label })
     )
@@ -225,7 +222,6 @@ async function capture(elId, filename) {
       backgroundColor: document.body.classList.contains('theme-light') ? '#F0F2F8' : '#08080F',
       scale:           2,
       useCORS:         true,
-      allowTaint:      true,
       logging:         false,
       width:           fullWidth,
       height:          fullHeight,

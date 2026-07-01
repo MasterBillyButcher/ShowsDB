@@ -357,7 +357,7 @@ function buildShowPanel(key) {
             <button class="btn b-gh b-sm"  onclick="exportGrowthCSV('${key}')">↓ CSV</button>
           </div>
         </div>
-        <div class="dnote no-capture" style="margin-bottom:10px">
+        <div class="dnote no-capture admin-only" style="margin-bottom:10px">
           <strong>Tip:</strong> Enable <strong>Edit Mode</strong> → click any follower cell → type new value (e.g. <em>3.5M</em>) → Tab out.
           Growth recalculates instantly. Use <strong>⟳ Roll Current → Last Checked</strong> to archive today's numbers before entering new ones.
         </div>
@@ -437,7 +437,8 @@ function setText(id, val) { const e = document.getElementById(id); if (e) e.text
 function renderTable(key) {
   const tbody = document.getElementById('tb-' + key);
   if (!tbody || !window.DB[key]) return;
-  const hidden = [];
+  const hidden  = [];
+  const isAdmin = document.body.classList.contains('admin-active');
 
   tbody.innerHTML = (window.DB[key] || []).map((c, i) => {
     const hid = isH(key, c.id);
@@ -448,8 +449,11 @@ function renderTable(key) {
       data-search="${(c.name + ' ' + (c.status || '') + ' ' + (c.profession || '') + ' ' + (c.tier || '')).toLowerCase()}"
       data-gender="${gender}"
       data-status="${cStatus}"
-      data-id="${c.id}">
-      <td class="tm" style="color:var(--mut);width:44px">${i + 1}</td>
+      data-id="${c.id}"
+      ${isAdmin ? `draggable="true" data-key="${key}"
+        ondragstart="rosterDragStart(event)" ondragover="rosterDragOver(event)"
+        ondrop="rosterDrop(event,'${key}')" ondragleave="rosterDragLeave(event)"` : ''}>
+      <td class="tm" style="color:var(--mut);width:44px">${isAdmin ? '⠿ ' : ''}${i + 1}</td>
       <td>
         <div class="contestant-cell">
           ${contestantAvatar(c)}
@@ -579,7 +583,8 @@ function sortT(key, col) {
 function renderCards(key) {
   const el = document.getElementById('sw-' + key + '-cgrid');
   if (!el || !window.DB[key]) return;
-  const col = window.SHOWS[key]?.color || '#4A9EFF';
+  const col     = window.SHOWS[key]?.color || '#4A9EFF';
+  const isAdmin = document.body.classList.contains('admin-active');
 
   el.innerHTML = (window.DB[key] || []).map((c, i) => {
     const hid       = isH(key, c.id);
@@ -610,12 +615,15 @@ function renderCards(key) {
            </div>
          </div>`;
 
-    return `<div class="ccard${hid ? ' c-hid' : ''}">
+    return `<div class="ccard${hid ? ' c-hid' : ''}"
+      ${isAdmin ? `draggable="true" data-id="${c.id}" data-key="${key}"
+        ondragstart="rosterDragStart(event)" ondragover="rosterDragOver(event)"
+        ondrop="rosterDrop(event,'${key}')" ondragleave="rosterDragLeave(event)"` : ''}>
       ${photoBlock}
       <div class="ccard-body">
         <div class="ccard-top-row">
           ${badge(c.status)}
-          <span class="ccard-num">#${i + 1}</span>
+          <span class="ccard-num">${isAdmin ? '⠿ ' : ''}#${i + 1}</span>
         </div>
         <div class="ccard-name">${sanitizeHTML(c.name)}</div>
         <div class="ccard-role">${sanitizeHTML(c.profession || '')} · ${c.gender || ''}</div>
@@ -757,6 +765,57 @@ function buildGrowthHTML(key) {
 /* ─── GROWTH DRAG-REORDER ───────────────────────────────── */
 let _dragSrc = null;
 
+/* ─── ROSTER / CARD DRAG-REORDER ────────────────────────────
+   Unlike the growth table (which keeps a separate display-only
+   order), this reorders window.DB[key] itself — the change is
+   real, persists, and is reflected in the # numbering and the
+   exported data.js immediately. */
+let _rosterDragSrc = null;
+
+function rosterDragStart(e) {
+  _rosterDragSrc = e.currentTarget;
+  e.dataTransfer.effectAllowed = 'move';
+  e.dataTransfer.setData('text/plain', e.currentTarget.dataset.id);
+  setTimeout(() => { if (_rosterDragSrc) _rosterDragSrc.style.opacity = '0.4'; }, 0);
+}
+function rosterDragOver(e) {
+  e.preventDefault();
+  e.dataTransfer.dropEffect = 'move';
+  e.currentTarget.classList.add('drag-over');
+}
+function rosterDragLeave(e) { e.currentTarget.classList.remove('drag-over'); }
+function rosterDrop(e, key) {
+  e.preventDefault();
+  const target = e.currentTarget;
+  target.classList.remove('drag-over');
+  if (!_rosterDragSrc || _rosterDragSrc === target) {
+    if (_rosterDragSrc) _rosterDragSrc.style.opacity = '';
+    _rosterDragSrc = null;
+    return;
+  }
+
+  const srcId = parseInt(_rosterDragSrc.dataset.id);
+  const tgtId = parseInt(target.dataset.id);
+  _rosterDragSrc.style.opacity = '';
+  _rosterDragSrc = null;
+
+  const arr = window.DB[key];
+  if (!arr) return;
+  const srcIdx = arr.findIndex(c => c.id === srcId);
+  const tgtIdx = arr.findIndex(c => c.id === tgtId);
+  if (srcIdx === -1 || tgtIdx === -1) return;
+
+  const [moved] = arr.splice(srcIdx, 1);
+  arr.splice(tgtIdx, 0, moved);
+
+  renderTable(key);
+  const cEl = document.getElementById('sw-' + key + '-cgrid');
+  if (cEl) renderCards(key);
+  renderRankings();
+  if (typeof _autoPersist === 'function') _autoPersist();
+  toast('✓ Reordered — drag again or click ↓ Save JSON to publish');
+}
+
 function growthDragStart(e) {
   _dragSrc = e.currentTarget;
   e.dataTransfer.effectAllowed = 'move';
@@ -847,9 +906,8 @@ function renderGrowth(key) {
 function renderGrowthAll() {
   const el = document.getElementById('ga-wrap');
   if (!el) return;
-  const isAdmin = document.body.classList.contains('admin-active');
   el.innerHTML = getShowKeys()
-    .filter(k => isAdmin || !isShowHidden(k))
+    .filter(k => !isShowHidden(k))
     .map(k => `
     <div style="margin-bottom:28px">
       <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;flex-wrap:wrap;gap:7px">
@@ -865,10 +923,9 @@ function renderGrowthAll() {
 
 /* ─── RANKINGS ──────────────────────────────────────────── */
 function renderRankings() {
-  const isAdmin = document.body.classList.contains('admin-active');
   const all = [];
   Object.keys(window.DB).forEach(k => {
-    if (!isAdmin && isShowHidden(k)) return;
+    if (isShowHidden(k)) return;
     (window.DB[k] || []).filter(c => !isH(k, c.id)).forEach(c =>
       all.push({ ...c, _k: k, _sl: window.SHOWS[k]?.label, _sc: window.SHOWS[k]?.color })
     );
@@ -916,10 +973,9 @@ function renderRankings() {
 function _populateRankFilters() {
   const sel = document.getElementById('rank-show-filter');
   if (!sel) return;
-  const isAdmin = document.body.classList.contains('admin-active');
   sel.innerHTML = '<option value="">All Shows</option>' +
     Object.keys(window.SHOWS || {})
-      .filter(k => isAdmin || !isShowHidden(k))
+      .filter(k => !isShowHidden(k))
       .map(k =>
         `<option value="${k}">${window.SHOWS[k].label}</option>`
       ).join('');
