@@ -1,6 +1,6 @@
 /* ═══════════════════════════════════════════════════════════
    data.js  —  Reality TV Intelligence Dashboard 2026
-   Last saved: 02 Jul 2026, 04:07
+   Last saved: 02 Jul 2026, 05:40
 
    HOW TO UPDATE EVERYONE:
    Upload this file to GitHub at:  public/data/data.js
@@ -88,31 +88,43 @@ window.DB = {
       "bio": [
         {
           "heading": "Personal Details",
-          "html": "<ul><li><strong>Born:</strong> December 11, 1981 (age 44)</li><li><strong>Birthplace:</strong> Kanpur, Uttar Pradesh, India</li><li><strong>Education:</strong> MBA; schooled at Seth Anandram Jaipuria School, Kanpur</li><li><strong>Spouse:</strong> Akanksha Chamola (m. November 24, 2016)</li></ul>"
+          "html": "<ul><li>Born: 11 December 1981</li><li>Birthplace: Kanpur, Uttar Pradesh, India</li><li>Education: MBA in Marketing</li><li>Languages: Hindi, English</li><li>Family: Father Vinod Khanna (export business), mother Shashi/Shakshi Khanna (homemaker), one elder sister</li><li>Other Names/Aliases: N/A</li><li>Spouse: Akanksha Chamola (actress; married 24 November 2016 in Kanpur). In June 2026, Akanksha announced on <em>Lock Upp: Sach Ya Sazaa Season 2</em> that the couple is getting divorced after living separately for about a year.</li><li>Children: None</li></ul>"
         },
         {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>Gaurav worked for nearly a year as a marketing manager in an IT company before shifting to the entertainment industry. He began with television commercials and gradually moved into acting.</p>"
+          "html": "<p>Worked briefly as a marketing manager at an IT firm before switching to acting; entered the industry through TV commercials and modelling.</p>"
         },
         {
           "heading": "Television Career",
-          "html": "<ul><li><em>Bhabhi</em> (2006): Supporting role</li><li><em>Kumkum – Ek Pyara Sa Bandhan</em> (2006–2007): Supporting role</li><li><em>Meri Doli Tere Angana</em> (2007): Lead role</li><li><em>Anupamaa</em> (2021–2024): Anuj Kapadia — breakout role, massive fan following</li><li>Other notable shows: <em>Tere Bin</em>, <em>Prem Ya Paheli – Chandrakanta</em></li></ul>"
+          "html": "<ul><li><em>Bhabhi</em> (2006): Bhuvan Sareen (debut)</li><li><em>Kumkum – Ek Pyara Sa Bandhan</em>: Sharman Wadhwa</li><li><em>Meri Doli Tere Angana</em> (2007), <em>Jeevan Saathi</em>, <em>Love Ne Mila Di Jodi</em>, <em>Yeh Pyar Na Hoga Kam</em>, <em>Byaah Hamari Bahoo Ka</em>, <em>Prem Ya Paheli – Chandrakanta</em></li><li><em>CID</em>: Senior Inspector Kavin</li><li><em>Anupamaa</em> (2021–2024/2026): Anuj Kapadia — his career-defining role, won him the Indian Telly Award for Best Actor</li></ul>"
+        },
+        {
+          "heading": "Film Career",
+          "html": "<p>No major film credits identified in public sources.</p>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Bigg Boss 19</em> (2025): Winner (₹50 lakh prize)</li><li><em>Celebrity MasterChef India</em> (2025): Winner (noted as the only vegetarian and color-blind contestant)</li><li><em>Khatron Ke Khiladi 15</em> (2026): Contestant</li></ul>"
+          "html": "<ul><li><em>Celebrity MasterChef India</em> (2025): Winner — ₹20 lakh cash and golden apron (notable as the only vegetarian, colour-blind contestant)</li><li><em>Bigg Boss 19</em> (2025): Winner</li><li><em>Khatron Ke Khiladi 15</em> (2026): Contestant</li></ul>"
         },
         {
           "heading": "Awards & Recognition",
-          "html": "<ul><li>Nominated for ITA and Gold Awards for Best Actor (Popular/Lead) for <em>Anupamaa</em> (2022)</li><li>Winner of Bigg Boss 19 and Celebrity MasterChef India</li></ul>"
+          "html": "<ul><li>Indian Telly Award – Best Actor (Editorial) for <em>Anupamaa</em> (2023)</li><li>Multiple ITA/Gold Award nominations</li></ul>"
         },
         {
           "heading": "Personal Life",
-          "html": "<p>Married to Akanksha Chamola since 2016. He is a vegetarian and has spoken about being color-blind. Lives in Mumbai.</p>"
+          "html": "<p>Reported to be colour-blind; revealed this during his <em>Celebrity MasterChef</em> run.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<p>2026 announcement of separation/divorce from wife Akanksha Chamola, revealed publicly by her on <em>Lock Upp Season 2</em>.</p>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: @gauravkhannaofficial (approximate; exact handle not independently confirmed)</li><li>YouTube: Not confirmed</li><li>Twitter/X: Not confirmed</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>Transitioned from a corporate IT job to television stardom</li><li>Gained massive popularity as Anuj Kapadia in <em>Anupamaa</em></li><li>Won two major reality titles in 2025 before competing in KKK 15</li></ul>"
+          "html": "<p>Reported among the highest-paid contestants on Bigg Boss 19; runs a restaurant business alongside acting.</p>"
         }
       ]
     },
@@ -136,31 +148,47 @@ window.DB = {
       "bio": [
         {
           "heading": "Personal Details",
-          "html": "<ul><li><strong>Born:</strong> August 26, 1987 (age 38)</li><li><strong>Birthplace:</strong> Shimla, Himachal Pradesh, India</li><li><strong>Education:</strong> St. Bede's College, Shimla</li><li><strong>Family:</strong> Parents Gopal &amp; Shakuntala Dilaik; sisters Rohini and Naina</li><li><strong>Spouse:</strong> Abhinav Shukla (m. June 2018)</li><li><strong>Children:</strong> Twin daughters (born November 2023)</li></ul>"
+          "html": "<ul><li>Born: 26 August 1987</li><li>Birthplace: Shimla, Himachal Pradesh, India</li><li>Education: B.A. in English Literature (minor in Political Science), St. Bede's College, Shimla</li><li>Languages: Hindi, English, Pahari</li><li>Family: Father Gopal Dilaik (Hindi author), mother Shakuntla Dilaik (homemaker); two sisters, Rohini and Naina/Jyotika Dilaik</li><li>Other Names/Aliases: N/A</li><li>Spouse: Abhinav Shukla (actor/model/photographer; married 21 June 2018 in Shimla)</li><li>Children: Twin daughters, Jeeva and Edhaa (born November 2023)</li></ul>"
         },
         {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>Grew up in the hills of Shimla. Started as a model before debuting on television.</p>"
+          "html": "<p>Won Miss Shimla (2006) and Miss North India (2008) beauty titles; originally aspired to become an IAS officer before entering acting.</p>"
         },
         {
           "heading": "Television Career",
-          "html": "<ul><li><em>Chotti Bahu – Sindoor Bin Suhagan</em> (2008–2010): Radhika — lead debut</li><li><em>Saas Bina Sasural</em> (2010–2012): Toasty — lead</li><li><em>Shakti – Astitva Ke Ehsaas Ki</em> (2016–2020): Saumya — iconic role</li><li>One of the highest-paid TV actresses in India</li></ul>"
+          "html": "<ul><li><em>Chotti Bahu</em> (2008–2010): Radhika Shastri (debut)</li><li><em>Saas Bina Sasural</em> (2012): Simran \"Smiley\" Gill</li><li><em>Punar Vivah – Ek Nayi Umeed</em> (2013): Divya Jakhotia</li><li><em>Devon Ke Dev...Mahadev</em> (2013–14): Sita</li><li><em>Shakti – Astitva Ke Ehsaas Ki</em> (2016–2020): Soumya Singh — landmark role playing a transgender woman</li></ul>"
+        },
+        {
+          "heading": "Film Career",
+          "html": "<ul><li><em>Ardh</em> (2022): Lead role opposite Rajpal Yadav and Hiten Tejwani — Hindi/Bollywood debut, released on ZEE5</li></ul>"
+        },
+        {
+          "heading": "Web Series / OTT Career",
+          "html": "<p>Hosts the talk show <em>Kisi Ne Bataya Nahi</em>, focused on motherhood and women's issues.</p>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Bigg Boss 14</em> (2020–2021): Winner</li><li><em>Khatron Ke Khiladi 12</em> (2022): Contestant (returning player)</li><li><em>Khatron Ke Khiladi 15</em> (2026): Contestant (returning)</li></ul>"
+          "html": "<ul><li><em>Bigg Boss 14</em> (2020–21): Winner</li><li><em>Fear Factor: Khatron Ke Khiladi 12</em> (2022): 4th place</li><li><em>Jhalak Dikhhla Jaa 10</em> (2022): 1st runner-up</li><li><em>Pati Patni Aur Panga</em> (2025)</li><li><em>Khatron Ke Khiladi 15</em> (2026): Contestant</li></ul>"
         },
         {
           "heading": "Awards & Recognition",
-          "html": "<ul><li>Multiple TV awards for <em>Chotti Bahu</em> and <em>Shakti</em></li><li>Bigg Boss 14 Winner</li></ul>"
+          "html": "<ul><li>Best Personality – Colors' Golden Petal Awards (2017)</li><li>Best Actress – ITA Awards (2017), for <em>Shakti</em></li></ul>"
         },
         {
           "heading": "Personal Life",
-          "html": "<p>Married actor Abhinav Shukla in 2018. Twin daughters born November 2023. Known for her authentic and resilient persona.</p>"
+          "html": "<p>Advocate for LGBTQ+ causes and mental health; has spoken candidly about postpartum struggles.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<p>Frequent public disagreements with co-contestants during <em>Bigg Boss 14</em>; publicly discussed walking out of other reality projects over respect issues.</p>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: @rubinadilaik</li><li>YouTube: Rubina Dilaik (associated channel)</li><li>Twitter/X: @RubiDilaik (approximate)</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>From the hills of Shimla to national fame</li><li>One of the strongest search-friendly names in KKK 15</li></ul>"
+          "html": "<p>Sold her Bigg Boss 14 winning gown and other outfits for LGBTQIA+ charity during Pride Month 2021.</p>"
         }
       ]
     },
@@ -185,23 +213,47 @@ window.DB = {
       "bio": [
         {
           "heading": "Personal Details",
-          "html": "<ul><li><strong>Birthplace:</strong> Kashmir / Mumbai, India</li><li><strong>Family:</strong> Kashmiri heritage</li><li><strong>Spouse:</strong> Unmarried (as of 2026)</li></ul>"
+          "html": "<ul><li>Born: 15 March 1997</li><li>Birthplace: Srinagar, Jammu &amp; Kashmir, India</li><li>Education: Bachelor's in Mass Communication and Journalism, Government College for Women, Srinagar; acting diploma from Anupam Kher's Actor Prepares, Mumbai</li><li>Languages: Hindi, English, Kashmiri</li><li>Family: Conservative Kashmiri Muslim family; father reportedly left the family when she was an infant; raised primarily by her mother</li><li>Other Names/Aliases: Farhana Bhatt / Farhana Bhat (spelling variants)</li><li>Spouse: Unmarried</li><li>Children: None</li></ul>"
         },
         {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>Of Kashmiri origin; came into the public eye via reality television. Known for her strong, outspoken personality.</p>"
+          "html": "<p>Five-time national Taekwondo medalist; trained as a self-taught dancer; overcame conservative societal expectations in Kashmir to pursue acting.</p>"
+        },
+        {
+          "heading": "Television Career",
+          "html": "<p>No major serial lead roles identified; primarily film/OTT-focused before Bigg Boss fame.</p>"
+        },
+        {
+          "heading": "Film Career",
+          "html": "<ul><li><em>Sunshine Music Tours and Travels</em> (2016)</li><li><em>Laila Majnu</em> (2018): Jasmeet — best-known role</li><li><em>Notebook</em> (2019)</li></ul>"
+        },
+        {
+          "heading": "Web Series / OTT Career",
+          "html": "<ul><li><em>The Freelancer</em> (Disney+ Hotstar)</li><li><em>India's Braves</em> (Amazon miniTV, 2024): Rihanna</li><li>Various music videos with T-Series, Speed Records, Zee Music</li></ul>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Bigg Boss 19</em> (2025): Runner-up — became a fan-favourite for her bold personality</li><li><em>Khatron Ke Khiladi 15</em> (2026): Contestant — reportedly won the Ticket to Finale (TTF) task</li></ul>"
+          "html": "<ul><li><em>Bigg Boss 19</em> (2025): First runner-up (2nd place)</li><li><em>Khatron Ke Khiladi 15</em> (2026): Contestant</li></ul>"
+        },
+        {
+          "heading": "Awards & Recognition",
+          "html": "<p>Nominated for Best Supporting Actress at regional awards for <em>Laila Majnu</em> (unconfirmed specifics).</p>"
         },
         {
           "heading": "Personal Life",
-          "html": "<p>Private about personal life; gained fans for her authentic behavior in the Bigg Boss house.</p>"
+          "html": "<p>Self-described peace activist; previously in a long-term relationship described as difficult, which ended before her Bigg Boss run.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<ul><li>November 2025: Legal controversy after being referred to with a derogatory/defamatory term on a YouTube channel by a relative of a fellow contestant; her family pursued legal action.</li><li>Accused by some housemates of \"fake activism\" during Bigg Boss 19.</li><li>Runner-up result contested by some fans as unfair to her favor of Gaurav Khanna's win.</li></ul>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: @farrhana_bhatt</li><li>YouTube: Not confirmed</li><li>Twitter/X: Not confirmed</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>Runner-up of Bigg Boss 19</li><li>Reportedly among the top 5 finalists of KKK 15</li></ul>"
+          "html": "<p>Was the first contestant \"eliminated\" on Day 1 of Bigg Boss 19 by housemate vote, but was secretly moved to a Secret Room instead of exiting.</p>"
         }
       ]
     },
@@ -226,35 +278,47 @@ window.DB = {
       "bio": [
         {
           "heading": "Personal Details",
-          "html": "<ul><li><strong>Born:</strong> October 2, 1987 (age 38)</li><li><strong>Birthplace:</strong> Srinagar, Jammu &amp; Kashmir, India</li><li><strong>Education:</strong> MBA from CCA School of Management, Gurgaon</li><li><strong>Family:</strong> Father (late, passed 2021); mother; younger brother</li><li><strong>Other Names/Aliases:</strong> Sher Khan (Bigg Boss nickname)</li><li><strong>Spouse:</strong> In a long-term relationship with Rocky Jaiswal (producer)</li></ul>"
+          "html": "<ul><li>Born: 2 October 1987</li><li>Birthplace: Srinagar, Jammu &amp; Kashmir, India</li><li>Education: MBA (2009), CCA School of Management, Gurgaon</li><li>Languages: Hindi, English, Kashmiri</li><li>Family: Father (late) Aslam Khan (ran a travel agency), mother; younger brother Aamir Khan</li><li>Other Names/Aliases: N/A</li><li>Spouse: Rocky Jaiswal (television producer; married June 2025 after a 13-year relationship)</li><li>Children: None</li></ul>"
         },
         {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>Grew up in a middle-class family in Srinagar and Delhi. Pursued her MBA before landing her iconic TV role.</p>"
+          "html": "<p>Worked at a call centre during college before pursuing acting; auditioned for <em>Yeh Rishta Kya Kehlata Hai</em> at friends' urging.</p>"
         },
         {
           "heading": "Television Career",
-          "html": "<ul><li><em>Yeh Rishta Kya Kehlata Hai</em> (2009–2016): Akshara — one of Indian TV's longest and most iconic lead roles</li><li><em>Kasautii Zindagii Kay 2</em> (2018–2019): Komolika — negative lead</li><li>One of Indian television's most popular and highest-paid actresses</li></ul>"
+          "html": "<ul><li><em>Yeh Rishta Kya Kehlata Hai</em> (2009–2016): Akshara Maheshwari Singhania — breakout role, two ITA Best Actress awards</li><li><em>Kasautii Zindagii Kay 2</em> (2018–2019): Komolika — acclaimed negative role</li><li><em>Naagin</em> (2020)</li></ul>"
         },
         {
           "heading": "Film Career",
-          "html": "<ul><li><em>Hacked</em> (2020): Lead role</li><li><em>Lines</em> (2021): Lead</li><li>Cannes Film Festival appearances (2019, multiple red carpet walks)</li></ul>"
+          "html": "<ul><li><em>Hacked</em> (2020): Bollywood debut</li><li><em>Lines</em>: International festival film</li><li>Punjabi debut: <em>Shinda Shinda No Papa</em> (2024), opposite Gippy Grewal</li></ul>"
+        },
+        {
+          "heading": "Web Series / OTT Career",
+          "html": "<ul><li><em>Damaged 2</em> (2019)</li><li>Multiple short films (<em>SmartPhone</em>, <em>Soulmate</em>, <em>Wish List</em>)</li><li><em>Seven One</em> (announced web series, cop role)</li></ul>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Bigg Boss 11</em> (2017): 1st Runner-up</li><li><em>Khatron Ke Khiladi 8</em> (2017): Finalist</li><li><em>Khatron Ke Khiladi 15</em> (2026): Contestant (returning)</li></ul>"
+          "html": "<ul><li><em>Fear Factor: Khatron Ke Khiladi 8</em> (2017): Runner-up</li><li><em>Bigg Boss 11</em> (2017–18): Runner-up</li><li><em>Pati Patni Aur Panga</em> (2025), with husband Rocky Jaiswal</li><li><em>Khatron Ke Khiladi 15</em> (2026): Contestant</li></ul>"
         },
         {
           "heading": "Awards & Recognition",
-          "html": "<ul><li>Multiple ITA Awards for Best Actress</li><li>Gold Award for Best Actress</li><li>Dadasaheb Phalke International Film Festival Award</li></ul>"
+          "html": "<p>Three ITA Awards, three Indian Telly Awards, seven Gold Awards over her career.</p>"
         },
         {
           "heading": "Personal Life",
-          "html": "<p>In a long-term relationship with producer Rocky Jaiswal. Diagnosed with Stage 3 breast cancer in June 2024. Underwent eight chemotherapy sessions, radiation therapy, and a double mastectomy by February 2025. Currently in remission and has resumed work. Her partner Rocky Jaiswal has been credited as her constant support.</p>"
+          "html": "<p>In June 2024, revealed she was diagnosed with Stage 3 breast cancer and underwent chemotherapy; has asthma, first disclosed in 2017.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<p>Cannes 2019 red carpet appearance drew mocking comments from a Filmfare editor, which sparked backlash in her defense.</p>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: @realhinakhan</li><li>YouTube: Not confirmed</li><li>Twitter/X: @eyehinakhan</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>First Indian TV actress to walk the Cannes red carpet</li><li>Cancer warrior and breast cancer awareness advocate</li><li>Returned to KKK 15 post-recovery, making her comeback even more inspiring</li></ul>"
+          "html": "<p>First Indian TV actress to walk the Cannes Film Festival red carpet (2019); co-owns clothing brand Katch Klothing and a production house with her husband.</p>"
         }
       ]
     },
@@ -278,27 +342,47 @@ window.DB = {
       "bio": [
         {
           "heading": "Personal Details",
-          "html": "<ul><li><strong>Born:</strong> September 19, 2002 (age 23)</li><li><strong>Birthplace:</strong> Bhopal, Madhya Pradesh, India</li><li><strong>Family:</strong> Father Vinod Malviya, mother; from Bhopal</li><li><strong>Spouse:</strong> Unmarried</li></ul>"
+          "html": "<ul><li>Born: 2 November 2003</li><li>Birthplace: Hoshangabad (now Narmadapuram), Madhya Pradesh, India</li><li>Education: Contai Model Institution; NMV College, Hoshangabad</li><li>Languages: Hindi, English</li><li>Family: Father Ashish Malviya (state education department employee), mother Mamta/homemaker</li><li>Other Names/Aliases: N/A</li><li>Spouse: Unmarried</li><li>Children: None</li></ul>"
         },
         {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>Grew up in Bhopal and moved to Mumbai to pursue an acting career at a young age.</p>"
+          "html": "<p>Began gymnastics at age 6, trained in Kathak for six years, started modelling at 13; competed in beauty pageants including Miss Madhya Pradesh (2017) and Miss Teen India Worldwide (2nd runner-up, 2019).</p>"
         },
         {
           "heading": "Television Career",
-          "html": "<ul><li><em>Udaariyaan</em> (2021–2023): Jasmine Sandhu — breakout role on Colors TV</li></ul>"
+          "html": "<ul><li><em>Udaariyaan</em> (2021): Jasmine Kaur Sandhu — breakout role</li></ul>"
+        },
+        {
+          "heading": "Film Career",
+          "html": "<p>No major film credits identified.</p>"
+        },
+        {
+          "heading": "Web Series / OTT Career",
+          "html": "<p>Featured in several Hindi/Punjabi music videos (\"Jiske Liye,\" \"Tu Mileya,\" \"Bomb Bomb\").</p>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Bigg Boss 17</em> (2023–2024): Contestant — generated massive buzz with personal dynamics</li><li><em>Khatron Ke Khiladi 15</em> (2026): Contestant</li></ul>"
+          "html": "<ul><li><em>Boogie Woogie</em>: Top 3 finish (dance competition, earlier career)</li><li><em>Bigg Boss 17</em> (2023): Contestant</li><li><em>Khatron Ke Khiladi 15</em> (2026): Contestant</li></ul>"
+        },
+        {
+          "heading": "Awards & Recognition",
+          "html": "<p>Beauty pageant titles (Miss Madhya Pradesh 2017, Shaan of Madhya Pradesh 2018, Miss Teen India Worldwide runner-up 2019).</p>"
         },
         {
           "heading": "Personal Life",
-          "html": "<p>Previously in a relationship with co-star Abhishek Kumar (much-discussed during Bigg Boss 17).</p>"
+          "html": "<p>Previously dated actor Abhishek Kumar (her <em>Udaariyaan</em> co-star) and later Samarth Jurel (2022–early 2024); both relationships became public via Bigg Boss 17.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<p>Publicly accused ex-boyfriend Abhishek Kumar of physical abuse and infidelity before entering Bigg Boss 17; her breakup with Samarth Jurel also played out publicly, with Jurel calling her an \"opportunist.\"</p>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: @ishamalviya02 (approximate; ~2.9 million followers)</li><li>YouTube: Not confirmed</li><li>Twitter/X: Not confirmed</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>One of the youngest contestants in KKK 15</li><li>Known for her emotional and bold personality</li></ul>"
+          "html": "<p>Once dreamed of becoming a pilot; was a popular TikTok creator before the app's India ban in 2020.</p>"
         }
       ]
     },
@@ -322,27 +406,47 @@ window.DB = {
       "bio": [
         {
           "heading": "Personal Details",
-          "html": "<ul><li><strong>Born:</strong> circa August 1999 (age ~26)</li><li><strong>Birthplace:</strong> Mumbai, Maharashtra, India</li><li><strong>Family:</strong> Business family background; father is a businessman</li><li><strong>Other Names/Aliases:</strong> Orry</li><li><strong>Spouse:</strong> Unmarried</li></ul>"
+          "html": "<ul><li>Born: 2 August (year variously reported as 1995 or 1999 across sources; not definitively confirmed)</li><li>Birthplace: Mumbai, Maharashtra, India</li><li>Education: Kodaikanal International School; Bachelor of Fine Arts in Communication Design, The New School / Parsons School of Design, New York; also associated with Columbia University</li><li>Languages: English, Hindi</li><li>Family: Father Suraj Kundanlal Awatramani (business interests in liquor, real estate, and hospitality; some reports also name a \"Jorj Awatramani\"), mother Shahnaz Awatramani; brother Kabir Awatramani (PR executive in New York)</li><li>Other Names/Aliases: Orry (nickname); self-described as a \"liver\" (\"I'm a liver, I live\")</li><li>Spouse: Unmarried</li><li>Children: None</li></ul>"
         },
         {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>Born into an affluent Mumbai family; became known as a socialite and influencer close to Bollywood star kids including Janhvi Kapoor, Sara Ali Khan, Ananya Panday, and others.</p>"
+          "html": "<p>Grew up in an affluent, well-connected Mumbai family; became known through viral photos partying with Bollywood and international celebrities rather than through a traditional profession.</p>"
+        },
+        {
+          "heading": "Television Career",
+          "html": "<p>No scripted television roles; reality-adjacent fame.</p>"
+        },
+        {
+          "heading": "Film Career",
+          "html": "<p>Has claimed a Hollywood cameo (in Gurinder Chadha's <em>Christmas Karma</em>), though his inclusion in official credits has been disputed by media.</p>"
         },
         {
           "heading": "Professional Career (Outside Entertainment)",
-          "html": "<p>Describes himself as a \"social media personality\" and \"consultant.\" Has worked with brands.</p>"
+          "html": "<p>Reportedly holds/held the title of Special Project Manager at Reliance Industries Limited since 2017; earns through brand collaborations and business ventures.</p>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Bigg Boss 17</em> (2023): Wildcard contestant</li><li><em>Khatron Ke Khiladi 15</em> (2026): Contestant</li></ul>"
+          "html": "<ul><li><em>Bigg Boss 17</em> (2023): Featured/associated appearances</li><li><em>Khatron Ke Khiladi 15</em> (2026): Contestant</li></ul>"
+        },
+        {
+          "heading": "Awards & Recognition",
+          "html": "<p>None publicly documented; known for cultural/internet influence rather than formal accolades.</p>"
         },
         {
           "heading": "Personal Life",
-          "html": "<p>Known for his close ties with Bollywood star kids. Very private about family details despite being a public personality.</p>"
+          "html": "<p>Has spoken about struggling with drug exposure and a suicide attempt during his time at boarding school (per a 2015 Humans of Bombay feature). Identifies as gay, per multiple reports, though he keeps his personal life largely private.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<ul><li>March 2025: Booked for allegedly consuming alcohol near the Vaishno Devi Temple, a prohibited zone.</li><li>February 2026: Named in connection with a Mumbai Police probe into a large-scale drugs case; summoned for questioning.</li><li>2026: Public social media fallout with actress Sara Ali Khan.</li><li>A leaked/publicized chat exchange with actress Palak Tiwari drew controversy.</li></ul>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: @orry (widely followed)</li><li>YouTube: Not confirmed</li><li>Twitter/X: Not confirmed</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>Famous for his catch-phrase answers</li><li>Known for his ties with Bollywood star kids</li><li>One of the most unpredictable personalities in KKK 15</li></ul>"
+          "html": "<p>Known for his \"Orry-ing\" signature pose; famous for gifting custom phone covers featuring his own face to celebrities.</p>"
         }
       ]
     },
@@ -367,27 +471,47 @@ window.DB = {
       "bio": [
         {
           "heading": "Personal Details",
-          "html": "<ul><li><strong>Born:</strong> June 9, 1986 (age 40)</li><li><strong>Birthplace:</strong> Delhi, India</li><li><strong>Education:</strong> Graduate; also trained as a cricketer</li><li><strong>Spouse:</strong> Unmarried (in a relationship with Uditi Singh)</li></ul>"
+          "html": "<ul><li>Born: 9 June 1986</li><li>Birthplace: Mohali, Punjab, India (raised in Delhi)</li><li>Education: St. Mark's Senior Secondary Public School, Delhi; IILM Institute for Higher Education, Delhi</li><li>Languages: Hindi, English, Punjabi</li><li>Family: Father Arun Wahi (businessman), mother Veena Wahi (former vice-principal); older sister Priyanka K. Bhatia</li><li>Other Names/Aliases: N/A</li><li>Spouse: Unmarried</li><li>Children: None</li></ul>"
         },
         {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>Was a Delhi-level cricketer before turning to acting. Trained under Kishore Namit Kapoor Acting Institute.</p>"
+          "html": "<p>Played Under-19 cricket for Delhi alongside Virat Kohli and Shikhar Dhawan before a career-ending injury redirected him toward modelling and acting.</p>"
         },
         {
           "heading": "Television Career",
-          "html": "<ul><li><em>Remix</em> (2004–2006): Ranveer — debut role</li><li><em>Dill Mill Gayye</em> (2007–2010): Dr. Siddhant Modi — breakout role</li><li><em>Kuch Toh Log Kahenge</em> (2012–2013): Lead</li><li>Hosted multiple reality shows including <em>Zara Nachke Dikha</em>, <em>MTV Fanaah</em></li></ul>"
+          "html": "<ul><li><em>Remix</em> (2004): Ranveer Sisodia (debut) — won Indian Telly Award for GR8 Best Male Newcomer</li><li><em>Mere Ghar Aayi Ek Nanhi Pari</em> (2009): male lead</li><li><em>Dill Mill Gayye</em> (2009–10): Dr. Siddhant Modi — breakout role</li><li><em>Channa Mereya</em> (2022): Aditya Raj Singh</li><li><em>Never Kiss Your Best Friend 2</em> (2022): Karan Malhotra</li><li><em>Half Love Half Arranged</em> (2023–24): Jogi</li></ul>"
+        },
+        {
+          "heading": "Film Career",
+          "html": "<ul><li><em>Daawat-e-Ishq</em> (2014): Amjad, supporting role</li><li><em>Babbu Ki Jawani</em> (2014): male lead</li><li><em>Hate Story 4</em> (2018)</li></ul>"
+        },
+        {
+          "heading": "Web Series / OTT Career",
+          "html": "<ul><li><em>Sacred Games</em> (Netflix)</li></ul>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Jhalak Dikhhla Jaa 6</em> (2013): Contestant</li><li><em>Khatron Ke Khiladi 15</em> (2026): Contestant (returning)</li></ul>"
+          "html": "<ul><li><em>Jhalak Dikhhla Jaa 5</em> (2012): Wild card entrant</li><li><em>Khatron Ke Khiladi 8</em> (2017): 8th place</li><li><em>Khatron Ke Khiladi – Made in India</em> (2020): 1st runner-up</li><li>Hosted <em>Nach Baliye</em>, <em>Indian Idol</em>, <em>India's Next Superstars</em>, <em>Comedy Nights Bachao</em></li><li><em>Khatron Ke Khiladi 15</em> (2026): Contestant</li></ul>"
+        },
+        {
+          "heading": "Awards & Recognition",
+          "html": "<p>Indian Telly Award for GR8 Best Male Newcomer (2005); ITA Milestone Award (2010).</p>"
         },
         {
           "heading": "Personal Life",
-          "html": "<p>In a relationship with Uditi Singh. Known for his sporty lifestyle and fitness.</p>"
+          "html": "<p>Has been linked to model Karishma Kotak and actress Jinita Sheth; has described himself as devoted to friends over relationships.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<p>July 2024: Questioned by India's Enforcement Directorate in connection with a money-laundering/forex trading investigation involving several TV celebrities.</p>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: @karanwahi</li><li>YouTube: Not confirmed</li><li>Twitter/X: Not confirmed</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>Was a Delhi-level cricketer before acting</li><li>Known for his energetic and sporty personality</li><li>Brings strong fan following to KKK 15</li></ul>"
+          "html": "<p>Was part of the winning team in the first season of the Box Cricket League; participated in the 2014 Ice Bucket Challenge for ALS awareness.</p>"
         }
       ]
     },
@@ -411,27 +535,47 @@ window.DB = {
       "bio": [
         {
           "heading": "Personal Details",
-          "html": "<ul><li><strong>Born:</strong> October 29, 1995 (age 30)</li><li><strong>Birthplace:</strong> Lucknow, Uttar Pradesh, India</li><li><strong>Spouse:</strong> Unmarried</li></ul>"
+          "html": "<ul><li>Born: 9 December 1995</li><li>Birthplace: Raipur, Chhattisgarh, India (some sources cite Patna, Bihar)</li><li>Education: Schooling at Holy Cross School, Raipur</li><li>Languages: Hindi, English</li><li>Family: Father Ravi Mishra, mother Sangeeta Mishra; brother Akshay Kumar Mishra</li><li>Other Names/Aliases: N/A</li><li>Spouse: Unmarried</li><li>Children: None</li></ul>"
         },
         {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>Moved to Mumbai from Lucknow to pursue acting.</p>"
+          "html": "<p>Named \"Face of Tourism Chhattisgarh\" (2015); moved to Mumbai in 2016; began career hosting local events and writing before acting.</p>"
         },
         {
           "heading": "Television Career",
-          "html": "<ul><li><em>Ishqbaaaz</em> (2017): Supporting role</li><li><em>Yeh Rishtey Hain Pyaar Ke</em> (2019): Kunal Rajvansh</li><li><em>Udaariyaan</em> (2023): Sahil</li></ul>"
+          "html": "<ul><li><em>Sethji</em> (2017): Bajirao (debut)</li><li><em>Ishqbaaaz</em> (2017): Abhay Singh Oberoi</li><li><em>Yeh Teri Galiyan</em> (2018–2020): Shantanu Mazumdar</li><li><em>Mariam Khan – Reporting Live</em> (2018): Zain Ashraf</li><li><em>Nath – Zewar Ya Zanjeer</em> (2022–23): Inspector Aryan Mishra</li><li><em>Titli</em> (2023): Garv Mehta</li><li><em>Meetha Khatta Pyaar Hamara</em> (2024): Shivam</li></ul>"
+        },
+        {
+          "heading": "Film Career",
+          "html": "<p>No major film credits identified.</p>"
+        },
+        {
+          "heading": "Web Series / OTT Career",
+          "html": "<p>Wrote/starred in short film <em>The Blogger</em> (2016); appeared in multiple Hindi music videos.</p>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Bigg Boss 18</em> (2024): Contestant — gained significant popularity</li><li><em>Khatron Ke Khiladi 15</em> (2026): Contestant — reportedly the first finalist of the season</li></ul>"
+          "html": "<ul><li><em>Bigg Boss 18</em> (2024–25): Finished 4th</li><li><em>Khatron Ke Khiladi 15</em> (2026): Contestant</li></ul>"
+        },
+        {
+          "heading": "Awards & Recognition",
+          "html": "<p>Nominated at Indian Television Academy Awards 2025 for his Bigg Boss 18 run.</p>"
         },
         {
           "heading": "Personal Life",
-          "html": "<p>Private about personal life. His dynamic with co-contestant Eisha Singh during Bigg Boss 18 was widely discussed.</p>"
+          "html": "<p>Has denied romantic rumors involving Eisha Singh, Bhavika Sharma, and Vrushika Mehta, maintaining he is single.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<p>During Bigg Boss 18, was accused of being a \"womaniser\" by a co-contestant; a heated altercation with contestant Chum Darang led to his temporary removal from the main house amid allegations he made female contestants feel unsafe — a claim he and supporters disputed.</p>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: @avinash_world</li><li>YouTube: Avinash Mishra (~217K subscribers)</li><li>Twitter/X: Not confirmed</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>Reported as the first finalist of KKK 15</li><li>Among the top 5 finalists of the season</li></ul>"
+          "html": "<p>Plays guitar and sings; bought a Mahindra Thar in 2022 that he calls his \"lucky charm.\"</p>"
         }
       ]
     },
@@ -455,27 +599,47 @@ window.DB = {
       "bio": [
         {
           "heading": "Personal Details",
-          "html": "<ul><li><strong>Born:</strong> June 28, 1990 (age 36)</li><li><strong>Birthplace:</strong> Kota, Rajasthan, India</li><li><strong>Education:</strong> Hospitality degree; graduate</li><li><strong>Spouse:</strong> In a relationship with Aly Goni</li></ul>"
+          "html": "<ul><li>Born: 28 June 1990</li><li>Birthplace: Kota, Rajasthan, India</li><li>Education: Graduate of a hospitality management college in Jaipur</li><li>Languages: Hindi, English, Punjabi</li><li>Family: Sikh family; father Surpal Singh Bhasin, mother Gurmeet Kaur Bhasin; brother Mankaran Singh Bhasin</li><li>Other Names/Aliases: N/A</li><li>Spouse: Unmarried; in a long-term relationship with actor Aly Goni since 2020/2021 (moved in together March 2025)</li><li>Children: None</li></ul>"
         },
         {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>Started with modeling and commercials before moving to TV acting.</p>"
+          "html": "<p>Worked as a marketing intern at American Express; discovered as a model and cast in her first Tamil film.</p>"
         },
         {
           "heading": "Television Career",
-          "html": "<ul><li><em>Tashan-e-Ishq</em> (2015–2016): Twinkle Taneja — debut lead</li><li><em>Dil Se Dil Tak</em> (2017–2018): Teni</li><li><em>Naagin 4</em> (2019–2020): Nayanthara — Colors TV</li></ul>"
+          "html": "<ul><li><em>Tashan-e-Ishq</em> (2015–16): Twinkle Taneja — TV debut</li><li><em>Dil Se Dil Tak</em> (2017–18): Teni Bhanushali</li><li><em>Dil Toh Happy Hai Ji</em> (2019): Happy Mehra</li><li><em>Naagin 4</em> (2019–20): Nayantara</li></ul>"
+        },
+        {
+          "heading": "Film Career",
+          "html": "<ul><li><em>Vaanam</em> (2011, Tamil): Debut film</li><li>Malayalam and Telugu films (<em>Beware of Dogs</em>, <em>Veta</em>, <em>Ladies &amp; Gentlemen</em>)</li><li>Punjabi films: <em>Honeymoon</em> (2022), <em>Carry on Jattiye</em> (2024), <em>Ardaas Sarbat De Bhale Di</em> (2024)</li></ul>"
+        },
+        {
+          "heading": "Web Series / OTT Career",
+          "html": "<p>Various Hindi and Punjabi music videos with T-Series, Desi Music Factory, Saregama.</p>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Khatron Ke Khiladi 9</em> (2019): Eliminated 7th</li><li><em>Khatron Ke Khiladi – Made in India</em> (2020): 2nd Runner-up</li><li><em>Bigg Boss 14</em> (2020–2021): Contestant</li><li><em>Khatron Ke Khiladi 15</em> (2026): Contestant (third time on KKK)</li></ul>"
+          "html": "<ul><li><em>Khatron Ke Khiladi 9</em> (2019): 7th place</li><li><em>Khatron Ke Khiladi – Made in India</em> (2020): 3rd place</li><li><em>Bigg Boss 14</em> (2020): 11th position</li><li><em>The Traitors India</em> (2025): 6th place</li><li><em>Khatron Ke Khiladi 15</em> (2026): Contestant</li></ul>"
+        },
+        {
+          "heading": "Awards & Recognition",
+          "html": "<p>Ranked in Times of India's Most Desirable Women of Indian Television lists (No. 16 in 2018, No. 12 in 2019, No. 3 in 2020).</p>"
         },
         {
           "heading": "Personal Life",
-          "html": "<p>In a relationship with actor Aly Goni since Bigg Boss 14.</p>"
+          "html": "<p>In a public, long-term relationship with actor Aly Goni; the two met on <em>Khatron Ke Khiladi 9</em> (2018) and began dating after <em>Bigg Boss 14</em> (2020–21).</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<p>Has spoken about a distressing early-career experience involving a director; faced online scrutiny and false tabloid reports over her relationship and appearance.</p>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: @jasminbhasin2806</li><li>YouTube: JasLY (joint channel with Aly Goni)</li><li>Twitter/X: Not confirmed</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>Third time participating in KKK franchise</li><li>Brings charm and emotional connect to the show</li></ul>"
+          "html": "<p>Ranked among the most-followed Indian television actresses on Instagram.</p>"
         }
       ]
     },
@@ -499,31 +663,47 @@ window.DB = {
       "bio": [
         {
           "heading": "Personal Details",
-          "html": "<ul><li><strong>Born:</strong> November 5, 1988 (age 37)</li><li><strong>Birthplace:</strong> Mumbai, Maharashtra, India</li><li><strong>Education:</strong> Graduate from Mithibai College, Mumbai</li><li><strong>Spouse:</strong> Previously in a relationship with Asha Negi (separated 2020)</li></ul>"
+          "html": "<ul><li>Born: 5 November 1988</li><li>Birthplace: Mandsaur, Madhya Pradesh, India</li><li>Education: Trained at Kishore Namit Kapoor's acting lab</li><li>Languages: Hindi, English, Sindhi</li><li>Family: Sindhi Hindu family; father Chandra Prakash Dhanjani, mother Heena Dhanjani; younger sister Geena Dhanjani</li><li>Other Names/Aliases: N/A</li><li>Spouse: Unmarried</li><li>Children: None</li></ul>"
         },
         {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>Grew up in Mumbai. Pursued acting after college.</p>"
+          "html": "<p>Worked as a choreographer in Dubai and did theatre there for two and a half years before moving into Indian television.</p>"
         },
         {
           "heading": "Television Career",
-          "html": "<ul><li><em>Pavitra Rishta</em> (2009–2014): Arjun Kirloskar — breakout role</li><li>Hosted <em>Super Dancer</em>, <em>India's Best Dramebaaz</em> and other reality shows</li></ul>"
+          "html": "<ul><li><em>Bandini</em> (2009): Parth (debut, negative role)</li><li><em>Bairi Piya</em> (2009–10), <em>Tere Liye</em> (2010)</li><li><em>Pyaar Kii Ye Ek Kahaani</em> (2010–11): Jay Khurana</li><li><em>Pavitra Rishta</em> (2011–2014): Arjun Digvijay Kirloskar — major breakout role</li><li><em>Galti Se Mis-Tech</em> (2018): Shivam Chaturvedi</li><li><em>Half Love Half Arranged 2</em> (2024): Ved</li></ul>"
+        },
+        {
+          "heading": "Film Career",
+          "html": "<ul><li><em>Jo Hum Chahein</em> (2011): Akash — film debut</li></ul>"
         },
         {
           "heading": "Web Series / OTT Career",
-          "html": "<ul><li><em>Cartel</em> (MX Player, 2021): Lead role</li></ul>"
+          "html": "<ul><li><em>I Don't Watch TV</em> (2016): Web debut</li><li><em>XXX</em> (2018): Mayank</li><li><em>Cartel</em> (2021): Abhay Angre</li></ul>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Nach Baliye 6</em> (2013): Winner (with Asha Negi)</li><li><em>Khatron Ke Khiladi 15</em> (2026): Contestant</li></ul>"
+          "html": "<ul><li><em>Jhalak Dikhhla Jaa 5</em> (2012): 2nd runner-up (wild card)</li><li><em>Nach Baliye 6</em> (2013–14, with Asha Negi): Winner</li><li><em>I Can Do That</em> (2015): Winner</li><li><em>Khatron Ke Khiladi 8</em> (2017): 7th place</li><li>Hosted multiple shows: <em>Super Dancer</em> (chapters 1–4), <em>India's Next Superstars</em>, <em>India's Got Talent 8</em></li><li><em>Khatron Ke Khiladi 15</em> (2026): Contestant</li></ul>"
+        },
+        {
+          "heading": "Awards & Recognition",
+          "html": "<ul><li>Indian Telly Award – Best Actor in a Supporting Role, <em>Pavitra Rishta</em> (2013)</li><li>Gold Award – Best Anchor (Male), <em>Super Dancer</em> (2017–18)</li></ul>"
         },
         {
           "heading": "Personal Life",
-          "html": "<p>Was in a long-term relationship with actress Asha Negi; they separated in 2020. Currently private about relationships.</p>"
+          "html": "<p>Dated actress Asha Negi (met on <em>Pavitra Rishta</em>, 2011); the couple split in 2020 after roughly 7–8 years together.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<p>None major publicly documented beyond his relationship split.</p>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: @rithvikdhanjani (~2.9 million followers)</li><li>YouTube: Not confirmed</li><li>Twitter/X: @rithvikd (approximate)</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>Known as one of TV's best hosts</li><li>Winner of Nach Baliye 6</li></ul>"
+          "html": "<p>Once weighed around 113 kg and underwent a major body transformation through disciplined gym training.</p>"
         }
       ]
     },
@@ -548,27 +728,47 @@ window.DB = {
       "bio": [
         {
           "heading": "Personal Details",
-          "html": "<ul><li><strong>Born:</strong> January 4, 1989 (age 37)</li><li><strong>Birthplace:</strong> Patna, Bihar, India</li><li><strong>Spouse:</strong> Unmarried</li></ul>"
+          "html": "<ul><li>Born: 25 January 1988</li><li>Birthplace: Arrah, Bihar, India</li><li>Education: Local schooling in Bihiya, Bihar; graduate</li><li>Languages: Hindi, English, Bhojpuri</li><li>Family: Details not widely publicized</li><li>Other Names/Aliases: N/A</li><li>Spouse: Unmarried</li><li>Children: None</li></ul>"
         },
         {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>Moved to Mumbai from Bihar to pursue acting.</p>"
+          "html": "<p>A district-level cricketer in school; worked as a model before pursuing acting; debuted on Bhojpuri TV before Hindi television.</p>"
         },
         {
           "heading": "Television Career",
-          "html": "<ul><li><em>Begusarai</em> (2015–2016): Lakhan — debut lead</li><li><em>Chandrakanta</em> (2017–2018): Virendra</li></ul>"
+          "html": "<ul><li><em>Jai Jai Shiv Shankar</em> (2010, Bhojpuri): Avdesh Thakur (early lead role)</li><li><em>Chandragupta Maurya</em> (2011): first major Hindi serial</li><li><em>Sasural Simar Ka</em>: Veeru</li><li><em>Begusarai</em> (2015): Lakhan Thakur/Shakti Thakur (dual role) — breakout role</li><li><em>Chandrakanta</em> (2017): King Veerendra Pratap Singh</li><li><em>Kullfi Kumarr Bajewala</em> (2018): Tevar Singh</li><li><em>Chand Jalne Laga</em> (2023): Dev Malik</li></ul>"
+        },
+        {
+          "heading": "Film Career",
+          "html": "<p>No major film credits identified.</p>"
+        },
+        {
+          "heading": "Web Series / OTT Career",
+          "html": "<p>Featured in music videos including \"Dil Mein Hindustan\" and \"Khwabeeda\" (with Madhurima Tuli).</p>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Nach Baliye 9</em> (2019): Contestant (with ex Madhurima Tuli)</li><li><em>Bigg Boss 13</em> (2019–2020): Contestant</li><li><em>Khatron Ke Khiladi 11</em> (2021): Contestant</li><li><em>Khatron Ke Khiladi 15</em> (2026): Contestant (returning)</li></ul>"
+          "html": "<ul><li><em>Nach Baliye 9</em> (2019, with Madhurima Tuli): 2nd runner-up</li><li><em>Bigg Boss 13</em> (2019): Wild card entrant; evicted Day 127, finished 8th</li><li><em>Khatron Ke Khiladi 11</em> (2021): 2nd runner-up</li><li><em>Khatron Ke Khiladi 15</em> (2026): Contestant</li></ul>"
+        },
+        {
+          "heading": "Awards & Recognition",
+          "html": "<p>Ranked in Times of India's Most Desirable Men on Television list (No. 13 in 2018, No. 17 in 2019).</p>"
         },
         {
           "heading": "Personal Life",
-          "html": "<p>Was in a relationship with actress Madhurima Tuli; their confrontations during Nach Baliye 9 and Bigg Boss 13 were heavily covered.</p>"
+          "html": "<p>Dated actress Madhurima Tuli, whom he met on the set of <em>Chandrakanta</em> (2017); the relationship ended after about a year in 2018.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<p>On <em>Bigg Boss 13</em>, ex-girlfriend and co-contestant Madhurima Tuli hit him with a frying pan during an on-camera altercation, leading to her eviction from the show.</p>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: @vishalsingh713 (~950,000+ followers)</li><li>YouTube: Not confirmed</li><li>Twitter/X: Not confirmed</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>Previously appeared in KKK Season 11; now returning for Season 15</li><li>Known for his intense personality</li></ul>"
+          "html": "<p>A devotee of Lord Shiva; struggled early in his career with diction, particularly differentiating \"sha\" and \"sa\" sounds.</p>"
         }
       ]
     },
@@ -592,35 +792,47 @@ window.DB = {
       "bio": [
         {
           "heading": "Personal Details",
-          "html": "<ul><li><strong>Born:</strong> June 30, 1997 (age 29)</li><li><strong>Birthplace:</strong> Mumbai, Maharashtra, India</li><li><strong>Family:</strong> Gujarati family settled in Mumbai</li><li><strong>Spouse:</strong> Unmarried</li></ul>"
+          "html": "<ul><li>Born: 30 June 1997</li><li>Birthplace: Mumbai, Maharashtra, India</li><li>Education: Ryan International School, Mumbai (no formal higher education pursued due to acting schedule)</li><li>Languages: Hindi, English, Gujarati</li><li>Family: Gujarati Hindu family; father Sameer Gor (investment insurer), mother Chetna/Chetana Gor (homemaker); only child</li><li>Other Names/Aliases: N/A</li><li>Spouse: Milind Chandwani (social activist/entrepreneur; engaged June 2025, reportedly married on the sets of <em>Pati Patni Aur Panga</em> in September 2025)</li><li>Children: None</li></ul>"
         },
         {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>Started acting as a child at age 10; became a household name through her debut role.</p>"
+          "html": "<p>Began modelling and fashion shows at age 8; won \"Best Model\" award for Gini and Johnny (2007) before her acting break.</p>"
         },
         {
           "heading": "Television Career",
-          "html": "<ul><li><em>Balika Vadhu</em> (2008–2010): Young Anandi — iconic child role</li><li><em>Sasural Simar Ka</em> (2011): Roli (child version)</li><li>Active in Telugu television and film industry</li></ul>"
+          "html": "<ul><li><em>Ssshhhh…Koi Hai</em> (2007): early role, debut</li><li><em>Balika Vadhu</em> (2008–2011): Young Anandi — breakout role that made her a household name</li><li><em>Sasural Simar Ka</em> (2011): Roli Dwivedi Bhardwaj (dual role with sister character)</li></ul>"
         },
         {
           "heading": "Film Career",
-          "html": "<ul><li>Multiple Telugu films including <em>Uyyala Jampala</em> (2013), <em>Cinema Choopistha Mava</em> (2015)</li><li><em>1920: Horrors of the Heart</em> (2023): Hindi film</li></ul>"
+          "html": "<ul><li><em>Morning Walk</em> (2009): Hindi film debut (child artist)</li><li><em>Uyyala Jampala</em> (2013, Telugu): Won SIIMA Award for Best Female Debut – Telugu</li><li><em>Cinema Choopistha Mava</em>, <em>#BRO</em> (Telugu films)</li><li><em>Shanmukha</em> (2025, Telugu): investigative journalist opposite Aadi Saikumar</li><li><em>1920: Horrors of the Heart</em> (2023), <em>Bloody Ishq</em> (2024)</li></ul>"
+        },
+        {
+          "heading": "Web Series / OTT Career",
+          "html": "<p>Produced the film <em>Popcorn</em> (2023) through her own production venture.</p>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Khatron Ke Khiladi 9</em> (2019): Contestant</li><li><em>Khatron Ke Khiladi 15</em> (2026): Contestant (returning)</li></ul>"
+          "html": "<ul><li><em>India's Got Talent</em> (2009)</li><li><em>Jhalak Dikhhla Jaa 5</em> (2012): Wild card contestant</li><li><em>Pati Patni Aur Panga</em> (2025), with fiancé/husband Milind Chandwani</li><li><em>Khatron Ke Khiladi 15</em> (2026): Contestant</li></ul>"
         },
         {
           "heading": "Awards & Recognition",
-          "html": "<ul><li>Multiple awards for <em>Balika Vadhu</em> as Best Child Actress</li></ul>"
+          "html": "<ul><li>Indian Television Academy Award – Best Child Artist, <em>Balika Vadhu</em> (2008, 2009, 2010) — four ITA Awards total across career</li><li>SIIMA Award – Best Female Debut (Telugu), <em>Uyyala Jampala</em></li><li>Rajiv Gandhi National Award for contribution to Indian television (reported to be the youngest recipient)</li></ul>"
         },
         {
           "heading": "Personal Life",
-          "html": "<p>Active in both Hindi and Telugu entertainment industries. Previously dated Manish Raisinghan (rumoured).</p>"
+          "html": "<p>Advocate for child-marriage awareness campaigns, tied to her breakout <em>Balika Vadhu</em> role; engaged/married to social activist Milind Chandwani after a five-year relationship.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<p>In June 2024, revealed she was inappropriately touched by a bodyguard from behind at a public event in Kazakhstan; spoke publicly about the incident as a call for better protections in the industry.</p>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: @avikagor</li><li>YouTube: Not confirmed</li><li>Twitter/X: Not confirmed</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>Started acting at age 10 in <em>Balika Vadhu</em></li><li>Successfully transitioned from child actress to leading roles in Telugu cinema</li><li>Returning to KKK after Season 9</li></ul>"
+          "html": "<p>Trained Kathak dancer; one of the youngest Indians to attend the Cannes Film Festival; has a pet dog named Shiroo.</p>"
         }
       ]
     },
@@ -644,27 +856,55 @@ window.DB = {
       "bio": [
         {
           "heading": "Personal Details",
-          "html": "<ul><li><strong>Birthplace:</strong> Punjab, India</li><li><strong>Education:</strong> Engineering background (reported)</li><li><strong>Spouse:</strong> Unmarried</li></ul>"
+          "html": "<ul><li>Born: 17 September 1993</li><li>Birthplace: Kanpur, Uttar Pradesh, India</li><li>Education: B.Tech in Engineering, Inderprastha Engineering College, Uttar Pradesh (some sources cite IIT-BHU, Varanasi — unconfirmed)</li><li>Languages: Hindi, English, Punjabi</li><li>Family: Punjabi family; father a lawyer (name not publicly disclosed), mother a homemaker; three sisters, including Twinkle Makol</li><li>Other Names/Aliases: \"Sasta Vicky Kaushal\" (nickname, due to resemblance to actor Vicky Kaushal)</li><li>Spouse: Unmarried</li><li>Children: None</li></ul>"
         },
         {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>Started as a stand-up comedian on the Indian comedy circuit; gained fame through YouTube videos and live shows.</p>"
+          "html": "<p>Worked as a database engineer at RateGain in Noida starting 2012 (initial monthly salary ₹13,000), then at HCL, IBM, and TCS; began performing stand-up at open mics after work, inspired by Kapil Sharma.</p>"
+        },
+        {
+          "heading": "Television Career",
+          "html": "<ul><li><em>Good Night India</em> (2022, Sony SAB): TV debut</li><li><em>The Kapil Sharma Show</em> (2023): Guest appearance</li></ul>"
+        },
+        {
+          "heading": "Film Career",
+          "html": "<ul><li><em>Mere Husband Ki Biwi</em> (upcoming, directed by Mudassar Aziz): Bollywood debut, alongside Arjun Kapoor, Bhumi Pednekar, Rakul Preet Singh</li></ul>"
+        },
+        {
+          "heading": "Web Series / OTT Career",
+          "html": "<p>Self-titled YouTube channel with millions of views; known videos include \"Shaadi Ke Rasmein,\" \"Kanpur &amp; River Ganga,\" \"Sasta Vicky Kaushal.\"</p>"
         },
         {
           "heading": "Music Career / Other Entertainment",
-          "html": "<p>Stand-up comedy — one of India's popular stand-up comedians.</p>"
+          "html": "<p>Signature stand-up tour: <em>Jo Bolta Hai, Wohi Hota Hai</em>, performed across India and internationally (UK, Australia, New Zealand, Singapore, UAE).</p>"
+        },
+        {
+          "heading": "Professional Career (Outside Entertainment)",
+          "html": "<p>Former database/software engineer before transitioning fully to comedy.</p>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>The Traitors</em> (2025): Contestant — first reality TV appearance</li><li><em>Khatron Ke Khiladi 15</em> (2026): Contestant — first time on this show</li></ul>"
+          "html": "<ul><li><em>Khatron Ke Khiladi 15</em> (2026): Contestant</li></ul>"
+        },
+        {
+          "heading": "Awards & Recognition",
+          "html": "<p>Named one of India's Top 2 stand-up ticket sellers of 2022, alongside Anubhav Singh Bassi.</p>"
         },
         {
           "heading": "Personal Life",
-          "html": "<p>Private about personal life.</p>"
+          "html": "<p>Unmarried; keeps his dating life private, occasionally joking about it in his own comedy sets.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<p>Some jokes touching on religion and politics have drawn online criticism, which he has addressed by emphasizing comedy should be taken lightly.</p>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: @realharshgujral</li><li>YouTube: Harsh Gujral (~2.9 million subscribers)</li><li>Twitter/X: Not confirmed</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>First KKK appearance; known for comedy, not stunts</li><li>Previously appeared in The Traitors</li></ul>"
+          "html": "<p>Has a pet dog named Oreo; performed for a year in London while still employed in the corporate sector, which helped launch his comedy career.</p>"
         }
       ]
     },
@@ -688,35 +928,47 @@ window.DB = {
       "bio": [
         {
           "heading": "Personal Details",
-          "html": "<ul><li><strong>Born:</strong> September 25, 2007 (age 18)</li><li><strong>Birthplace:</strong> Delhi, India (raised in Mumbai)</li><li><strong>Education:</strong> IGCSE board schooling in Mumbai; passed 10th standard</li><li><strong>Family:</strong> Father (trader); mother Dolly Dhawan (homemaker)</li><li><strong>Other Names/Aliases:</strong> Ruhi (screen name)</li><li><strong>Spouse:</strong> Unmarried</li></ul>"
+          "html": "<ul><li>Born: 25 September 2007</li><li>Birthplace: Delhi, India</li><li>Education: Completed schooling at Prabhavati Padamashi Soni International Junior College (June 2025)</li><li>Languages: Hindi, English, Punjabi (learned for a film role)</li><li>Family: Settled Hindu family based in Delhi; parents' names not widely publicized</li><li>Other Names/Aliases: Ruhaanika Dhawan (alternate spelling)</li><li>Spouse: Unmarried (was a minor/young adult as of KKK15 casting)</li><li>Children: None</li></ul>"
         },
         {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>Started her career at age 5 in television. Born in Delhi, raised in Mumbai.</p>"
+          "html": "<p>Began acting at age 5; balanced school (5–9 PM shoot schedule) with a demanding child-actor career.</p>"
         },
         {
           "heading": "Television Career",
-          "html": "<ul><li><em>Mrs. Kaushik Ki Paanch Bahuein</em> (Zee TV, 2012): Aashi — debut at age 5</li><li><em>Yeh Hai Mohabbatein</em> (Star Plus, 2013–2019): Ruhi Bhalla / Pihu Bhalla — iconic child role spanning 1295+ episodes</li></ul>"
+          "html": "<ul><li><em>Mrs. Kaushik Ki Paanch Bahuein</em> (2012): Aashi (debut)</li><li><em>Yeh Hai Mohabbatein</em> (2013–2019): Child Ruhi Bhalla, later Child Pihu Bhalla — breakout role, opposite Divyanka Tripathi and Karan Patel</li><li><em>Yeh Hai Chahatein</em> (2019): recurring appearances</li></ul>"
         },
         {
           "heading": "Film Career",
-          "html": "<ul><li><em>Jai Ho</em> (2014): Cameo (Salman Khan film)</li><li><em>Ghayal Once Again</em> (2016): Ananya Bansal (Sunny Deol film)</li></ul>"
+          "html": "<ul><li><em>Jai Ho</em> (2014): Cameo role, Bollywood</li><li><em>Ghayal Once Again</em> (2016): Role opposite Sunny Deol, who reportedly taught her Punjabi on set</li></ul>"
+        },
+        {
+          "heading": "Web Series / OTT Career",
+          "html": "<p>None widely documented.</p>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Jhalak Dikhhla Jaa 9</em> (2016): Contestant</li><li><em>Khatron Ke Khiladi 15</em> (2026): Contestant — one of the youngest in the season</li></ul>"
+          "html": "<ul><li><em>Jhalak Dikhhla Jaa 9</em> (2016): Contestant</li><li><em>Khatron Ke Khiladi 15</em> (2026): Contestant</li></ul>"
         },
         {
           "heading": "Awards & Recognition",
-          "html": "<ul><li>Indian Telly Award for Most Popular Child Actress (2014)</li><li>Multiple child actress awards for <em>Yeh Hai Mohabbatein</em></li></ul>"
+          "html": "<ul><li>Indian Telly Award – Most Popular Child Actress, <em>Yeh Hai Mohabbatein</em> (2014)</li><li>Star Parivaar Awards – \"Rishta Soch Ka\" (with Divyanka Tripathi) and \"Favourite Chota Sadasya\" (2015)</li></ul>"
         },
         {
           "heading": "Personal Life",
-          "html": "<p>Bought her dream home worth ₹4 crore at age 15 (January 2023), crediting her mother for managing her finances. Currently pursuing education alongside her career.</p>"
+          "html": "<p>Bought her own home at age 15, funded by her acting earnings, and publicly thanked her parents for their support and guidance.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<p>None publicly documented.</p>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: @ruhanikadhawan (approximate)</li><li>YouTube: Not confirmed</li><li>Twitter/X: Not confirmed</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>Started acting at age 5</li><li>Purchased a home at age 15 with her own earnings</li><li>Skilled in gymnastics, MMA, and Kathak</li><li>Net worth estimated at ₹8 crore</li></ul>"
+          "html": "<p>Enjoys swimming and dancing; favorite fictional characters include Rapunzel and Cinderella.</p>"
         }
       ]
     },
@@ -740,27 +992,47 @@ window.DB = {
       "bio": [
         {
           "heading": "Personal Details",
-          "html": "<ul><li><strong>Birthplace:</strong> India (details limited in public sources)</li><li><strong>Spouse:</strong> Unmarried</li></ul>"
+          "html": "<ul><li>Born: 28 October 1997</li><li>Birthplace: Palampur, Himachal Pradesh, India</li><li>Education: Bachelor's degree in Mass Media/Mass Communication, University of Mumbai</li><li>Languages: Hindi, English</li><li>Family: Hindu family; mother Sushma Sharma; sister Shweta Sharma; brother Rajat Verma (father's name not publicly disclosed)</li><li>Other Names/Aliases: N/A</li><li>Spouse: Unmarried; reportedly dating actor Aman Gandhi, her co-star from <em>Kyunki Saas Bhi Kabhi Bahu Thi 2</em> (unconfirmed by either party)</li><li>Children: None</li></ul>"
         },
         {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>Entered the television industry at a young age. Known for her TV roles.</p>"
+          "html": "<p>Grew up in Palampur, Himachal Pradesh; encouraged by friends to pursue acting despite initially studying mass media; landed her first TV role at her very first audition.</p>"
         },
         {
           "heading": "Television Career",
-          "html": "<ul><li><em>Kyunki Saas Bhi Kabhi Bahu Thi</em>: Known role (as reported in KKK 15 coverage)</li></ul>"
+          "html": "<ul><li><em>Kuch Toh Hai Tere Mere Darmiyaan</em> (2015): Sanjana Kapoor (debut)</li><li><em>Kuch Rang Pyaar Ke Aise Bhi</em> (2017)</li><li><em>Tu Aashiqui</em>: Richa Thakur</li><li><em>Ishk Par Zor Nahi</em> (2021): Sonali \"Sonu\" Malhotra Rathore</li><li><em>Sasural Genda Phool 2</em> (2021–22): Tanya \"Titli\" Awasthi — major breakthrough role, opposite Jay Soni</li><li><em>Harphoul Mohini</em> (2022): Mohini Vijayan Chaudhary</li><li><em>Yeh Hai Chahatein</em> (2023–24): Kashvi Sabharwal, IAS officer</li><li><em>Kyunki Saas Bhi Kabhi Bahu Thi 2</em> (2025–ongoing): Paridhi \"Pari\" Virani, a bold negative role</li></ul>"
+        },
+        {
+          "heading": "Film Career",
+          "html": "<ul><li><em>Tennis Buddies</em> (2019): Bollywood film, directed by Suhail Tatari</li></ul>"
+        },
+        {
+          "heading": "Web Series / OTT Career",
+          "html": "<ul><li><em>Dating Siyapaa</em> (2020): Chameli</li><li><em>Mera Number Kab Aayega</em> (2022): Short film, screened at multiple festivals, won over 25 awards</li></ul>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Khatron Ke Khiladi 15</em> (2026): Contestant — one of the fresh faces in the lineup</li></ul>"
+          "html": "<ul><li><em>Khatron Ke Khiladi 15</em> (2026): Contestant</li></ul>"
+        },
+        {
+          "heading": "Awards & Recognition",
+          "html": "<p>No major individual acting awards publicly documented; her short film <em>Mera Number Kab Aayega</em> won 25+ festival awards.</p>"
         },
         {
           "heading": "Personal Life",
-          "html": "<p>Private about personal details.</p>"
+          "html": "<p>Faced a career gap earlier in her career but persisted; known for a clean, controversy-free public image.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<p>None publicly documented.</p>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: @shagun__sharma</li><li>YouTube: Not confirmed</li><li>Twitter/X: Not confirmed</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<p>---</p><ul><li>One of the fresh faces joining KKK 15</li><li>Her participation adds young energy to the season</li></ul>"
+          "html": "<p>Animal lover, frequently posts about pets; enjoys yoga, painting, and Himachali home cooking.</p><p>---</p><p><em>End of KKK 15 profiles. Note: Several fields (exact family details, precise net worth, verified relationship statuses) vary across tabloid/entertainment sources and should be treated as best-available public information rather than officially confirmed facts. Next up: Lock Upp S2 profiles.</em></p>"
         }
       ]
     }
@@ -786,31 +1058,47 @@ window.DB = {
       "bio": [
         {
           "heading": "Personal Details",
-          "html": "<ul><li><strong>Born:</strong> May 18, 1998 (age 28)</li><li><strong>Birthplace:</strong> Dehradun, Uttarakhand, India</li><li><strong>Family:</strong> Father Amarjeet Joshi; mother; brother</li><li><strong>Spouse:</strong> Unmarried</li></ul>"
+          "html": "<ul><li>Born: 18 May (year reported inconsistently across sources as 1995, 1998; most commonly cited as 1995 or 1998)</li><li>Birthplace: Reports vary between Pune, Maharashtra and Dehradun, Uttarakhand — she was raised in Dehradun</li><li>Education: B.A., Dehradun (took a one-year break from graduation to pursue TV)</li><li>Languages: Hindi, English</li><li>Family: Brahmin family from Uttarakhand; father Suman Prakash Joshi, mother Yashoda Joshi; sister Sheetal Joshi, brother Samarth Joshi</li><li>Other Names/Aliases: N/A</li><li>Spouse: Unmarried</li><li>Children: None</li></ul>"
         },
         {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>From Dehradun; moved to Mumbai for television career.</p>"
+          "html": "<p>National-level dance competitor in school; gold medalist in Taekwondo; came to Mumbai at 17 to pursue television.</p>"
         },
         {
           "heading": "Television Career",
-          "html": "<ul><li><em>Khelti Hai Zindagi Aankh Micholi</em> (2013): Debut</li><li><em>Yeh Rishta Kya Kehlata Hai</em> (2016–2021): Naira Singhania / Sirat — one of the most loved TV characters; years-long run</li><li><em>Balika Vadhu 2</em> (2022): Lead</li><li><em>Bade Achhe Lagte Hain 4</em>: Recent role</li></ul>"
+          "html": "<ul><li><em>Khelti Hai Zindagi Aankh Micholi</em> (2013): Trisha/Nisha (debut)</li><li><em>Beintehaa</em> (2013): Aayat Haider</li><li><em>Begusarai</em> (2015–16): Poonam Thakur, opposite Vishal Aditya Singh</li><li><em>Yeh Rishta Kya Kehlata Hai</em> (2016–2021): Naira Singhania Goenka — breakout role, ITA Award for Best Actress Popular</li><li><em>Balika Vadhu 2</em> (2021–22): Anandi Chaturvedi</li><li><em>Barsatein – Mausam Pyaar Ka</em> (2023–24): Aradhana Sahni</li><li><em>Bade Achhe Lagte Hain 4</em> (2025): Bhagyashree \"Bhagya\" Iyer, opposite Harshad Chopda</li></ul>"
+        },
+        {
+          "heading": "Film Career",
+          "html": "<ul><li><em>Our Own Sky</em> (2020): Made her debut at the Cannes Film Festival</li></ul>"
+        },
+        {
+          "heading": "Web Series / OTT Career",
+          "html": "<ul><li><em>Jab We Matched</em> (2023): Prachi</li><li><em>Bekaboo</em> (2023): Rajpari Devlekha, opposite Zain Imam</li></ul>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Lock Upp Season 2</em> (Netflix, 2026): Contestant</li></ul>"
+          "html": "<ul><li><em>Box Cricket League</em> (2016)</li><li><em>Khatron Ke Khiladi 12</em> (2022): Finished 12th</li><li><em>Lock Upp: Sach Ya Sazaa Season 2</em> (2026): Contestant</li></ul>"
         },
         {
           "heading": "Awards & Recognition",
-          "html": "<ul><li>Multiple Gold Awards and ITA Awards for Best Actress for <em>Yeh Rishta Kya Kehlata Hai</em></li><li>Massive devoted fan base</li></ul>"
+          "html": "<p>Indian Television Academy Award, an Indian Telly Award, and three Gold Awards across her career, including Best Actress Popular for <em>Yeh Rishta Kya Kehlata Hai</em>.</p>"
         },
         {
           "heading": "Personal Life",
-          "html": "<p>Private about personal relationships. Devoted social media following.</p>"
+          "html": "<p>Previously dated co-star Mohsin Khan (met on <em>YRKKH</em>); later linked to Randeep Rai (<em>Balika Vadhu 2</em> co-star) and then Kushal Tandon, whom she dated after meeting on <em>Barsatein</em>; that relationship ended in 2025. In March 2023, she was hospitalized with a kidney infection and later underwent surgery.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<p>Was reportedly terminated early from <em>Begusarai</em> in 2016 over professionalism concerns, per some reports (disputed by other accounts).</p>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: @shivangijoshi10 (~9+ million followers)</li><li>YouTube: Not confirmed</li><li>Twitter/X: Not confirmed</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>One of Indian TV's most loved faces</li><li>Known for strong emotional characters</li><li>Walking in with a massive fanbase gives her a serious edge in Lock Upp</li></ul>"
+          "html": "<p>Bought a Mercedes-Benz in January 2023; trained in Kathak, jazz, and hip-hop dance.</p>"
         }
       ]
     },
@@ -834,39 +1122,43 @@ window.DB = {
       "bio": [
         {
           "heading": "Personal Details",
-          "html": "<ul><li><strong>Born:</strong> September 1, 1973 (age 52)</li><li><strong>Birthplace:</strong> New Delhi, India</li><li><strong>Education:</strong> Lee Strasberg Theatre and Film Institute, New York</li><li><strong>Spouse:</strong> Gautami Gadgil (m. 2003)</li><li><strong>Children:</strong> 2 (son Aks, daughter Sia)</li></ul>"
+          "html": "<ul><li>Born: 1 September 1973</li><li>Birthplace: Mumbai (Bombay), Maharashtra, India (family from Jalandhar, Punjab)</li><li>Education: Sherwood College, Nainital</li><li>Languages: Hindi, English, Punjabi</li><li>Family: Father Anil Kapoor (business tycoon, died 2021), mother Rita Kapoor (homemaker); sister Aruna Kapoor</li><li>Other Names/Aliases: N/A</li><li>Spouse: Gautami Kapoor (née Gadgil; actress; married 14 February 2003)</li><li>Children: Two, including daughter Sia (born 2006)</li></ul>"
         },
         {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>Trained at Lee Strasberg Institute in New York before returning to India for TV and film career.</p>"
+          "html": "<p>Discovered his love for acting at Sherwood College when cast in a school play; trained under theatre director Amir Raza Hussein.</p>"
         },
         {
           "heading": "Television Career",
-          "html": "<ul><li><em>Ghar Ek Mandir</em> (2000): Early role</li><li><em>Kasamh Se</em> (2006–2009): Jai Walia — iconic role</li><li><em>Bade Achhe Lagte Hain</em> (2011–2014): Ram Kapoor — career-defining role opposite Sakshi Tanwar</li></ul>"
+          "html": "<ul><li><em>Nyaay</em> (1997/1999): debut</li><li><em>Heena</em> (1998), <em>Sangharsh</em> (1999), <em>Kavita</em> (2000)</li><li><em>Ghar Ek Mandir</em> (2000): met future wife Gautami on set</li><li><em>Kyunki Saas Bhi Kabhi Bahu Thi</em>, <em>Basera</em></li><li><em>Kasamh Se</em> (2006): Jai Walia — won Best Actor, Indian Television Awards</li><li><em>Bade Achhe Lagte Hain</em> (2011–2014): Ram Amarnath Kapoor — his defining role, made him one of the highest-paid Indian TV actors; first Indian TV actor to perform an on-screen kissing scene</li><li><em>Kya Hua Tera Vaada</em> (2012)</li></ul>"
         },
         {
           "heading": "Film Career",
-          "html": "<ul><li><em>Udaan</em> (2010): Critical acclaim</li><li><em>Student of the Year</em> (2012): Supporting role</li><li>Multiple Bollywood films</li></ul>"
-        },
-        {
-          "heading": "Web Series / OTT Career",
-          "html": "<ul><li><em>Karrle Tu Bhi Mohabbat</em> (ALTBalaji): Lead</li><li><em>A Suitable Boy</em> (Netflix, 2020)</li></ul>"
+          "html": "<ul><li><em>Monsoon Wedding</em> (2001): cameo</li><li><em>Agent Vinod</em>, <em>Student of the Year</em> (2012)</li><li><em>Humshakals</em> (2014): triple role</li><li><em>The Big Bull</em> (2021), <em>Neeyat</em> (2023), <em>Yudhra</em> (2024)</li></ul>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Lock Upp Season 2</em> (Netflix, 2026): Contestant — the most senior and recognizable name on the list</li></ul>"
+          "html": "<ul><li>Hosted <em>Rakhi Ka Swayamwar</em> (2009)</li><li><em>Jhalak Dikhla Jaa</em>, <em>Welcome – Baazi Mehmaan Nawazi Ki</em> (2013)</li><li><em>Lock Upp: Sach Ya Sazaa Season 2</em> (2026): Contestant</li></ul>"
         },
         {
           "heading": "Awards & Recognition",
-          "html": "<ul><li>Indian Television Academy Awards (multiple)</li><li>Screen Awards for Best Actor</li></ul>"
+          "html": "<p>Three ITA Awards, three Indian Telly Awards for Best Actor.</p>"
         },
         {
           "heading": "Personal Life",
-          "html": "<p>Married to actress Gautami Gadgil since 2003. Two children. Known for his dramatic body transformation in recent years. Candid and unfiltered in interviews.</p>"
+          "html": "<p>Married to actress Gautami Kapoor since 2003; was reportedly estranged from his father for around a decade over his decision to pursue acting rather than the family business.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<p>In a 2025 interview, alleged that producer Ekta Kapoor faced backlash over an extended intimate scene between him and co-star Sakshi Tanwar on <em>Bade Achhe Lagte Hain</em>, which he said led to friction with Kapoor. On Day 1 of <em>Lock Upp Season 2</em>, he reportedly injured co-contestant Sunita Ahuja during a task.</p>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: @iamramkapoor</li><li>YouTube: Not confirmed</li><li>Twitter/X: Active, handle not independently confirmed</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>Trained at the prestigious Lee Strasberg Institute in NYC</li><li>One of Indian television's most respected actors</li><li>His calm, polished image will be interesting inside the high-pressure jail format</li></ul>"
+          "html": "<p>Owns a notable car collection including a Porsche 911 Carrera S and BMW X5; owns a property in Alibaug reportedly worth ₹20 crore.</p>"
         }
       ]
     },
@@ -890,31 +1182,47 @@ window.DB = {
       "bio": [
         {
           "heading": "Personal Details",
-          "html": "<ul><li><strong>Other Names/Aliases:</strong> Pamela Serena</li></ul>"
+          "html": "<ul><li>Born: Exact date not publicly confirmed; believed to be in her 30s as of 2026</li><li>Birthplace: London, England, United Kingdom, to Indian parents</li><li>Education: Psychology degree, University College London (UCL); further training at the London School of Film Production</li><li>Languages: English, Hindi (reported)</li><li>Family: Details not widely publicized</li><li>Other Names/Aliases: Pamala Serena Rull (full name); self-styled \"Dubai Ki Komolika\"</li><li>Spouse: Personal relationship status not confirmed in public sources</li><li>Children: Not publicly disclosed</li></ul>"
         },
         {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>Came to public attention through Netflix's <em>Desi Bling</em>.</p>"
+          "html": "<p>Moved to Dubai in 2012, which she describes as the city that shaped who she is; began her career in pageantry.</p>"
+        },
+        {
+          "heading": "Television Career",
+          "html": "<p>No scripted television roles identified.</p>"
         },
         {
           "heading": "Web Series / OTT Career",
-          "html": "<ul><li><em>Desi Bling</em> (Netflix): Gained attention; her equation with co-star Tejasswi Prakash grabbed headlines</li></ul>"
+          "html": "<ul><li><em>Desi Bling</em> (Netflix): Cast member, part of a series following wealthy South Asians in Dubai's social scene, alongside personalities like Karan Kundrra and Tejasswi Prakash</li></ul>"
         },
         {
           "heading": "Professional Career (Outside Entertainment)",
-          "html": "<p>Digital content creator.</p>"
+          "html": "<p>Entrepreneur and real estate businesswoman based in London/Dubai; official UN Ambassador of Peace; involved with children's charities Liter of Light and Earth Angels NGO.</p>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Lock Upp Season 2</em> (Netflix, 2026): Contestant — one of the most intriguing additions</li></ul>"
+          "html": "<ul><li><em>Desi Bling</em> (2026): Cast member</li><li><em>Lock Upp: Sach Ya Sazaa Season 2</em> (2026): Contestant</li></ul>"
+        },
+        {
+          "heading": "Awards & Recognition",
+          "html": "<ul><li>Ms Universe Dubai (2021)</li><li>Ms UAE World (2022)</li><li>Also referenced as former Miss India–UK titleholder</li></ul>"
         },
         {
           "heading": "Personal Life",
-          "html": "<p>Has publicly named <em>Desi Bling</em> co-star Tejasswi Prakash as someone she would rather not see — suggesting she doesn't manage her image carefully.</p>"
+          "html": "<p>Publicly known for her rivalry/disagreements with fellow <em>Desi Bling</em> cast member Lailli Mirza.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<p>Her on-screen clashes on <em>Desi Bling</em>, particularly with Lailli Mirza, generated ongoing media attention.</p>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: @pamalaserena</li><li>YouTube: Not confirmed</li><li>Twitter/X: Not confirmed</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>One of the most genuinely unpredictable names in the Lock Upp 2 lineup</li><li>Has the glam factor but will be tested in a high-pressure format</li></ul>"
+          "html": "<p>Walked the ramp for Elie Saab in June 2026; appeared on the cover of Friday Magazine Bride in May 2026.</p>"
         }
       ]
     },
@@ -938,31 +1246,43 @@ window.DB = {
       "bio": [
         {
           "heading": "Personal Details",
-          "html": "<ul><li><strong>Born:</strong> December 20, 1984 (age 41)</li><li><strong>Birthplace:</strong> New Delhi, India</li><li><strong>Family:</strong> Punjabi family from Delhi</li><li><strong>Spouse:</strong> Vinny Arora (m. November 2016)</li><li><strong>Children:</strong> 1 son (Zayn, born 2022)</li></ul>"
+          "html": "<ul><li>Born: 20 December 1984</li><li>Birthplace: New Delhi, India</li><li>Education: Diploma in Fashion Designing</li><li>Languages: Hindi, English, Punjabi</li><li>Family: Punjabi Hindu family; father Sushil Dhoopar, mother Veena Dhoopar; two brothers (including Gaurav Dhoopar), sister Shaila</li><li>Other Names/Aliases: N/A</li><li>Spouse: Vinny Arora (actress; married 16 November 2016 in Delhi; met on the set of <em>Maat Pitaah Ke Charnon Mein Swarg</em>)</li><li>Children: One son, born 10 August 2022</li></ul>"
         },
         {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>Started acting in Delhi theater before moving to Mumbai.</p>"
+          "html": "<p>Worked as an airline cabin crew member and did over 100 television commercials (Maruti Suzuki, Parker, Dabur Honey, Samsung, Videocon) before acting.</p>"
         },
         {
           "heading": "Television Career",
-          "html": "<ul><li><em>Maat Pitaah Ke Charnon Mein Swarg</em> (2009): Debut</li><li><em>Sasural Simar Ka</em> (2011–2017): Prem Bharadwaj — popular role</li><li><em>Kundali Bhagya</em> (2017–2022): Karan Luthra — career-defining role</li><li><em>Sherdil Shergill</em> (2022–2023): Lead</li></ul>"
+          "html": "<ul><li><em>Maat Pitaah Ke Charnon Mein Swarg</em>: Ansh (debut)</li><li><em>Behenein</em>: Bhavesh Patel</li><li><em>Mrs. Tendulkar</em>: Sushant</li><li><em>Sasural Simar Ka</em> (2013–2017): Prem Bhardwaj, opposite Dipika Kakar</li><li><em>Kundali Bhagya</em> (2017–2022): Karan Luthra, opposite Shraddha Arya — his career-defining role, ~5 years</li><li><em>Naagin 5</em> (2020): Cameo as Cheel Akesh/Shakura</li><li><em>Sherdil Shergill</em> (2022–23): opposite Surbhi Chandna</li><li><em>Saubhagyavati Bhava: Niyam Aur Shartein Laagu</em> (2023): grey-shaded role</li></ul>"
+        },
+        {
+          "heading": "Film Career",
+          "html": "<p>No major film credits identified.</p>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Jhalak Dikhhla Jaa 10</em> (2022): Contestant</li><li><em>Lock Upp Season 2</em> (Netflix, 2026): Contestant</li></ul>"
+          "html": "<ul><li>Hosted <em>Sa Re Ga Ma Pa</em> grand finale and <em>Dance India Dance 7</em> (2019, quit mid-season)</li><li><em>Jhalak Dikhhla Jaa 10</em> (2022): Withdrew in Week 4 due to health/personal issues</li><li><em>Lock Upp: Sach Ya Sazaa Season 2</em> (2026): Contestant</li></ul>"
         },
         {
           "heading": "Awards & Recognition",
-          "html": "<ul><li>Zee Gold Awards for Best Actor</li><li>ITA Awards for <em>Kundali Bhagya</em></li></ul>"
+          "html": "<p>Indian Television Academy Award for Best Actor (Popular) and multiple Gold Awards for <em>Kundali Bhagya</em>; listed on The Times' Most Desirable Men on TV.</p>"
         },
         {
           "heading": "Personal Life",
-          "html": "<p>Married to actress Vinny Arora since 2016. Son Zayn born in 2022.</p>"
+          "html": "<p>Took a paternity break in 2022 following the birth of his son to focus on fatherhood.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<p>None major publicly documented.</p>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: @dheerajdhoopar (~4.5+ million followers)</li><li>YouTube: Not confirmed</li><li>Twitter/X: Not confirmed</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>Known as one of TV's most popular male leads</li><li>Massive TV fan base follows him from <em>Kundali Bhagya</em></li></ul>"
+          "html": "<p>Won 13 industry honors in a single year at the peak of his <em>Kundali Bhagya</em> fame; fitness enthusiast known for his stylish look.</p>"
         }
       ]
     },
@@ -985,20 +1305,40 @@ window.DB = {
       "id": 18,
       "bio": [
         {
+          "heading": "Personal Details",
+          "html": "<ul><li>Born: 4 December 2003 (some sources cite 2005; 2003 is most widely reported)</li><li>Birthplace: Pithoragarh, Uttarakhand, India (some profiles cite Haldwani)</li><li>Education: Primary schooling at Mallikarjun School, Pithoragarh; further education details not confirmed</li><li>Languages: Hindi, English</li><li>Family: Hindu Rawat family from Uttarakhand; further details not widely publicized</li><li>Other Names/Aliases: \"Yogesh (Haldwani)\" in some Splitsvilla coverage</li><li>Spouse: Unmarried</li><li>Children: None</li></ul>"
+        },
+        {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>Known as a digital creator / content personality before entering reality TV.</p>"
+          "html": "<p>Black belt in Taekwondo; two-time national kickboxing gold medalist; also competed in football, basketball, and Wushu at state level before entering modelling and reality TV.</p>"
+        },
+        {
+          "heading": "Television Career",
+          "html": "<p>No scripted acting roles identified.</p>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Lock Upp Season 2</em> (Netflix, 2026): Contestant — noted that Netflix's global reach is new territory for him</li></ul>"
+          "html": "<ul><li><em>MTV Roadies Season 20: Double Cross</em> (2025): Contestant on Elvish Yadav's team, noted for his emotional backstory involving his father's health</li><li><em>MTV Splitsvilla X6 (Season 16)</em> (2026): Contestant, part of \"Pyaar Villa,\" paired with Akanksha Choudhary; later involved in storyline with wildcard entrant Ruru Thakur; had a publicized on-camera dispute with host Sunny Leone during a Dome session</li><li><em>Lock Upp: Sach Ya Sazaa Season 2</em> (2026): Contestant</li></ul>"
+        },
+        {
+          "heading": "Awards & Recognition",
+          "html": "<p>Two national gold medals in kickboxing; Taekwondo black belt.</p>"
         },
         {
           "heading": "Personal Life",
-          "html": "<p>Linked in show promotions with Akanksha (Lock Upp has brought them face to face).</p>"
+          "html": "<p>Publicly linked to fellow Splitsvilla contestant Akanksha Choudhary during the show, with later rumors of a connection to wildcard entrant Ruru Thakur.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<p>Heated on-camera argument with host Sunny Leone during a Splitsvilla Dome session; speculation about shifting romantic connections inside the villa drew fan criticism.</p>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: Active, handle not independently confirmed</li><li>YouTube: Not confirmed</li><li>Twitter/X: Not confirmed</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>Excited about the global reach Netflix provides compared to his previous platforms</li></ul>"
+          "html": "<p>Does not drink alcohol or smoke; enjoys traveling and fitness content creation.</p>"
         }
       ]
     },
@@ -1021,20 +1361,40 @@ window.DB = {
       "id": 17,
       "bio": [
         {
+          "heading": "Personal Details",
+          "html": "<ul><li>Born: Exact date not publicly disclosed; reported to be in her mid-20s (~24) as of 2026</li><li>Birthplace: Jaipur, Rajasthan, India</li><li>Education: Reports vary significantly — some sources describe her as an alumna of SRCC and IIM Ahmedabad (2017–19); others describe a more general modelling/pageant background without formal management education. This discrepancy is unresolved in public sources.</li><li>Languages: Hindi, English</li><li>Family: Middle-class family from Jaipur; was an NCC cadet during school</li><li>Other Names/Aliases: N/A</li><li>Spouse: Unmarried</li><li>Children: None</li></ul>"
+        },
+        {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>Known from digital/social media space.</p>"
+          "html": "<p>Began in beauty pageants and modelling before reality television; represented Rajasthan in Miss Universe India pageant circuits.</p>"
+        },
+        {
+          "heading": "Television Career",
+          "html": "<p>No scripted acting roles identified.</p>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Lock Upp Season 2</em> (Netflix, 2026): Contestant — her dynamic with Yogesh Rawat is a highlighted storyline</li></ul>"
+          "html": "<ul><li><em>MTV Splitsvilla X6 (Season 16)</em> (2026): Contestant, part of \"Pyaar Villa,\" paired with Yogesh Rawat; reported to have set a record for highest live viewership for any contestant on the season</li><li><em>Lock Upp: Sach Ya Sazaa Season 2</em> (2026): Contestant</li></ul>"
+        },
+        {
+          "heading": "Awards & Recognition",
+          "html": "<ul><li>Miss India Elite 2016 (winner)</li><li>Represented India at Miss Face of Beauty International</li><li>National finalist, Miss Universe India 2025</li></ul>"
         },
         {
           "heading": "Personal Life",
-          "html": "<p>Her face-to-face encounter with Yogesh Rawat inside Lock Upp is being promoted as a key narrative.</p>"
+          "html": "<p>Has spoken publicly about struggling with PCOD and weight gain, and about her fitness-driven transformation and weight loss. Unmarried and has not publicly confirmed any relationship.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<p>None major publicly documented; generally described as maintaining a clean, drama-free public image during Splitsvilla.</p>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: @akankshachoudhary_official (~120,000+ followers)</li><li>YouTube: Not confirmed</li><li>Twitter/X: Not confirmed</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>Her pairing/dynamic with Yogesh Rawat is a key talking point of the season</li></ul>"
+          "html": "<p>Known within Splitsvilla fandom for her calm, composed demeanor in contrast to more dramatic contestants.</p>"
         }
       ]
     },
@@ -1058,27 +1418,43 @@ window.DB = {
       "bio": [
         {
           "heading": "Personal Details",
-          "html": "<ul><li><strong>Family:</strong> Wife of actor/politician Govinda (Govind Arun Ahuja)</li><li><strong>Spouse:</strong> Govinda (m. March 11, 1987)</li><li><strong>Children:</strong> 2 — daughter Tina Ahuja (actress), son Yashvardhan Ahuja</li></ul>"
+          "html": "<ul><li>Born: June 1967</li><li>Birthplace: Mumbai, Maharashtra, India (raised in Pali Hill)</li><li>Education: Schooling in Mumbai; some reports cite undergraduate study at University of Mumbai</li><li>Languages: Hindi, English, Punjabi</li><li>Family: Half-Punjabi, half-Nepali background; born Sunita Munjal; father a businessman; elder sister married to actor Govinda's maternal uncle, Anand Singh</li><li>Other Names/Aliases: Née Sunita Munjal</li><li>Spouse: Govinda (Govind Arun Ahuja; Bollywood actor; married 11 March 1987, kept secret for about four years)</li><li>Children: Daughter Narmada \"Tina\" Ahuja (born 16 July 1989, actress) and son Yashvardhan Ahuja; a second daughter died in infancy at three months old</li></ul>"
         },
         {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>Known primarily as Govinda's wife. Built her own public image through interviews and TV appearances.</p>"
+          "html": "<p>Met Govinda through her sister's family connection; the couple corresponded secretly via letters before marrying.</p>"
         },
         {
-          "heading": "Professional Career (Outside Entertainment)",
-          "html": "<p>Homemaker; public personality.</p>"
+          "heading": "Television Career",
+          "html": "<p>No scripted acting career; known primarily as Govinda's wife and, more recently, as an outspoken social-media personality with her own YouTube channel.</p>"
+        },
+        {
+          "heading": "Film Career",
+          "html": "<p>No acting credits.</p>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Lock Upp Season 2</em> (Netflix, 2026): Contestant — expected to bring unfiltered reactions</li></ul>"
+          "html": "<ul><li><em>Lock Upp: Sach Ya Sazaa Season 2</em> (2026): Contestant</li></ul>"
+        },
+        {
+          "heading": "Awards & Recognition",
+          "html": "<p>None in entertainment; recognized as a prominent Bollywood spouse and, more recently, social media personality.</p>"
         },
         {
           "heading": "Personal Life",
-          "html": "<p>Married to Bollywood star Govinda since 1987. Two children. Known for being outspoken, emotional, and unfiltered.</p>"
+          "html": "<p>Converted to Christianity as a child (attends church weekly, per her own account). In August 2025, it was reported she had filed for divorce from Govinda, citing adultery, cruelty, and desertion; the couple had reportedly been living separately. Family members and Govinda's manager have disputed some divorce rumors at various points.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<p>2025 divorce filing/rumors dominated headlines; has publicly discussed a permanent rift with nephew-by-marriage Krushna Abhishek and his wife Kashmera Shah, whom she has accused of profiting off the Govinda family name.</p>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: @officialsunitaahuja (~180,000+ followers)</li><li>YouTube: Active channel, focused on lifestyle/personal content</li><li>Twitter/X: Not confirmed</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>Known to most Bollywood fans as Govinda's wife</li><li>Outspoken and doesn't filter her words — strong reality show candidate</li><li>Lock Upp needs people who react, and she fits that profile</li></ul>"
+          "html": "<p>Was offered a spot on <em>Fabulous Lives of Bollywood Wives</em>, per reports; titled one of her first vlogs \"Ab Main Paise Chapungi\" (\"Now I'll print money\").</p>"
         }
       ]
     },
@@ -1102,31 +1478,47 @@ window.DB = {
       "bio": [
         {
           "heading": "Personal Details",
-          "html": "<ul><li><strong>Born:</strong> May 17, 1983 (age 43)</li><li><strong>Birthplace:</strong> Gondia, Maharashtra, India</li><li><strong>Family:</strong> Maharashtrian family from Gondia</li><li><strong>Spouse:</strong> Unmarried</li></ul>"
+          "html": "<ul><li>Born: 17 May 1983</li><li>Birthplace: Gondia, Maharashtra, India</li><li>Education: Engineering degree (computer engineering), Modern College of Arts, Science and Commerce / Modern College of Engineering, Pune</li><li>Languages: Hindi, English, Marwari</li><li>Family: Marwari Jain family; father Prakash Chopda, mother Rekha Chopda; younger sister Harsha Chopda</li><li>Other Names/Aliases: Harshad Prakash Chopda (full name)</li><li>Spouse: Unmarried</li><li>Children: None</li></ul>"
         },
         {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>From a small town in Maharashtra; moved to Mumbai for acting.</p>"
+          "html": "<p>Parents initially discouraged acting; he moved to Mumbai immediately after completing his engineering degree to pursue it anyway.</p>"
         },
         {
           "heading": "Television Career",
-          "html": "<ul><li><em>Left Right Left</em> (2006–2008): Cadet Ali Baig — debut</li><li><em>Kis Desh Mein Hai Meraa Dil</em> (2008–2010): Prem — lead</li><li><em>Bepannah</em> (2018): Aditya Hooda — hugely popular role</li><li><em>Yeh Rishta Kya Kehlata Hai</em> (2021–2023): Abhimanyu Birla</li></ul>"
+          "html": "<ul><li><em>Mamta</em> (2006): Karan Srivastav (debut)</li><li><em>Left Right Left</em> (2006–07): Cadet Ali Baig</li><li><em>Amber Dhara</em>: Akshat Mehra</li><li><em>Kis Desh Mein Hai Meraa Dil</em> (2008–2010): Prem Juneja — breakout role</li><li><em>Tere Liye</em> (2010–11): Anurag Ganguly — ITA Award for GR8 Face of the Year</li><li><em>Dharampatni</em> (2011–12): Mohan Gala</li><li><em>Dil Se Di Dua... Saubhagyavati Bhava?</em> (2012): Raghavendra Pratap \"Raghav\" Singh</li><li><em>Humsafars</em> (2014): Sahir Azeem Chaudhary</li><li><em>Bepannah</em> (2018): Captain Aditya Hooda, opposite Jennifer Winget — won ITA Award for Best Actor Popular</li><li><em>Yeh Rishta Kya Kehlata Hai</em> (2021–2025): Dr. Abhimanyu Birla, opposite Pranali Rathod</li><li><em>Bade Achhe Lagte Hain 4</em> (2025): Rishabh \"Rishu\" Kapoor, opposite Shivangi Joshi</li></ul>"
+        },
+        {
+          "heading": "Film Career",
+          "html": "<ul><li><em>2016 The End</em> (2017): Rahul — film debut</li></ul>"
+        },
+        {
+          "heading": "Web Series / OTT Career",
+          "html": "<ul><li><em>Aakhiri Mulaqaat</em> (musical series): four songs opposite Smriti Kalra</li></ul>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Lock Upp Season 2</em> (Netflix, 2026): Contestant — one of the strongest TV names on the list</li></ul>"
+          "html": "<ul><li><em>Lock Upp: Sach Ya Sazaa Season 2</em> (2026): Contestant</li></ul>"
         },
         {
           "heading": "Awards & Recognition",
-          "html": "<ul><li>ITA Awards for Best Actor</li><li>Gold Awards for <em>Bepannah</em></li></ul>"
+          "html": "<p>Seven Indian Television Academy Awards (six for Best Actor Popular), three Indian Telly Awards, two Asian Viewers Television Awards — one of the most awarded actors in Indian television history.</p>"
         },
         {
           "heading": "Personal Life",
-          "html": "<p>Very private about personal life. Unmarried. Known for maintaining distance from the paparazzi culture.</p>"
+          "html": "<p>Widely rumored to have dated on-screen and off-screen co-star Pranali Rathod, which both have denied. Previously linked to actress Sriti Jha, his co-star from <em>Dil Se Di Dua</em>.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<p>On Day 1 of <em>Lock Upp Season 2</em>, was reported to have injured co-contestant Sunita Ahuja during a task.</p>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: @harshadchopda13 (~3.1 million followers)</li><li>YouTube: Not confirmed</li><li>Twitter/X: Active, ~60,000 followers</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>One of Indian TV's most loved romantic leads</li><li>His entry brings a lot of online buzz</li></ul>"
+          "html": "<p>Consistently ranked on Eastern Eye's list of Most Sexiest Asian Men; has said in interviews he has not married despite dating, joking about repeated relationship setbacks.</p>"
         }
       ]
     },
@@ -1150,23 +1542,43 @@ window.DB = {
       "bio": [
         {
           "heading": "Personal Details",
-          "html": "<ul><li><strong>Family:</strong> Known as Gaurav Khanna's wife</li><li><strong>Spouse:</strong> Gaurav Khanna (m. November 24, 2016)</li></ul>"
+          "html": "<ul><li>Born: 18 January 1991</li><li>Birthplace: Mumbai, Maharashtra, India</li><li>Education: Master of Commerce (M.Com), Mumbai University</li><li>Languages: Hindi, English</li><li>Family: Mother Sheela Chamola; father and siblings' details largely private</li><li>Other Names/Aliases: N/A</li><li>Spouse: Gaurav Khanna (actor; married 24 November 2016 in Kanpur). In June 2026, she publicly confirmed on <em>Lock Upp: Sach Ya Sazaa Season 2</em> that she and Gaurav are getting divorced, revealing they had been living separately for about a year by mutual decision.</li><li>Children: None</li></ul>"
         },
         {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>Known in the TV circle as an actress and also as Gaurav Khanna's wife.</p>"
+          "html": "<p>Worked as a model before acting; met Gaurav Khanna during an audition.</p>"
+        },
+        {
+          "heading": "Television Career",
+          "html": "<ul><li><em>Swaragini – Jodein Rishton Ke Sur</em> (2015–16): Parineeta Adarsh Maheshwari — TV debut, breakout role</li><li><em>Bhutu / Bhootu</em> (2016–17): Anandita Subodh Bose</li><li><em>Bhagyalaxmi</em> (2021)</li><li><em>Kaise Mujhe Tum Mil Gaye</em> (2024): Manvi — comeback role after a career gap</li></ul>"
+        },
+        {
+          "heading": "Film Career",
+          "html": "<p>No major film credits identified.</p>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Lock Upp Season 2</em> (Netflix, 2026): Contestant — first major reality show; will reveal her personality beyond social media and public appearances</li></ul>"
+          "html": "<ul><li><em>Lock Upp: Sach Ya Sazaa Season 2</em> (2026): Contestant, where she publicly revealed her divorce from Gaurav Khanna</li></ul>"
+        },
+        {
+          "heading": "Awards & Recognition",
+          "html": "<p>None major publicly documented.</p>"
         },
         {
           "heading": "Personal Life",
-          "html": "<p>Married to Gaurav Khanna (Bigg Boss 19 winner, KKK 15 contestant) since 2016. Their parallel reality show appearances in 2026 create a unique dynamic.</p>"
+          "html": "<p>Vocal vegan advocate and animal-welfare supporter; publicly discussed the end of her marriage to Gaurav Khanna during her Lock Upp run, saying the split was mutual and that they \"no longer felt like husband and wife,\" noting the separation began around the time Gaurav was on <em>Bigg Boss 19</em>.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<p>In 2024, faced online trolling after a cat-related video went viral, which she later clarified was scripted content. Her 2026 on-air divorce revelation from Gaurav Khanna generated significant media coverage.</p>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: @akankshagkhanna (~880,000+ followers)</li><li>YouTube: Not confirmed</li><li>Twitter/X: Not confirmed</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>Husband Gaurav Khanna is simultaneously a KKK 15 contestant</li><li>Lock Upp will be the first time audiences see her personality independently</li></ul>"
+          "html": "<p>Favorite actress cited as Smita Patil, favorite singer Kishore Kumar.</p>"
         }
       ]
     },
@@ -1190,19 +1602,43 @@ window.DB = {
       "bio": [
         {
           "heading": "Personal Details",
-          "html": "<ul><li><strong>Other Names/Aliases:</strong> Laila</li></ul>"
+          "html": "<ul><li>Born: 5 July 1998</li><li>Birthplace: Patel Nagar, West Delhi, India</li><li>Education: Studied at Dr. B.R. Ambedkar University</li><li>Languages: Hindi, English</li><li>Family: Middle-class family; brother Mohit Yadav (studied law); parents' and sister's names not publicly disclosed</li><li>Other Names/Aliases: \"Laila\" (stage/online name)</li><li>Spouse: Unmarried</li><li>Children: None</li></ul>"
         },
         {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>Internet personality known by the alias \"Laila.\" Part of the younger digital creator cohort.</p>"
+          "html": "<p>Gave mathematics tuition after completing 11th grade to support himself; worked in the corporate/tourism sector for about four years before pivoting to content creation during the COVID-19 lockdown.</p>"
+        },
+        {
+          "heading": "Television Career",
+          "html": "<p>No scripted acting roles identified.</p>"
+        },
+        {
+          "heading": "Web Series / OTT Career",
+          "html": "<p>Runs YouTube channel \"Laila Vlogs\" (500,000+ subscribers) with comedic, unfiltered lifestyle content; co-founded clothing brand \"Allstag\" with longtime friend and creative partner Aarush Bhola. Appeared on digital shows <em>Lafda Central</em>, <em>India's Got Latent</em>, and <em>Love, Sex, Dhoka</em>.</p>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Lock Upp Season 2</em> (Netflix, 2026): Contestant — represents the younger digital audience</li></ul>"
+          "html": "<ul><li><em>Lock Upp: Sach Ya Sazaa Season 2</em> (2026): Contestant</li></ul>"
+        },
+        {
+          "heading": "Awards & Recognition",
+          "html": "<p>None publicly documented; recognized primarily for social media influence.</p>"
+        },
+        {
+          "heading": "Personal Life",
+          "html": "<p>Single as of his most recent public statements; his closest bond is with longtime collaborator and friend Aarush Bhola, whom he calls his brother, spanning a 13-year friendship.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<p>In mid-2024, Varun and Aarush Bhola faced public backlash after an incident at a café in Majnu Ka Tila, Delhi, where they were accused of harassing an individual during a vlog shoot.</p>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: @varuun_yadav (~1.1 million followers)</li><li>YouTube: Laila Vlogs (~500,000+ subscribers)</li><li>Twitter/X: Not confirmed</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>Represents Gen Z digital creators in Lock Upp 2</li><li>Adds fresh energy and unpredictable dynamics</li></ul>"
+          "html": "<p>Has tattoos on his right wrist and left shoulder; has traveled extensively, including to Dubai, Thailand, New Zealand, and Mexico, often documented in his vlogs.</p>"
         }
       ]
     },
@@ -1226,27 +1662,43 @@ window.DB = {
       "bio": [
         {
           "heading": "Personal Details",
-          "html": "<ul><li><strong>Family:</strong> Wife of Ashneer Grover (BharatPe co-founder, Shark Tank India fame)</li><li><strong>Spouse:</strong> Ashneer Grover</li><li><strong>Children:</strong> Yes (details limited)</li></ul>"
+          "html": "<ul><li>Born: 30 May 1981</li><li>Birthplace: Panipat, Haryana, India</li><li>Education: Bachelor of Computer Application (Indira Gandhi National Open University); Fashion Design and Information Technology degree (National Institute of Fashion Technology, New Delhi); Diploma in Export Management (Foreign Trade Development Centre)</li><li>Languages: Hindi, English</li><li>Family: Father Suresh Jain; brother Shwetank Jain; sister Pooja Jain</li><li>Other Names/Aliases: Madhuri Jain Grover (full married name); Madhuri Jain (maiden name)</li><li>Spouse: Ashneer Grover (BharatPe co-founder and <em>Shark Tank India</em> investor; married 4 July 2006)</li><li>Children: Two children</li></ul>"
         },
         {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>Known primarily as Ashneer Grover's wife. Has a background in business (was associated with BharatPe).</p>"
+          "html": "<p>Took over the family textile business, Shivalik Fabrics, in Panipat in 2000, working there as an interior designer until 2017; interned at fashion label Satya Paul in 2004.</p>"
+        },
+        {
+          "heading": "Television Career",
+          "html": "<p>No acting career; entrepreneurial/business background primarily.</p>"
         },
         {
           "heading": "Professional Career (Outside Entertainment)",
-          "html": "<p>Business — associated with BharatPe alongside husband Ashneer Grover. Ashneer became a household name after <em>Shark Tank India</em> and later hosted <em>Rise and Fall</em>.</p>"
+          "html": "<ul><li>Senior Designer, Vardhman Creations Pvt. Ltd. (2005)</li><li>Conducted design workshops for Indian handicraft artisans (2010)</li><li>Head of Controls, BharatPe (from October 2018), managing HR, finance, and internal operations during the fintech company's early growth phase</li></ul>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Lock Upp Season 2</em> (Netflix, 2026): Contestant — gets her own reality show moment</li></ul>"
+          "html": "<ul><li><em>Lock Upp: Sach Ya Sazaa Season 2</em> (2026): Contestant</li></ul>"
+        },
+        {
+          "heading": "Awards & Recognition",
+          "html": "<p>None in entertainment; known for her role in BharatPe's early corporate operations.</p>"
         },
         {
           "heading": "Personal Life",
-          "html": "<p>Married to Ashneer Grover. Lock Upp gives her a chance to step out of Ashneer's shadow.</p>"
+          "html": "<p>Married to Ashneer Grover since 2006; their children reportedly helped paste BharatPe promotional stickers at merchant outlets in the company's early days. Enjoys traveling, baking, and fitness.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<ul><li>January 2022: Central to a controversy involving a leaked audio clip allegedly featuring her and Ashneer using abusive language toward a Kotak Mahindra Bank employee during a dispute connected to Nykaa's IPO share allocation.</li><li>May 2023: Named, along with Ashneer and other family members, in an FIR filed by Delhi Police's Economic Offences Wing over an alleged ₹81 crore fraud connected to BharatPe, involving allegations of backdated invoices and diverted funds.</li><li>November 2023: Reportedly barred from international travel via a Look Out Circular during the related investigation.</li><li>Reports have circulated of a potential Bollywood biopic about Ashneer Grover, with actress Shraddha Kapoor speculated (unconfirmed) to portray Madhuri.</li></ul>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: Active, describes herself as \"Entrepreneur, Traveller, Photography, Acting, Mother\"</li><li>YouTube: Not confirmed</li><li>Twitter/X: Not confirmed</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>Viewers will be curious to see if she brings the same sharp energy as her husband Ashneer</li><li>Lock Upp is her platform to establish an independent public identity</li></ul>"
+          "html": "<p>Graduate of NIFT; helped build BharatPe's internal operational structure from the ground up alongside her husband.</p>"
         }
       ]
     },
@@ -1269,16 +1721,48 @@ window.DB = {
       "id": 30,
       "bio": [
         {
+          "heading": "Personal Details",
+          "html": "<ul><li>Born: Reports vary — most consistently cited as 14 April 1999, though other sources give 29 April (year unspecified) or 2002; birth year is not definitively confirmed across sources</li><li>Birthplace: Mumbai, Maharashtra, India</li><li>Education: Convent Girls High School (primary); Ramnarain Ruia College, Mumbai (graduation); studied Film, Television and New Media Production</li><li>Languages: Hindi, English, Tamil (Tamil Brahmin heritage), Kannada/Tulu (mother's Mangalorean side)</li><li>Family: Tamil Brahmin family; father Santosh Iyer (businessman, roots in Thrissur, Kerala), mother Rohini Iyer (Mangalorean Tuluva, homemaker); brother Shreyas Iyer, Indian international cricketer and KKR/IPL captain</li><li>Other Names/Aliases: N/A</li><li>Spouse: Unmarried</li><li>Children: None</li></ul>"
+        },
+        {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>Details limited in public sources. Known from the digital/entertainment space.</p>"
+          "html": "<p>Began posting dance and creative content online; made her on-screen debut via the item song \"Agreement Karle\" from the film <em>Sarkari Baccha</em>.</p>"
+        },
+        {
+          "heading": "Television Career",
+          "html": "<p>No scripted television acting roles beyond the noted film song appearance.</p>"
+        },
+        {
+          "heading": "Film Career",
+          "html": "<ul><li><em>Sarkari Baccha</em> (2025): Featured in the song \"Agreement Karle\"</li></ul>"
+        },
+        {
+          "heading": "Professional Career (Outside Entertainment)",
+          "html": "<p>Professional dancer and choreographer; founder of animal-welfare Instagram initiative @we_are_pawerful.</p>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Lock Upp Season 2</em> (Netflix, 2026): Contestant</li></ul>"
+          "html": "<p>Declined offers from <em>MTV Roadies</em> and <em>MTV Splitsvilla</em> earlier in her career, stating they did not align with her interests.</p><ul><li><em>Lock Upp: Sach Ya Sazaa Season 2</em> (2026): Contestant</li></ul>"
+        },
+        {
+          "heading": "Awards & Recognition",
+          "html": "<p>None major publicly documented.</p>"
+        },
+        {
+          "heading": "Personal Life",
+          "html": "<p>Went viral in 2026 after sharing a candid \"same-night breakup\" story during a live stand-up comedy set by comedian Pranit More, describing how she and a friend both ended relationships on the same night after realizing clarity about their situations. No public information about a current relationship.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<p>The viral \"same-night breakup\" anecdote sparked mixed public reaction, with some praising her honesty and others criticizing it as oversharing.</p>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: @shrestaiyer29 (~220,000+ followers)</li><li>YouTube: Not confirmed</li><li>Twitter/X: Not confirmed</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>One of the lesser-known names, but Lock Upp often rewards surprise performers</li></ul>"
+          "html": "<p>Traveled to Sydney with BCCI support to be with brother Shreyas Iyer after his serious shoulder injury during a 2025 ODI against Australia.</p>"
         }
       ]
     },
@@ -1302,35 +1786,43 @@ window.DB = {
       "bio": [
         {
           "heading": "Personal Details",
-          "html": "<ul><li><strong>Born:</strong> September 14, 2003 (age 22)</li><li><strong>Birthplace:</strong> Jaigaon, West Bengal, India</li><li><strong>Family:</strong> Originally from Bhutan border area; sister Riza Afreen (also an influencer)</li><li><strong>Other Names/Aliases:</strong> Riyaz Afreen, Riyaz.14</li><li><strong>Spouse:</strong> Unmarried</li></ul>"
+          "html": "<ul><li>Born: 14 September 2003</li><li>Birthplace: Jaigaon, Bhutan (on the India–Bhutan border)</li><li>Education: Schooling through 10th grade at Shri Hanuman Mandir Dharamshala (SHMD) School, Jaigaon (reportedly scored above 85%)</li><li>Languages: Hindi, English, Bengali (regional)</li><li>Family: Father Afroz/Liton Afreen (businessman), mother Shabnam Afreen (homemaker); elder sister Riza/Reeza Afreen, also a social media personality who is often credited by Riyaz for helping launch his career</li><li>Other Names/Aliases: Real name Riyaz Afreen</li><li>Spouse: Unmarried</li><li>Children: None</li></ul>"
         },
         {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>Rose to fame through TikTok before the app was banned in India. One of India's biggest social media stars.</p>"
+          "html": "<p>Was overweight as a child and began gym training at age 14; started posting lip-sync and dance content on Instagram and then TikTok in 2017, quickly going viral.</p>"
         },
         {
-          "heading": "Music Career / Other Entertainment",
-          "html": "<p>Featured in multiple music videos with top Bollywood composers.</p>"
+          "heading": "Television Career",
+          "html": "<p>No scripted television acting roles.</p>"
         },
         {
-          "heading": "Professional Career (Outside Entertainment)",
-          "html": "<p>Full-time social media influencer.</p>"
+          "heading": "Web Series / OTT Career",
+          "html": "<ul><li>Music videos: \"Yaari Hai\" (2019), \"Pahadan\" (2019), \"Superstar\" (2020, featuring Anushka Sen), \"Chocolate\" (featuring Avneet Kaur), \"Daily Daily\" (with Neha Kakkar and Avneet Kaur), \"Gucci,\" \"Dil Mera\" (with Jannat Zubair Rahmani), \"Dilruba\" (with Sargun Mehta), and others</li></ul>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Lock Upp Season 2</em> (Netflix, 2026): Contestant — brings massive Gen Z following</li></ul>"
+          "html": "<ul><li><em>Lock Upp: Sach Ya Sazaa Season 2</em> (2026): Contestant</li></ul>"
         },
         {
           "heading": "Awards & Recognition",
-          "html": "<p>One of India's most followed social media personalities; millions of followers across platforms.</p>"
+          "html": "<p>Reported to be the fastest TikToker in India to reach both the 10 million and 20 million follower marks.</p>"
         },
         {
           "heading": "Personal Life",
-          "html": "<p>Very private. Known for his lip-sync and dance videos.</p>"
+          "html": "<p>Has been linked romantically to fellow influencer Avneet Kaur (rumored, unconfirmed) and reportedly dated influencer Ruhi Singh for over a year, per some sources; other reports describe him as single with no confirmed relationships.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<p>Faced public criticism after being seen driving a car while reportedly underage.</p>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<p>(Formerly one of India's most-followed TikTok stars, with 45+ million followers before the platform's 2020 India ban.)</p><ul><li>Instagram: @riyaz.14 (tens of millions of followers)</li><li>YouTube: @Riyaz_Aly (1.2+ million subscribers)</li><li>Twitter/X: Not confirmed</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>Was one of India's biggest TikTok stars before the ban</li><li>His Gen Z following is significantly different from traditional TV audiences</li></ul>"
+          "html": "<p>Gives credit for his rise to his elder sister Riza Afreen, herself a well-known creator; collaborated frequently with fellow young influencers Jannat Zubair Rahmani and Avneet Kaur.</p>"
         }
       ]
     },
@@ -1353,20 +1845,48 @@ window.DB = {
       "id": 32,
       "bio": [
         {
-          "heading": "Early Life & Career Beginnings",
-          "html": "<p>Known from the digital/social media space.</p>"
+          "heading": "Personal Details",
+          "html": "<ul><li>Born: 14 January 1997 (one source cites June 1996 — 14 January 1997 is more widely and consistently reported)</li><li>Birthplace: Indore, Madhya Pradesh, India</li><li>Education: New Digambar Public School, Indore; Queens College, Indore; bachelor's in commerce; MBA from Prestige Institute of Management and Research (PIMR), Indore</li><li>Languages: Hindi, English</li><li>Family: Sindhi family; father Kishore Kalra (businessman), mother Rajkumari Kalra; brother Manish Kalra</li><li>Other Names/Aliases: N/A</li><li>Spouse: Engaged to actor/model Rishabh Jaiswal (as of 2025)</li><li>Children: None</li></ul>"
         },
         {
-          "heading": "Professional Career (Outside Entertainment)",
-          "html": "<p>Digital personality / content creator.</p>"
+          "heading": "Early Life & Career Beginnings",
+          "html": "<p>Started as a content creator on TikTok, transitioning to Instagram Reels, MX TakaTak, and Moj after the app's India ban; built a following through fashion, dance, and lifestyle content.</p>"
+        },
+        {
+          "heading": "Television Career",
+          "html": "<p>No traditional daily-soap roles.</p>"
+        },
+        {
+          "heading": "Film Career",
+          "html": "<p>No feature film credits identified.</p>"
+        },
+        {
+          "heading": "Web Series / OTT Career",
+          "html": "<ul><li><em>Heartbeats: Pyaar Aur Armaan</em> (2024, Amazon MX Player): Acting/web series debut</li><li><em>Khatta Khatta Meetha Meetha</em> (2024)</li><li>Music videos: \"Zariya Tu,\" \"Pehla Pyar,\" \"Chokri,\" \"Saare Tumhare Hogaye,\" \"Mahiya Tere Sang\" (2023–2025)</li></ul>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Lock Upp Season 2</em> (Netflix, 2026): Contestant</li></ul>"
+          "html": "<ul><li><em>MTV Roadies Revolution</em> (2020): Wild card contestant, Nikhil Chinapa's team</li><li><em>MTV Splitsvilla</em> (2020): Contestant</li><li><em>Lock Upp: Sach Ya Sazaa Season 2</em> (2026): Contestant</li></ul>"
+        },
+        {
+          "heading": "Awards & Recognition",
+          "html": "<p>None major publicly documented.</p>"
+        },
+        {
+          "heading": "Personal Life",
+          "html": "<p>Engaged to actor/model Rishabh Jaiswal as of 2025.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<p>On <em>Lock Upp Season 2</em>, drew online criticism and \"hate\" for confronting fellow contestant Ram Kapoor over past controversial remarks and repeatedly asking him to be her \"cellmate,\" which some viewers felt was attention-seeking; also criticized for involving herself in a dispute between contestants Yogesh Rawat and Akanksha Choudhary.</p>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: @shreyakalraa</li><li>YouTube: Shreya Kalra (~1.5–1.6 million subscribers)</li><li>Twitter/X: Not confirmed</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>Part of the diverse digital creator cohort in Lock Upp 2</li></ul>"
+          "html": "<p>Hosted a podcast featuring several <em>Splitsvilla</em> Season 16 contestants before joining <em>Lock Upp</em>.</p>"
         }
       ]
     },
@@ -1389,28 +1909,48 @@ window.DB = {
       "id": 33,
       "bio": [
         {
+          "heading": "Personal Details",
+          "html": "<ul><li>Born: 9 October 2003 (some sources cite 2004; 2003 appears more consistently in detailed profiles)</li><li>Birthplace: Mangalore, Karnataka, India</li><li>Education: Studied media and communication; spent much of his schooling in Surat, Gujarat (roughly 3rd–10th grade) before relocating for further education/career</li><li>Languages: English, Hindi, Gujarati</li><li>Family: Dawoodi Bohra Shia community (Gujarati Muslim mercantile heritage); maternal grandfather Abdul Husain Motiwala (self-made pearl-trade businessman); father Ahmed Zardi (professional photographer, ran Studio Dayzars in Bombay Central for 30+ years); mother Rubab (youngest daughter of Abdul Husain Motiwala); cousin Mohammed Hussain (stand-up comedian, \"Official Sane\"); cousin-in-law Mariam (Bollywood celebrity stylist)</li><li>Other Names/Aliases: N/A</li><li>Spouse: Unmarried</li><li>Children: None</li></ul>"
+        },
+        {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>Fashion commentator and social media personality.</p>"
+          "html": "<p>Decided he wanted to become a fashion editor/critic by age 15–16; began posting blunt, unfiltered celebrity fashion critique videos on Instagram around 2021, which set him apart from typical PR-friendly fashion commentary.</p>"
         },
         {
           "heading": "Television Career",
-          "html": "<ul><li><em>The Traitors Season 1</em> (2025): Contestant</li></ul>"
+          "html": "<p>No traditional television roles.</p>"
         },
         {
-          "heading": "Music Career / Other Entertainment",
-          "html": "<p>Fashion commentary; sharp social media takes on fashion and pop culture.</p>"
+          "heading": "Film Career",
+          "html": "<p>No feature film credits.</p>"
         },
         {
-          "heading": "Professional Career (Outside Entertainment)",
-          "html": "<p>Fashion commentator / social media influencer.</p>"
+          "heading": "Web Series / OTT Career",
+          "html": "<ul><li><em>The Traitors India</em> (2025, Amazon Prime Video, hosted by Karan Johar): Contestant — his most-publicized moment was a heated on-camera clash with rapper Raftaar, who dismissively called him a \"sidekick\"; Sufi's composed pushback went viral</li><li><em>Do You Wanna Partner</em> (2025, Amazon Prime Video/Dharmatic Entertainment): Played Firdaus Makujina, brother of Diana Penty's character, opposite Tamannaah Bhatia and Diana Penty — his scripted acting debut</li></ul>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>The Traitors Season 1</em> (2025): Contestant</li><li><em>Lock Upp Season 2</em> (Netflix, 2026): Contestant — his sharpest tool is his mouth, which can be both a weapon and a liability</li></ul>"
+          "html": "<ul><li><em>The Traitors India</em> (2025)</li><li><em>Lock Upp: Sach Ya Sazaa Season 2</em> (2026): Contestant</li></ul>"
+        },
+        {
+          "heading": "Awards & Recognition",
+          "html": "<p>None formal; signed in 2024 by Dharma Cornerstone Agency (DCA), the talent management company co-founded by Karan Johar and Bunty Sajdeh, for representing next-generation digital creators.</p>"
+        },
+        {
+          "heading": "Personal Life",
+          "html": "<p>Has spoken about a difficult period in his relationship with his parents after coming out, which he says later evolved into mutual respect.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<ul><li>July 2024: Content creator Uorfi Javed publicly accused him of sending her a vulgar direct message; he apologized, claiming it was sent to the wrong person by mistake.</li><li>On <em>The Traitors</em>, his conflict with Raftaar was a major storyline.</li><li>Faced public fallout and mutual \"unfollowing\" drama with fellow creator Apoorva Mukhija in 2026.</li><li>Criticized comedian Abhishek Malhan's (Fukra Insaan) wedding-related content and other creators' looks, sparking further online spats, including comments about his sexuality from Malhan.</li></ul>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: Handle associated with fashion-critique content (~370,000+ followers)</li><li>YouTube: Active channel</li><li>Twitter/X: Not confirmed</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<p>---</p><ul><li>Previously appeared in The Traitors Season 1</li><li>Fashion commentator known for sharp tongue</li><li>Inside Lock Upp, his mouth can either make him a fan favourite or put him in trouble</li></ul>"
+          "html": "<p>Made his international fashion-world debut at the Cannes Film Festival in May 2026, one of the few young Indian digital creators to attend at his age; fluent in three languages; his first major viral moment came from praising content creator Nancy Tyagi's Cannes look over established Bollywood stars' looks.</p><p>---</p><p><em>End of Lock Upp S2 profiles. Note: Several fields — particularly exact birth years, detailed family information, and some relationship statuses for newer digital-first personalities (Yogesh Rawat, Akanksha Choudhary, Shresta Iyer, Sufi Motiwala) — vary or conflict across tabloid/entertainment sources and should be treated as best-available public information rather than officially confirmed facts. Next up: Alliance India profiles.</em></p>"
         }
       ]
     }
@@ -1436,35 +1976,51 @@ window.DB = {
       "bio": [
         {
           "heading": "Personal Details",
-          "html": "<ul><li><strong>Born:</strong> July 17, 1969 (age 56)</li><li><strong>Birthplace:</strong> Jaunpur, Uttar Pradesh, India</li><li><strong>Family:</strong> Large family; father was a government employee</li><li><strong>Other Names/Aliases:</strong> Real name Ravindra Shyamnarayan Shukla</li><li><strong>Spouse:</strong> Preeti Shukla</li><li><strong>Children:</strong> 4 (including daughter Riva Kishan, his Alliance partner)</li></ul>"
+          "html": "<ul><li>Born: 17 July 1969</li><li>Birthplace: Santacruz, Bombay (now Mumbai), Maharashtra, India (family roots in Kerakat, Jaunpur district, Uttar Pradesh)</li><li>Education: 12th standard / some reports cite B.Com, Rizvi College of Arts, Science &amp; Commerce, Mumbai (discrepancy noted in his own election affidavits)</li><li>Languages: Hindi, Bhojpuri, Awadhi, English</li><li>Family: Youngest of five siblings; father a priest (inspired his role in <em>Tere Naam</em>)</li><li>Other Names/Aliases: Full name Ravindra Shyamnarayan Shukla (also styled Ravindra Kishan Shukla)</li><li>Spouse: Priti Shukla (married 10 December 1993)</li><li>Children: Four — one son, three daughters, including actress Riva Kishan; daughter Ishita joined the Indian Army in 2023</li></ul>"
         },
         {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>Started in Bhojpuri cinema and gradually expanded to Hindi films and politics.</p>"
+          "html": "<p>Ran away from home to Mumbai at 17 with very little money; family had relocated to Jaunpur, UP for several years due to a dairy business dispute before he returned to Mumbai.</p>"
+        },
+        {
+          "heading": "Television Career",
+          "html": "<ul><li><em>Jai Hanuman</em> (1997): Shri Krishna</li><li><em>Vishnu Puran</em> (2000): Sudhanva</li><li><em>Khauff</em> (Sony SAB): Raghuveer</li></ul>"
         },
         {
           "heading": "Film Career",
-          "html": "<ul><li>Extensive Bhojpuri film career — superstar of Bhojpuri cinema</li><li>Hindi films: <em>Mukkabaaz</em> (2017), <em>Tanu Weds Manu Returns</em> (2015), <em>Maa Behen</em> (2026) — currently garnering praise</li></ul>"
+          "html": "<p>Appeared in over 750 films across Bhojpuri, Hindi, Telugu, Kannada, and Tamil cinema, including <em>Tere Naam</em> (2003), <em>Phir Hera Pheri</em> (2006), <em>Welcome to Sajjanpur</em> (2008), <em>Raavan</em> (2010), <em>Agent Vinod</em> (2012), <em>Bullet Raja</em> (2013), <em>Race Gurram</em> (2014, Telugu debut), <em>Mukkabaaz</em> (2017), <em>Batla House</em> (2019), <em>Hebbuli</em> (2017, Kannada), and <em>Laapataa Ladies</em> (2023), for which he won the Filmfare and IIFA Awards for Best Supporting Actor. Became a Bhojpuri cinema superstar starting with <em>Saiyaan Hamar</em> and other regional hits; his Bhojpuri film <em>Jala Debh Duniya Tohra Pyar Mein</em> screened at Cannes in 2010.</p>"
+        },
+        {
+          "heading": "Music Career / Other Entertainment",
+          "html": "<p>Dubbed Tobey Maguire's Spider-Man into Bhojpuri for <em>Spider-Man 3</em> (2007/2008) — the first Hollywood blockbuster with a Bhojpuri dub.</p>"
         },
         {
           "heading": "Professional Career (Outside Entertainment)",
-          "html": "<ul><li><strong>Politician:</strong> Lok Sabha MP (BJP) from Gorakhpur constituency</li><li>Active in politics alongside his entertainment career</li></ul>"
+          "html": "<p>Member of Parliament, Lok Sabha, from Gorakhpur (BJP) since 2019, re-elected 2024; received the Sansad Ratna Award in 2025 for parliamentary performance. Previously contested for the Indian National Congress in 2014 (unsuccessfully) before joining the BJP in 2017.</p>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Bigg Boss 1</em> (2006): Contestant</li><li><em>Jhalak Dikhhla Jaa 5</em> (2012): Contestant</li><li><em>Survivor India</em> (2012): Contestant</li><li><em>Alliance India</em> (Prime Video, 2026): Contestant — paired with daughter Riva Kishan</li></ul>"
+          "html": "<ul><li><em>Bigg Boss 1</em> (2006): Second runner-up</li><li><em>Jhalak Dikhhla Jaa 5</em> (2012): Contestant</li><li>Hosted <em>Bathroom Singer</em>, <em>Naman: Ek Sansani</em>, <em>Ek Se Badhkar Ek – Jalwe Sitaron Ke</em>, and <em>Raaz Pichhle Janam Ka</em> (NDTV Imagine, two seasons); hosted Bhojpuri version of KBC, <em>Ke Bani Crorepati</em> (2011)</li><li><em>Alliance</em> (2026): Contestant, paired with daughter Riva Kishan</li></ul>"
         },
         {
           "heading": "Awards & Recognition",
-          "html": "<ul><li>Multiple Bhojpuri cinema awards</li><li>National recognition as actor-politician</li></ul>"
+          "html": "<ul><li>Filmfare Award and IIFA Award for Best Supporting Actor, <em>Laapataa Ladies</em> (2023)</li><li>Sansad Ratna Award (2025)</li><li>ETV Bhojpuri Cinema Samman – Most Popular Actor (2008)</li></ul>"
         },
         {
           "heading": "Personal Life",
-          "html": "<p>Married to Preeti Shukla. Four children. Elected as Lok Sabha MP from Gorakhpur. Juggles acting and politics.</p>"
+          "html": "<p>Close relationship with his four children; publicly proud of daughter Riva's acting career and daughter Ishita's military service.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<ul><li>2023: Publicly revealed he faced a casting-couch situation early in his career.</li><li>April 2024: A woman named Aparna Thakur claimed to have been married to Kishan during his struggling years and that he fathered her daughter, Shenova, who filed a civil suit seeking a DNA test and legal recognition; Kishan's legal team and wife Preeti filed a counter-FIR alleging extortion.</li><li>Alleged he was cheated out of ₹3.25 crore by a Mumbai real estate builder in a loan dispute dating to 2012.</li></ul>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: Active, handle not independently confirmed</li><li>YouTube: Not confirmed</li><li>Twitter/X: Active, handle not independently confirmed</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>One of Bhojpuri cinema's biggest superstars</li><li>Competing on Alliance with his own daughter Riva</li><li>No stranger to reality shows — Bigg Boss 1 veteran</li><li>Currently an elected Member of Parliament</li></ul>"
+          "html": "<p>Famous catchphrase: \"Zindagi Jhandwa... Phir Bhi Ghamandwa\"; former Rowdy Bangalore player in Box Cricket League Season 1 (2014); good friend of Saif Ali Khan; school junior of cricketer Rahul Dravid.</p>"
         }
       ]
     },
@@ -1488,27 +2044,47 @@ window.DB = {
       "bio": [
         {
           "heading": "Personal Details",
-          "html": "<ul><li><strong>Birthplace:</strong> Mumbai, Maharashtra, India</li><li><strong>Family:</strong> Daughter of actor-politician Ravi Kishan and Preeti Shukla</li><li><strong>Spouse:</strong> Unmarried</li></ul>"
+          "html": "<ul><li>Born: 4 July 1996</li><li>Birthplace: Mumbai, Maharashtra, India</li><li>Education: Early schooling in Mumbai; dance training under Terence Lewis Professional Training Institute and Rohit Chawla; one year of acting training under Naseeruddin Shah's acting playgroup; Acting and Filmmaking program, The Acting Corps Institute, Los Angeles, USA</li><li>Languages: Hindi, English</li><li>Family: Father Ravi Kishan (actor/politician), mother Preeti Kishan; siblings Tanishq Kishan, Ishita Shukla (Indian Army, joined 2023), and brother Saksham</li><li>Other Names/Aliases: N/A</li><li>Spouse: Unmarried</li><li>Children: None</li></ul>"
         },
         {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>Growing up as Ravi Kishan's daughter; pursuing acting, modeling, and digital content creation. Recognized as a Gen-Z fashion icon.</p>"
+          "html": "<p>Learned acting basics from her father from a young age; performed in the play \"Parindon Ki Mehfil\" with Heeba Shah (Naseeruddin Shah's daughter).</p>"
         },
         {
-          "heading": "Professional Career (Outside Entertainment)",
-          "html": "<p>Actor, model, and digital personality.</p>"
+          "heading": "Television Career",
+          "html": "<p>No scripted television roles identified.</p>"
+        },
+        {
+          "heading": "Film Career",
+          "html": "<ul><li><em>Sab Kushal Mangal</em> (2020): Mandira, opposite Priyaank Sharma — Bollywood debut, produced by Nitin Manmohan's daughter Prachi (the same producer family behind her father's debut film); shot over 45 days in Jharkhand</li></ul>"
+        },
+        {
+          "heading": "Web Series / OTT Career",
+          "html": "<p>Featured in the music video \"Bewafa Se Pyar Kiya\" (2023), sung by Jubin Nautiyal, opposite Gautam Singh Vig.</p>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Alliance India</em> (Prime Video, 2026): Contestant — paired with father Ravi Kishan</li></ul>"
+          "html": "<ul><li><em>Alliance</em> (2026): Contestant, paired with her father, Ravi Kishan; their father-daughter dynamic was well received by viewers</li></ul>"
+        },
+        {
+          "heading": "Awards & Recognition",
+          "html": "<p>None major publicly documented.</p>"
         },
         {
           "heading": "Personal Life",
-          "html": "<p>Daughter of Ravi Kishan. Competing alongside her father creates a unique family dynamic.</p>"
+          "html": "<p>Close bond with her father, frequently highlighted in interviews and on the show; unmarried and focused on her acting career as of 2026.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<p>None publicly documented.</p>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: @itsrivakishan (~1.1 million followers)</li><li>YouTube: Not confirmed</li><li>Twitter/X: Not confirmed</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>Father-daughter duo with Ravi Kishan is one of Alliance's most talked-about pairings</li><li>Known as a Gen-Z fashion icon</li></ul>"
+          "html": "<p>Has openly discussed nepotism, acknowledging she'd likely get limited opportunities purely because of her father's fame; enjoys travel to Goa, London, New York, Dubai, and Los Angeles.</p>"
         }
       ]
     },
@@ -1532,27 +2108,43 @@ window.DB = {
       "bio": [
         {
           "heading": "Personal Details",
-          "html": "<ul><li><strong>Born:</strong> August 25, 1984 (age 41)</li><li><strong>Birthplace:</strong> Mumbai, Maharashtra, India</li><li><strong>Family:</strong> Mangalorean Catholic family</li><li><strong>Spouse:</strong> Unmarried</li></ul>"
+          "html": "<ul><li>Born: 25 August 1984</li><li>Birthplace: Mumbai (Bombay), Maharashtra, India</li><li>Education: Arts graduate, Khalsa College, Mumbai</li><li>Languages: Hindi, English, Gujarati</li><li>Family: Gujarati family; father (businessman, died 2007 of a heart attack), mother Pallavi Shah; sister Deepali Shah</li><li>Other Names/Aliases: Nicknamed \"Dizzy\"</li><li>Spouse: Unmarried</li><li>Children: None</li></ul>"
         },
         {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>Started as a background dancer and choreographer before transitioning to acting.</p>"
+          "html": "<p>Worked for about four years as an assistant choreographer to Ganesh Acharya, including on films like <em>Zameen</em> and <em>Khakee</em>, before transitioning to modelling and acting. Won \"Miss Photogenic\" in a local Mumbai contest (Miss Dombivli) in 10th grade.</p>"
+        },
+        {
+          "heading": "Television Career",
+          "html": "<p>No major scripted television roles identified.</p>"
         },
         {
           "heading": "Film Career",
-          "html": "<ul><li><em>Jai Ho</em> (2014): Rinku — Bollywood debut opposite Salman Khan</li><li><em>Race 3</em> (2018): Sanjana — major Bollywood role</li><li>Also worked in Kannada cinema</li><li>Previously worked as a choreographer (assistant to Ganesh Acharya)</li></ul>"
+          "html": "<ul><li><em>Bodyguard</em> (2011, Kannada): Ammu — debut</li><li><em>Bhadra</em> (2011, Kannada): Kavya</li><li><em>Jai Ho</em> (2014): Rinky Shah, opposite Salman Khan — Hindi/Bollywood debut</li><li><em>Aakramana</em> (2014, Kannada): first Kannada 3D horror film</li><li><em>Hate Story 3</em> (2015): Kaya Sharma, opposite Karan Singh Grover</li><li><em>Race 3</em> (2018): Sanjana Singh</li><li><em>Gujarat 11</em> (2019): Divya Chauhan — Gujarati debut</li></ul>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Alliance India</em> (Prime Video, 2026): Contestant — paired with Zaid Darbar</li></ul>"
+          "html": "<ul><li><em>Fear Factor: Khatron Ke Khiladi 13</em> (2023): Contestant</li><li><em>Alliance</em> (2026): Contestant, paired with Kushal Tandon</li></ul>"
+        },
+        {
+          "heading": "Awards & Recognition",
+          "html": "<p>Highest Grossing Debut Actress, ETC Bollywood Business Awards (2015), for <em>Jai Ho</em>.</p>"
         },
         {
           "heading": "Personal Life",
-          "html": "<p>Unmarried. Close to the Salman Khan circle.</p>"
+          "html": "<p>Rumored past relationship with choreographer Ganesh Acharya (both denied it was romantic); part of the Da-Bangg Tour led by Salman Khan.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<p>Was named in an attempted-murder accusation filed by Bhojpuri actor Satyendra Singh related to the Tamil film <em>Soda</em> and its crew (details/resolution not widely documented).</p>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: Active, self-titled YouTube channel also exists</li><li>YouTube: Self-titled channel with workout, travel, and cooking content</li><li>Twitter/X: Not confirmed</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>Started as a background dancer before Bollywood</li><li>Paired with Zaid Darbar in Alliance as close friends</li></ul>"
+          "html": "<p>Has Sanskrit tattoo on right arm meaning \"My mother and father are my Gods\"; underwent intensive kickboxing training for <em>Race 3</em>; initially dreamed of being an air hostess; turned down an earlier <em>Bodyguard</em>-adjacent role offer that reportedly upset Salman Khan.</p>"
         }
       ]
     },
@@ -1576,27 +2168,43 @@ window.DB = {
       "bio": [
         {
           "heading": "Personal Details",
-          "html": "<ul><li><strong>Born:</strong> November 24, 1995 (age 30)</li><li><strong>Birthplace:</strong> Mumbai, Maharashtra, India</li><li><strong>Family:</strong> Son of music composer Ismail Darbar; brother of choreographer Awez Darbar</li><li><strong>Spouse:</strong> Gauahar Khan (m. December 25, 2020)</li><li><strong>Children:</strong> 1 son (born 2023)</li></ul>"
+          "html": "<ul><li>Born: 24 October 1995</li><li>Birthplace: Mumbai, Maharashtra, India</li><li>Education: Partial schooling at Savar Cantonment Public School &amp; College, Bangladesh, before returning to Mumbai</li><li>Languages: Hindi, English</li><li>Family: Father Ismail Darbar (renowned Bollywood music director — <em>Devdas</em>, <em>Hum Dil De Chuke Sanam</em>), mother Farzana Shaikh; stepmother Ayesha I. Darbar; brother Awez Darbar (choreographer/content creator, <em>Bigg Boss 19</em> contestant); sisters Moonzarin Darbar and Anam Darbar (both social media influencers); stepbrother Imaan Darbar</li><li>Other Names/Aliases: N/A</li><li>Spouse: Gauahar Khan (actress, model, <em>Bigg Boss 7</em> winner; engaged November 2020, married 25 December 2020 in Mumbai)</li><li>Children: Two sons — Zehaan (born 10 May 2023) and a second son, Farwaan (born 1 September 2025)</li></ul>"
         },
         {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>Born into a creative family; father is Bollywood music composer Ismail Darbar. Started as a choreographer and content creator.</p>"
+          "html": "<p>Grew up surrounded by music and performing arts due to his father's career; co-runs dance academy \"B You Academy\" with his siblings.</p>"
         },
         {
-          "heading": "Music Career / Other Entertainment",
-          "html": "<p>Choreographer, dancer, and content creator.</p>"
+          "heading": "Television Career",
+          "html": "<p>No scripted television roles.</p>"
+        },
+        {
+          "heading": "Web Series / OTT Career",
+          "html": "<p>Rose to fame through viral TikTok dance and lip-sync videos before the platform's India ban; transitioned to Instagram and YouTube. Featured in Hindi music videos \"Close Relation,\" \"Tum Mil Jao,\" and \"Tera Kya Hota\" (2020), several alongside wife Gauahar Khan.</p>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Alliance India</em> (Prime Video, 2026): Contestant — paired with Daisy Shah (close friends)</li></ul>"
+          "html": "<ul><li><em>Alliance</em> (2026): Contestant, paired with Dolly Javed</li></ul>"
+        },
+        {
+          "heading": "Awards & Recognition",
+          "html": "<p>None formally documented; recognized primarily for social media influence and viral content.</p>"
         },
         {
           "heading": "Personal Life",
-          "html": "<p>Married to actress Gauahar Khan (Bigg Boss 7 winner) on December 25, 2020. They have a son born in 2023.</p>"
+          "html": "<p>Proposed to Gauahar Khan via a viral dance video set to Neha Kakkar's \"Diamond Da Challa\" on 3 September 2020; the couple, who have roughly a 6–12 year age gap (reports vary), have been vocal in the media about addressing trolling over the age difference.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<p>Reportedly involved in a legal dispute following an alleged altercation in Mumbai in 2015, which was resolved without long-term consequences. The age-gap discussion with Gauahar Khan has recurred as a media talking point.</p>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: Millions of followers (exact count not independently confirmed)</li><li>YouTube: Active channel since July 2020, including the viral \"GAZA Wedding Movie\" vlog (4.3+ million views)</li><li>Twitter/X: Not confirmed</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>Son of legendary Bollywood composer Ismail Darbar</li><li>Brother of Awez Darbar (also confirmed for Alliance initially)</li><li>Married to Bigg Boss 7 winner Gauahar Khan</li></ul>"
+          "html": "<p>Owns a Mercedes-Benz and BMW; enjoys football and snooker; is a dog lover.</p>"
         }
       ]
     },
@@ -1620,31 +2228,47 @@ window.DB = {
       "bio": [
         {
           "heading": "Personal Details",
-          "html": "<ul><li><strong>Born:</strong> November 8, 1994 (age 31)</li><li><strong>Birthplace:</strong> Gurgaon, Haryana, India</li><li><strong>Family:</strong> Father from Andhra Pradesh; mother from Punjab</li><li><strong>Spouse:</strong> Parikshit Bawa (m. August 2020)</li></ul>"
+          "html": "<ul><li>Born: 8 November 1994</li><li>Birthplace: Delhi/Gurugram, Haryana, India</li><li>Education: Loreto Convent School, Delhi; Bachelor of Arts, Sophia College for Women, Mumbai</li><li>Languages: Hindi, English</li><li>Family: Father Sandip Taylor (Gujarati Hindu, real estate business), mother Cheryl Taylor (Bengali Christian, from Kolkata); elder sister Aditi (Taylor) Parbhoo</li><li>Other Names/Aliases: N/A</li><li>Spouse: Parikshit Bawa (Indian Army officer; married 13 August 2020 in a small, private, COVID-era ceremony after dating for years)</li><li>Children: None (as of 2025)</li></ul>"
         },
         {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>Started acting as a teenager in television.</p>"
+          "html": "<p>Was a shy child who faced bullying in school; moved to Mumbai as a teenager to pursue modelling before transitioning into acting.</p>"
         },
         {
           "heading": "Television Career",
-          "html": "<ul><li><em>Pyaar Ka Bandhan</em> (2009): Debut</li><li><em>Kaisi Yeh Yaariyan</em> (2014–2015, 2020): Nandini Murthy — iconic role, massive youth fan following</li><li><em>Ishqbaaaz</em> (2018–2019): Mannat — lead</li></ul>"
+          "html": "<ul><li><em>Pyaar Ka Bandhan</em> (2009): Debut, age 15</li><li><em>Kaisi Yeh Yaariyan</em> (2014–16, 2018): Nandini Murthy, opposite Parth Samthaan — breakthrough role</li><li><em>Ghulaam</em> (2017): Shivani Mathur, opposite Param Singh</li><li><em>Ishqbaaz</em> (2019): Mannat Kaur Khurana</li></ul>"
+        },
+        {
+          "heading": "Film Career",
+          "html": "<ul><li><em>Mem Vayasuku Vachcham</em> (2012, Telugu): Feature film debut</li><li><em>Pelli Pustakam</em> (Telugu), with Rahul Ravindran</li></ul>"
+        },
+        {
+          "heading": "Web Series / OTT Career",
+          "html": "<ul><li>Featured in Punjabi music video \"Cappuccino\" (2019) and Hindi music video \"Parindey Ka Pagalpan\" (2016)</li></ul>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Alliance India</em> (Prime Video, 2026): Contestant — paired with Ruhee Dosani</li></ul>"
+          "html": "<ul><li><em>Jhalak Dikhhla Jaa 10</em> (2022): Contestant, eliminated alongside Nia Sharma</li><li><em>Bigg Boss 18</em> (2024): Guest/supportive appearances, vocal in supporting fellow contestants</li><li><em>Alliance</em> (2026): Contestant</li></ul>"
         },
         {
           "heading": "Awards & Recognition",
-          "html": "<ul><li>ITA Awards for Best Actress (Popular) for <em>Kaisi Yeh Yaariyan</em></li><li>Massive youth fan following</li></ul>"
+          "html": "<p>Ranked in Eastern Eye's 50 Sexiest Asian Women list: 15th (2015), 12th (2016), 10th (2018).</p>"
         },
         {
           "heading": "Personal Life",
-          "html": "<p>Married to army officer Parikshit Bawa in August 2020.</p>"
+          "html": "<p>Married Indian Army officer Parikshit Bawa in a private court ceremony on 13 August 2020, with traditional Hindu rituals (including \"pehli rasoi\") incorporated afterward; the couple has no children as of 2025.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<p>None major publicly documented.</p>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: Over 4 million followers</li><li>YouTube: Not confirmed</li><li>Twitter/X: Not confirmed</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>Known for the iconic role of Nandini in <em>Kaisi Yeh Yaariyan</em></li><li>Married to an army officer</li><li>Paired with US-based digital creator Ruhee Dosani in Alliance</li></ul>"
+          "html": "<p>Debut commercial was for Tata Docomo; enjoys UFC, swimming, cooking, and collecting phone covers; her first on-screen serial debut is sometimes conflated with a 2012–2013 timeline in some sources.</p>"
         }
       ]
     },
@@ -1668,31 +2292,43 @@ window.DB = {
       "bio": [
         {
           "heading": "Personal Details",
-          "html": "<ul><li><strong>Birthplace:</strong> United States (Indian-American)</li><li><strong>Family:</strong> Indian-American</li></ul>"
+          "html": "<ul><li>Born: 8 March 1997</li><li>Birthplace: United States (family originally from Punjab, India)</li><li>Education: St. Lawrence High School, Kandivali, Mumbai; R.D. National College, Mumbai</li><li>Languages: English, Hindi, Punjabi</li><li>Family: Sikh Punjabi family; father (name not disclosed, died 2016), mother Mona (Mohinder Kaur) Dosani; elder brother Punit Dosani</li><li>Other Names/Aliases: \"Punjab di Kudi Living Abroad\" (self-styled Instagram tagline)</li><li>Spouse: Unmarried</li><li>Children: None</li></ul>"
         },
         {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>Digital creator from the US who gained widespread fame after Diljit Dosanjh shared one of her reels.</p>"
+          "html": "<p>Worked as an IT/software professional in the United States before pivoting fully to content creation; began posting Bollywood-song dance videos with her U.S. friend group.</p>"
         },
         {
-          "heading": "Music Career / Other Entertainment",
-          "html": "<p>Dance and content creation; known for Indian dance reels.</p>"
+          "heading": "Television Career",
+          "html": "<ul><li><em>Follow Kar Lo Yaar</em> type reality-adjacent appearances; official TV/streaming debut via digital-first platforms</li></ul>"
         },
         {
-          "heading": "Professional Career (Outside Entertainment)",
-          "html": "<p>Full-time digital content creator.</p>"
+          "heading": "Web Series / OTT Career",
+          "html": "<p>Digital content creator known for viral dance reels; part of Monk Entertainment (talent management/influencer marketing agency).</p>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Alliance India</em> (Prime Video, 2026): Contestant — paired with Niti Taylor</li></ul>"
+          "html": "<ul><li><em>Alliance</em> (2026): Contestant</li></ul>"
+        },
+        {
+          "heading": "Awards & Recognition",
+          "html": "<p>Ranked among Forbes India's Digital Stars list (2024), No. 98, in the Comedy category.</p>"
         },
         {
           "heading": "Personal Life",
-          "html": "<p>US-based; represents the Indian-American digital creator community.</p>"
+          "html": "<p>Keeps romantic life largely private; no confirmed relationship publicly documented.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<p>Faced significant online trolling in 2022 for a collaborative reel with actor Kartik Aaryan recreating the \"Bhool Bhulaiyaa 2\" hook step, which fans felt was executed poorly.</p>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: @ruheedosani (over 2 million followers)</li><li>YouTube: Small channel, modest subscriber base</li><li>Twitter/X: Not confirmed</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>Gained fame when Diljit Dosanjh shared her reel</li><li>Represents the international digital creator space in Alliance</li></ul>"
+          "html": "<p>First viral video was reposted by singer-actor Diljit Dosanjh in August 2020; invited by Aamir Khan to his family's Baisakhi celebration in April 2022; briefly attempted to join the U.S. Army before pursuing content creation.</p>"
         }
       ]
     },
@@ -1715,24 +2351,44 @@ window.DB = {
       "id": 10,
       "bio": [
         {
-          "heading": "Early Life & Career Beginnings",
-          "html": "<p>Gaming content creator and livestreamer.</p>"
+          "heading": "Personal Details",
+          "html": "<ul><li>Born: 29 July 2003</li><li>Birthplace: Dehradun, Uttarakhand, India</li><li>Education: Schooling in Dehradun; some association with University of Delhi (details unconfirmed)</li><li>Languages: Hindi, English</li><li>Family: Middle-class family; keeps most family details private</li><li>Other Names/Aliases: \"Vasu\"; YouTube channel \"Vanshaj Bro\"</li><li>Spouse: Unmarried</li><li>Children: None</li></ul>"
         },
         {
-          "heading": "Professional Career (Outside Entertainment)",
-          "html": "<p>Full-time gaming creator / streamer.</p>"
+          "heading": "Early Life & Career Beginnings",
+          "html": "<p>Launched his YouTube channel in July 2015, initially posting gaming videos, comedy skits, and later IRL (in-real-life) livestreams; relocated to Mumbai to grow his content career.</p>"
+        },
+        {
+          "heading": "Television Career",
+          "html": "<p>No scripted acting roles.</p>"
+        },
+        {
+          "heading": "Web Series / OTT Career",
+          "html": "<ul><li><em>Gaming Insaan</em> (2024): Digital series appearance</li><li>Released Hindi rap songs \"Barvi\" (2021) and \"Motu Seth\" (2021, with Vasu Kainth) on his YouTube channel</li></ul>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Alliance India</em> (Prime Video, 2026): Contestant — paired with Dolly Javed</li></ul>"
+          "html": "<ul><li><em>Playground Season 2</em> (2023) and <em>Season 4</em> (2024): Runner-up, representing \"AAA Werewolves\"</li><li><em>The 50</em> (February 2026): First contestant eliminated on Day 1 by captain vote; made a viral wildcard re-entry on 8 February 2026, publicly clashing with contestants including Prince Narula and Karan Patel</li><li><em>Alliance</em> (2026): Contestant, paired with Dolly Javed; had a heated on-camera exchange with fellow contestant Kushal Tandon in the show's first episode</li></ul>"
+        },
+        {
+          "heading": "Awards & Recognition",
+          "html": "<p>Signed exclusively with Revenant Esports (November, year unconfirmed) to manage his brand.</p>"
         },
         {
           "heading": "Personal Life",
-          "html": "<p>Had a heated clash with Kushal Tandon during Alliance, with rising tension turning into a personal battle.</p>"
+          "html": "<p>Previously in a high-profile, publicly documented relationship with fellow content creator Pooja Goswami, which reportedly ended around late 2024; describes himself as single and focused on his career since.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<p>Publicly criticized fellow <em>The 50</em> contestants after his Day 1 elimination, accusing senior players of \"group politics\"; the criticism, plus his dramatic wildcard return, generated significant online discussion.</p>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: @iamvanshajsingh (over 1.1 million followers)</li><li>YouTube: \"Vanshaj Bro\" (380,000+ subscribers)</li><li>Twitter/X: Not confirmed</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>Represents India's gaming community in Alliance</li><li>Paired with Dolly Javed</li></ul>"
+          "html": "<p>One of his most popular videos covers how to get free McDonald's in Mumbai; enjoys spending time with his pet dog.</p>"
         }
       ]
     },
@@ -1756,23 +2412,47 @@ window.DB = {
       "bio": [
         {
           "heading": "Personal Details",
-          "html": "<ul><li><strong>Family:</strong> Not publicly detailed (note: despite the surname, not related to Urfi Javed as per confirmed reports)</li></ul>"
+          "html": "<ul><li>Born: 21 April 2003</li><li>Birthplace: Lucknow, Uttar Pradesh, India</li><li>Education: Schooling in Lucknow; graduate (or pursuing graduation) from Amity University, Lucknow</li><li>Languages: Hindi, English, Urdu</li><li>Family: Muslim family; father Ifru Javed, mother Zakiya Sultana; siblings include actress/internet personality Urfi (Uorfi) Javed, sisters Urusa Javed and Asfi Javed, and brother Sameer Aslam</li><li>Other Names/Aliases: Real name Mantsha Aslam; professionally known as Dolly Javed</li><li>Spouse: Unmarried; previously associated with Yuvraj Aryan (unconfirmed relationship)</li><li>Children: None</li></ul>"
         },
         {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>Fashion and lifestyle influencer and content creator.</p>"
+          "html": "<p>Began building an online presence in September 2016 via her Instagram account; family faced financial hardship after her father's remarriage and departure, which Urfi Javed has discussed publicly, including allegations of past abuse.</p>"
         },
         {
-          "heading": "Professional Career (Outside Entertainment)",
-          "html": "<p>Full-time fashion and lifestyle influencer / content creator.</p>"
+          "heading": "Television Career",
+          "html": "<ul><li><em>Follow Kar Lo Yaar</em> (Amazon Prime Video): Reality series featuring her whole family, including Urfi, Urusa, Asfi, and brother Sameer Aslam — her television debut</li><li><em>Chhoriyan Chali Gaon</em> (2025, Zee TV/ZEE5): Cast member, rural-life transformation reality show</li></ul>"
+        },
+        {
+          "heading": "Film Career",
+          "html": "<p>No feature film credits.</p>"
+        },
+        {
+          "heading": "Web Series / OTT Career",
+          "html": "<p>Content creator focused on beauty, fashion, and lifestyle content on Instagram; has collaborated with brands like xNARA, Bombay Shaving Company, Miniso, and Bryan &amp; Candy.</p>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Alliance India</em> (Prime Video, 2026): Contestant — paired with Vanshaj Singh</li></ul>"
+          "html": "<ul><li><em>Follow Kar Lo Yaar</em> (Amazon Prime Video)</li><li><em>Chhoriyan Chali Gaon</em> (2025)</li><li><em>Alliance</em> (2026): Contestant, paired with Vanshaj Singh</li></ul>"
+        },
+        {
+          "heading": "Awards & Recognition",
+          "html": "<p>None publicly documented.</p>"
+        },
+        {
+          "heading": "Personal Life",
+          "html": "<p>Youngest sibling in the Javed/Aslam family; keeps her romantic life largely private; has not officially confirmed any relationship.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<p>Family history includes public discussion (via sister Urfi Javed) of childhood abuse by their father and subsequent financial hardship after his remarriage.</p>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: @_dollyjaved (150,000+ followers)</li><li>YouTube: Limited presence</li><li>Twitter/X: Not confirmed</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>Fashion and lifestyle influencer</li><li>Paired with gaming creator Vanshaj Singh — an interesting cross-community pairing</li></ul>"
+          "html": "<p>Known for a natural, relatable content style in contrast to her sister Urfi's bold, headline-grabbing fashion persona; content grows through family collaboration reels.</p>"
         }
       ]
     },
@@ -1796,31 +2476,39 @@ window.DB = {
       "bio": [
         {
           "heading": "Personal Details",
-          "html": "<ul><li><strong>Born:</strong> October 7, 1999 (age 26)</li><li><strong>Birthplace:</strong> Chhattisgarh, India</li><li><strong>Other Names/Aliases:</strong> Payal Gaming</li><li><strong>Spouse:</strong> Unmarried</li></ul>"
+          "html": "<ul><li>Born: 18 September 2000</li><li>Birthplace: Bhilai, Chhattisgarh, India (family later moved to Umranala village, Chhindwara district, Madhya Pradesh)</li><li>Education: Maharishi Vidya Mandir School, Chhindwara (class topper, 10th and 12th); B.Com, Rungta College, Bhilai</li><li>Languages: Hindi, English</li><li>Family: Father Shiv Shankar Dhare (works in the forest department, per some sources; described elsewhere as businessman), mother Sangeeta Dhare (homemaker); two sisters, elder Anjali Dhare and younger Bhumi Dhare</li><li>Other Names/Aliases: Payal Gaming (professional/stage name); earliest gaming alias \"4ZA Payal\" / \"Forza Payal\"</li><li>Spouse: Unmarried</li><li>Children: None</li></ul>"
         },
         {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>Rose to fame as one of India's leading female gaming creators and livestreamers.</p>"
+          "html": "<p>Began playing PUBG Mobile casually during her first year of college after friends introduced her to it; started her YouTube channel on 2 March 2019 under the name \"Payal Gaming.\"</p>"
         },
         {
           "heading": "Professional Career (Outside Entertainment)",
-          "html": "<p>Full-time gaming creator, esports influencer. Commands a huge and loyal fanbase through esports content, lifestyle vlogs, and relatable persona.</p>"
+          "html": "<ul><li>Joined Entity Gaming (TSM Entity) as an early career move, attending monthly Mumbai bootcamps</li><li>Later joined S8UL Esports (co-owned by Naman \"Mortal\" Mathur, Thug, and Lokesh \"Goldy\" Jain) as its first female member</li><li>First Indian female game streamer to cross 3 million (May 2023) and later 4+ million YouTube subscribers</li><li>Streams BGMI, GTA V, Valorant, and Among Us; brand partnerships with Red Bull, Intel, Logitech, NVIDIA, and Loco</li></ul>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Alliance India</em> (Prime Video, 2026): Contestant — paired with Sabby Suri</li></ul>"
+          "html": "<ul><li><em>Bigg Boss 19</em> (2025): Contestant — a strategic move to broaden her audience beyond gaming</li><li><em>Alliance</em> (2026): Contestant, paired with Sabby Suri</li></ul>"
         },
         {
           "heading": "Awards & Recognition",
-          "html": "<ul><li>One of India's top female gaming influencers</li><li>Multiple gaming/esports community recognitions</li></ul>"
+          "html": "<ul><li>Fan Favourite Streamer of the Year – India Gaming Awards</li><li>Best Female Gaming Content Creator – GEM Awards (2022)</li><li>Dynamite Gaming Creator of the Year &amp; Fan Favorite Female Streamer of the Year (Creators United Awards, 2023)</li><li>Gaming Creator of the Year (Female) – Creators Unit 2.0 Awards (March 2024)</li><li>Mobile Streamer of the Year – Mobies Awards, Los Angeles (2024)</li><li>Invited to meet Indian Prime Minister Narendra Modi (April 2024) to discuss India's gaming ecosystem, alongside other top streamers</li></ul>"
         },
         {
           "heading": "Personal Life",
-          "html": "<p>Private. Known for her gaming persona.</p>"
+          "html": "<p>Rumored to be close to fellow gamer Parv \"ReGaLToS\" Singh; neither has publicly confirmed a relationship. Gifted her parents a Mahindra Thar SUV and a property in 2023.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<p>In June 2023, she and fellow female gamer Kaashvi Hiranandani received rape and death threats during a livestream from accounts linked to \"gdxl\"/GodLike Esports fan culture; she escalated the matter through S8UL leadership. A 2025 deepfake video of her went viral, which her fanbase quickly debunked. She has also faced other online harassment during livestreams over the years.</p>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: @payalgamingg (nearly 5 million followers)</li><li>YouTube: \"PAYAL GAMING\" (4.5+ million subscribers)</li><li>Twitter/X: Not confirmed</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>One of India's leading female gaming creators</li><li>Brings the massive gaming community audience to Alliance</li><li>Paired with Sabby Suri</li></ul>"
+          "html": "<p>First female gamer in India to surpass 3 million and later 4 million YouTube subscribers; has said she wants a Netflix film made about her journey from a traditional household to top Indian gaming streamer; her gaming setup includes neon lighting, anime figures, and an NVIDIA RTX 4090.</p>"
         }
       ]
     },
@@ -1844,27 +2532,47 @@ window.DB = {
       "bio": [
         {
           "heading": "Personal Details",
-          "html": "<ul><li><strong>Born:</strong> June 25, 1997 (age 29)</li><li><strong>Birthplace:</strong> Punjab, India</li><li><strong>Family:</strong> Punjabi family</li></ul>"
+          "html": "<ul><li>Born: 26 February (year variously reported; one source cites 2001)</li><li>Birthplace: Chandigarh, India</li><li>Education: St. Stephen's School, Chandigarh; Goswami Ganesh Dutta Sanatan Dharma College, Chandigarh</li><li>Languages: Hindi, English, Punjabi</li><li>Family: Khatri caste family; further details not widely publicized</li><li>Other Names/Aliases: Nicknames \"Sabu,\" \"Sunshine\"</li><li>Spouse: Unmarried</li><li>Children: None</li></ul>"
         },
         {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>Well-known Punjabi actress, model, and dancer.</p>"
+          "html": "<p>Was passionate about acting and modelling since childhood, reportedly practicing performances in front of a mirror; began modelling professionally in 2016 while in college.</p>"
+        },
+        {
+          "heading": "Television Career",
+          "html": "<p>No scripted television series roles identified.</p>"
         },
         {
           "heading": "Film Career",
-          "html": "<ul><li>Punjabi films and music videos</li><li>Recognized in regional entertainment</li></ul>"
+          "html": "<ul><li><em>Big Daddy – World's Best Father</em> (2017, Punjabi): Acting debut</li><li><em>Yaar Belly</em> (2018, Punjabi)</li><li><em>Aape Pein Siyaape</em> (2021, Punjabi)</li><li><em>Bai Ji Kuttange</em> and <em>Majnoo</em> (Punjabi films)</li></ul>"
         },
         {
-          "heading": "Professional Career (Outside Entertainment)",
-          "html": "<p>Model; influencer; dancer; content creator.</p>"
+          "heading": "Web Series / OTT Career",
+          "html": "<p>Featured in the Haryanvi music video \"Chora Jaat Ka\" (2018) by Veer Sahu.</p>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Alliance India</em> (Prime Video, 2026): Contestant — paired with Payal Gaming (Payal Dhare)</li></ul>"
+          "html": "<ul><li><em>Alliance</em> (2026): Contestant, paired with Payal Dhare (Payal Gaming)</li></ul>"
+        },
+        {
+          "heading": "Awards & Recognition",
+          "html": "<ul><li>Golden ticket, North Zone crowning round, Femina Miss India 2017</li><li>\"Tiara Queen\" title, Tiara Pageant (2018)</li></ul>"
+        },
+        {
+          "heading": "Personal Life",
+          "html": "<p>Has chosen to keep her romantic life private; describes herself as single and focused on her career.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<p>None publicly documented.</p>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: @sabbysuri_official (100,000+ followers)</li><li>YouTube: Active channel</li><li>Twitter/X: Not confirmed</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>Punjabi actor, influencer, dancer, and content creator</li><li>Brings glamour and strong screen presence to Alliance</li><li>Paired with Payal Gaming — blending gaming community with regional entertainment appeal</li></ul>"
+          "html": "<p>Does not smoke or drink alcohol; enjoys dancing; favorite song is \"Leja Leja Re\" by Shreya Ghoshal.</p><p>---</p><p><em>End of Alliance India profiles. Note: Several fields — particularly exact birth years for younger digital-first personalities (Vanshaj Singh, Sabby Suri, Armaan Khera, Delbar Arya, Dolly Javed) and some pairing/relationship details — vary or are unconfirmed across tabloid and entertainment sources, and should be treated as best-available public information rather than officially verified facts. This completes the three-show contestant profile series: KKK 15, Lock Upp S2, and Alliance India.</em></p>"
         }
       ]
     },
@@ -1888,31 +2596,43 @@ window.DB = {
       "bio": [
         {
           "heading": "Personal Details",
-          "html": "<ul><li><strong>Born:</strong> April 16, 1988 (age 38)</li><li><strong>Birthplace:</strong> Bhopal, Madhya Pradesh, India (Kashmiri origin)</li><li><strong>Family:</strong> Brother of actor Aly Goni</li><li><strong>Spouse:</strong> In a relationship with Sussanne Khan (interior designer, ex-wife of Hrithik Roshan)</li></ul>"
+          "html": "<ul><li>Born: 19 December 1986 (some sources cite a range of 1985–1989; 19 December 1986 is most consistently reported)</li><li>Birthplace: Bhaderwah, Jammu &amp; Kashmir, India</li><li>Education: The Lawrence School, Sanawar, Himachal Pradesh (boarding school from age 7); law degree, Mumbai; acting training under Anupam Kher</li><li>Languages: Hindi, English, Kashmiri, Urdu</li><li>Family: Father Amjad/Aslam Goni (reportedly a criminal lawyer and politician), mother Rabia/Ruby Goni; brother Aly Goni (actor, <em>Bigg Boss 14</em> contestant); two sisters, Ilham Goni and Saltanat Goni (a lawyer)</li><li>Other Names/Aliases: N/A</li><li>Spouse: Unmarried; in a long-term relationship with Sussanne Khan (interior/fashion designer, ex-wife of actor Hrithik Roshan) since late 2021</li><li>Children: None</li></ul>"
         },
         {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>Started acting in Bollywood films and web series.</p>"
+          "html": "<p>Initially pursued a law degree in Mumbai at his father's encouragement before switching to acting; worked as a model, walking ramps for Indian designers, before his acting debut.</p>"
+        },
+        {
+          "heading": "Television Career",
+          "html": "<ul><li><em>Mai Hero Boll Raha Hu</em> (2021, ZEE5/ALTBalaji, produced by Ekta Kapoor): Lala — with co-stars Patralekhaa, Parth Samthaan</li><li><em>Tanaav</em> (2022): Web series, gained recognition</li></ul>"
         },
         {
           "heading": "Film Career",
-          "html": "<ul><li><em>Jia Aur Jia</em> (2017): Bollywood debut</li></ul>"
-        },
-        {
-          "heading": "Web Series / OTT Career",
-          "html": "<ul><li><em>Mai Hero Boll Raha Hu</em> (ALTBalaji/Zee5, 2021): Lead role — gained acclaim</li></ul>"
+          "html": "<ul><li><em>Mystery Man</em> (2016): Short film debut, included nude scenes he has openly discussed</li><li><em>Jia Aur Jia</em> (2017): Sam/Vasu Krishna, opposite Kalki Koechlin and Richa Chadha — feature film debut</li><li><em>Kirayenama</em>: Ripudaman (post-production/release status varies by source)</li></ul>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Alliance India</em> (Prime Video, 2026): Contestant — paired with Kushal Tandon</li></ul>"
+          "html": "<ul><li><em>Alliance</em> (2026): Contestant</li></ul>"
+        },
+        {
+          "heading": "Awards & Recognition",
+          "html": "<p>None major publicly documented.</p>"
         },
         {
           "heading": "Personal Life",
-          "html": "<p>In a high-profile relationship with Sussanne Khan (interior designer). Brother of actor Aly Goni (Jasmin Bhasin's partner).</p>"
+          "html": "<p>In a publicly acknowledged relationship with Sussanne Khan since late 2021; the two frequently exchange affectionate posts on social media. Previously dated a woman named Atiya around 2012. Was close friends with the late actor Sushant Singh Rajput.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<p>None major beyond media scrutiny of his relationship with Sussanne Khan, given her prior marriage to Hrithik Roshan.</p>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: Active, handle not independently confirmed</li><li>YouTube: Not confirmed</li><li>Twitter/X: Not confirmed</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>Brother of Aly Goni (who is Jasmin Bhasin's partner — Jasmin is on KKK 15 simultaneously)</li><li>Stays in the spotlight for his relationship with Sussanne Khan</li><li>Brings a calm, grounded presence to Alliance</li></ul>"
+          "html": "<p>Environmentalist who reuses plastic items to reduce waste; has a pet dog (a St. Bernard named Liam) and a parrot; writes poetry (shayari) in his spare time.</p>"
         }
       ]
     },
@@ -1936,31 +2656,51 @@ window.DB = {
       "bio": [
         {
           "heading": "Personal Details",
-          "html": "<ul><li><strong>Born:</strong> March 28, 1985 (age 41)</li><li><strong>Birthplace:</strong> Lucknow, Uttar Pradesh, India</li><li><strong>Spouse:</strong> Unmarried</li></ul>"
+          "html": "<ul><li>Born: 28 March 1985</li><li>Birthplace: Lucknow, Uttar Pradesh, India</li><li>Education: Scindia School, Gwalior; Hansraj College, Delhi University; acting course at New York Film Academy (NYFA), Los Angeles (2010)</li><li>Languages: Hindi, English</li><li>Family: Father Billu Tandon (transport and oil business owner, President of the Transport Union in Uttar Pradesh), mother Sandhya Tandon; two elder sisters, Bhavana Tandon Kapoor and Tina Bhushan; grandson of former Madhya Pradesh Governor Lalji Tandon</li><li>Other Names/Aliases: N/A</li><li>Spouse: Unmarried</li><li>Children: None</li></ul>"
         },
         {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>Moved to Mumbai for acting; started with modeling before TV.</p>"
+          "html": "<p>State-level hockey player in school; first runner-up, Grasim Mr. India (2005), before training in acting in the U.S.</p>"
         },
         {
           "heading": "Television Career",
-          "html": "<ul><li><em>Ek Hazaaron Mein Meri Behna Hai</em> (2011–2013): Virat — breakout role</li><li><em>Beyhadh</em> (2016–2017): Arjun — lead</li></ul>"
+          "html": "<ul><li><em>Ek Hazaaron Mein Meri Behna Hai</em> (2011–13): Virat Singh Vadhera — breakout role; shaved his head to support a bald young cancer patient</li><li><em>Beyhadh</em> (2016–17): Arjun Sharma, opposite Jennifer Winget and Aneri Vajani</li><li><em>Barsatein – Mausam Pyaar Ka</em> (2023–24): Reyansh Lamba, opposite Shivangi Joshi</li></ul>"
         },
         {
-          "heading": "Professional Career (Outside Entertainment)",
-          "html": "<p>Restaurant business in Mumbai.</p>"
+          "heading": "Film Career",
+          "html": "<p>No major theatrical film credits identified.</p>"
+        },
+        {
+          "heading": "Web Series / OTT Career",
+          "html": "<ul><li><em>Hum – I'm Because of Us</em> (2018, ALTBalaji): Rahul Nanda</li><li><em>Unlock</em> (2020, ZEE5): Tech horror film</li><li><em>Bebaakee</em> (2020, ALTBalaji)</li></ul>"
+        },
+        {
+          "heading": "Music Career / Other Entertainment",
+          "html": "<p>Featured in Rahat Fateh Ali Khan's music video \"Zaroori Tha\" (2015) alongside then-girlfriend Gauahar Khan; owns restaurant \"Arbour 28\" in Mumbai (opened February 2020).</p>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Bigg Boss 7</em> (2013): Contestant</li><li><em>Khatron Ke Khiladi 5</em> (2014): Contestant</li><li><em>Alliance India</em> (Prime Video, 2026): Contestant — paired with Arslan Goni</li></ul>"
+          "html": "<ul><li><em>Nach Baliye 5</em> (2012), with partner Elena Boeva</li><li><em>Bigg Boss 7</em> (2013): Contestant</li><li><em>Fear Factor: Khatron Ke Khiladi 5</em> (2014)</li><li><em>Alliance</em> (2026): Contestant, paired with Daisy Shah</li></ul>"
+        },
+        {
+          "heading": "Awards & Recognition",
+          "html": "<p>Indian Telly Award for Best Fresh New Face (Male) and Gold Award for Best Debut in a Lead Role, both for <em>Ek Hazaaron Mein Meri Behna Hai</em> (2012). Ranked 2nd on Eastern Eye's 50 Sexiest Asian Men list (2012); 7th on Times Most Desirable Men on Television (2017).</p>"
         },
         {
           "heading": "Personal Life",
-          "html": "<p>Previously dated actress Gauahar Khan. Bold and outspoken personality.</p>"
+          "html": "<p>Dated Elena Boeva, then Gauahar Khan (met on <em>Bigg Boss 7</em>, broke up 2014); also linked at various times to Ankita Lokhande, Aneri Vajani, and Ridhima Pandit. Dated actress Shivangi Joshi from 2023, following their meeting on <em>Barsatein</em>; that relationship reportedly ended in 2025.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<p>Got into a physical altercation with VJ Andy inside the <em>Bigg Boss 7</em> house after Andy made inappropriate remarks about Gauahar Khan. Had a public Twitter dispute with actress Ameesha Patel in 2015 over a national-anthem-related tweet.</p>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: Active, handle not independently confirmed</li><li>YouTube: Not confirmed</li><li>Twitter/X: Not confirmed</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>Has proven his mettle in reality shows (Bigg Boss 7 and KKK 5)</li><li>Known for bold and outspoken personality</li><li>Teams up with Arslan Goni in Alliance</li></ul>"
+          "html": "<p>Once broke his own hand at boarding school to be sent home; reportedly clashed with fellow <em>Alliance</em> contestant Vanshaj Singh in the show's first episode.</p>"
         }
       ]
     },
@@ -1984,31 +2724,47 @@ window.DB = {
       "bio": [
         {
           "heading": "Personal Details",
-          "html": "<ul><li><strong>Birthplace:</strong> Germany (German-Persian descent)</li><li><strong>Family:</strong> German-Persian heritage</li></ul>"
+          "html": "<ul><li>Born: 23 May (exact year not publicly confirmed)</li><li>Birthplace: Germany</li><li>Education: BA in Economics; trained at Anupam Kher's \"Actor Prepares — The School for Actors,\" Mumbai</li><li>Languages: English, German, Farsi, Hindi (working proficiency)</li><li>Family: Father a veteran actor in Iran with a career spanning over 50 years; mother a singer</li><li>Other Names/Aliases: Nicknamed \"The Heart Stealer\"</li><li>Spouse: Not publicly disclosed</li><li>Children: Not publicly disclosed</li></ul>"
         },
         {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>International actress and model of German-Persian descent. Made a mark in Indian entertainment through Punjabi music videos and regional films.</p>"
+          "html": "<p>Began pursuing theatre in Germany from age 13, appearing in productions including Shakespeare's <em>Macbeth</em> (as Lady Macbeth), Roland Schimmelpfennig/Roselt's <em>Truffel</em> (as Petra), and Pinter's <em>Old Times</em> (as Kate). Trained in Bharatanatyam as well as contemporary, hip-hop, salsa, and street dance; produced and directed her own dance show, \"India — Explosion of Colours.\"</p>"
         },
         {
-          "heading": "Music Career / Other Entertainment",
-          "html": "<ul><li>Punjabi music videos including collaborations with Guru Randhawa</li></ul>"
+          "heading": "Television Career",
+          "html": "<p>No scripted television series roles identified; primarily film and commercial work.</p>"
         },
         {
-          "heading": "Professional Career (Outside Entertainment)",
-          "html": "<p>International model.</p>"
+          "heading": "Film Career",
+          "html": "<ul><li><em>Fitoor</em> (2016): Shaukat, opposite Aditya Roy Kapur and Katrina Kaif — Bollywood debut</li><li><em>PR</em> (with Harbhajan Mann)</li><li><em>Tu Hovein Main Hovan</em> (2023): Tania, opposite Jimmy Shergill — Punjabi film debut era</li><li><em>Mansooba</em> (2024): Punjabi film</li></ul>"
+        },
+        {
+          "heading": "Web Series / OTT Career",
+          "html": "<ul><li>Music videos: \"Downtown\" with Guru Randhawa (T-Series, released 16 October 2018, 200+ million views), \"Oh Oh Jane Jaana\" (2020, with Gurashish Singh), \"I Think\" (2023, with Sajjan Adeeb and Jimmy Shergill)</li><li>Television commercials for Patanjali (Kesh Kanti Hair Oil and Rice), The Kashmiri Life Tourism (with Amitabh Bachchan), Dream11 (with MS Dhoni), Canon EOS R3, and Nandu Foods</li></ul>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Alliance India</em> (Prime Video, 2026): Contestant — paired with Armaan Khera</li></ul>"
+          "html": "<ul><li><em>Alliance</em> (2026): Contestant, paired with Armaan Khera</li></ul>"
+        },
+        {
+          "heading": "Awards & Recognition",
+          "html": "<p>None major publicly documented.</p>"
         },
         {
           "heading": "Personal Life",
-          "html": "<p>Brings a unique global and multicultural perspective.</p>"
+          "html": "<p>Describes deep personal connection to Punjabi culture, having grown up with Punjabi friends and visiting gurudwaras in Germany; calls entering Punjabi cinema a \"homecoming.\"</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<p>None publicly documented.</p>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: Active</li><li>YouTube: Not confirmed</li><li>Twitter/X: Not confirmed</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>German-Persian actress working in Indian entertainment</li><li>Collaborated with Guru Randhawa in music videos</li><li>Brings unique global appeal and glamour to Alliance</li></ul>"
+          "html": "<p>Praised Diljit Dosanjh's performance in <em>Amar Singh Chamkila</em> (2024) at a screening; enjoys Punjabi food, including saag, paneer, and lassi; jokes that she was \"Punjabi in a past life.\"</p>"
         }
       ]
     },
@@ -2031,28 +2787,52 @@ window.DB = {
       "id": 16,
       "bio": [
         {
+          "heading": "Personal Details",
+          "html": "<ul><li>Born: Year variously reported as 1992; exact date not publicly confirmed</li><li>Birthplace: Wellington, New Zealand</li><li>Education: Incarnation School, Queens Village, New York (primary); Pine Grove Middle School, New York (secondary); undergraduate degree, Wellington Institute of Technology (WelTec), New Zealand; Philosophy degree, Victoria University of Wellington, New Zealand</li><li>Languages: English, Hindi</li><li>Family: Mother Anju Khera; sister Jessica Khera</li><li>Other Names/Aliases: Credited in some projects simply as \"armaan\"</li><li>Spouse: Unmarried</li><li>Children: None</li></ul>"
+        },
+        {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>Actor, singer, and musician. Gained recognition through OTT work.</p>"
+          "html": "<p>Worked as an Insurance Sales Consultant at Cigna before pivoting to acting; trained at California's Edgemar Center for the Arts. Made his Hindi television debut in the series <em>Everest</em>.</p>"
+        },
+        {
+          "heading": "Television Career",
+          "html": "<ul><li><em>Everest</em>: Television debut</li></ul>"
+        },
+        {
+          "heading": "Film Career",
+          "html": "<ul><li><em>Taish</em> (2020, Bejoy Nambiar): Jassi — breakout role</li><li><em>Ganapath</em> (2023)</li><li><em>Kalki 2898 AD</em> (2024)</li><li>Also appeared in <em>The Bandit Hound</em>, <em>See You in September</em>, <em>Bad Impulse</em>, <em>The Red Thread</em></li></ul>"
         },
         {
           "heading": "Web Series / OTT Career",
-          "html": "<ul><li><em>Taaza Khabar</em> (Netflix): Role alongside Bhuvan Bam — gained recognition</li></ul>"
+          "html": "<ul><li><em>Citadel: Honey Bunny</em> (2024, Amazon Prime Video): Nakul</li><li><em>Masaba Masaba</em> Season 2: Fateh</li><li><em>Black Spider-Man</em> (comic web series)</li></ul>"
         },
         {
           "heading": "Music Career / Other Entertainment",
-          "html": "<p>Singer and musician — artistic versatility.</p>"
+          "html": "<p>Sings and performs in the music video \"Bombay Ka Jadoo\"; works as a musician alongside acting.</p>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Alliance India</em> (Prime Video, 2026): Contestant — paired with Delbar Arya</li></ul>"
+          "html": "<ul><li><em>Alliance</em> (2026): Contestant, paired with Delbar Arya</li></ul>"
+        },
+        {
+          "heading": "Awards & Recognition",
+          "html": "<p>None major publicly documented.</p>"
         },
         {
           "heading": "Personal Life",
-          "html": "<p>Private. Known for suave screen presence.</p>"
+          "html": "<p>Details largely private; not publicly known to be married.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<p>None publicly documented.</p>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: Active, sizable following, known for lip-sync and promotional content</li><li>YouTube: Not confirmed</li><li>Twitter/X: Not confirmed</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>Known for his role in Netflix's <em>Taaza Khabar</em> with Bhuvan Bam</li><li>Actor, singer, and musician — artistic versatility</li><li>Part of an internationally diverse and creatively driven duo with Delbar Arya</li></ul>"
+          "html": "<p>An Indo-Kiwi actor with a multicultural upbringing spanning New Zealand and New York before moving into Bollywood and Hindi OTT work.</p>"
         }
       ]
     },
@@ -2076,35 +2856,47 @@ window.DB = {
       "bio": [
         {
           "heading": "Personal Details",
-          "html": "<ul><li><strong>Born:</strong> September 7, 1973 (age 52)</li><li><strong>Birthplace:</strong> Bangalore, Karnataka, India (Mangalorean origin)</li><li><strong>Spouse:</strong> Pearl Chinapa (DJ/model)</li><li><strong>Children:</strong> 1 daughter</li></ul>"
+          "html": "<ul><li>Born: 6 June 1973</li><li>Birthplace: Bangalore (Bengaluru), Karnataka, India</li><li>Education: Multiple schools due to father's Army postings, including Hyderabad Public School (Begumpet), Faust High School (Secunderabad), St. Joseph's Boys' High School (Bangalore), and St. George's College, Agra; Bachelor of Architecture, BMS College of Engineering, Bangalore (thesis on hospital design)</li><li>Languages: English, Hindi, Kannada</li><li>Family: Father was a paratrooper in the Indian Army; full name Kalengada Bhemaiah Chinapa (of Kodava/Coorgi heritage)</li><li>Other Names/Aliases: VJ Nikhil</li><li>Spouse: Pearl Miglani (DJ; married 2006 or 2012, sources vary, after a six-year relationship)</li><li>Children: One daughter, Anouka, born February 2018</li></ul>"
         },
         {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>Pioneer of Indian youth television. Started as an MTV VJ in the 1990s.</p>"
+          "html": "<p>Began DJing at parties during college to earn pocket money; won the MTV VJ Hunt in 1999 (some sources cite an earlier 1992 VJ debut on MTV Select).</p>"
         },
         {
           "heading": "Television Career",
-          "html": "<ul><li><strong>MTV VJ</strong> (1990s–2000s): Legendary — helped shape MTV India</li><li><em>MTV Roadies</em>: Judge/mentor across multiple seasons</li><li><em>MTV Splitsvilla</em>: Judge across multiple seasons</li></ul>"
+          "html": "<ul><li>Hosted <em>MTV Select</em>, introducing international music and bands to Indian audiences</li><li>Hosted <em>MTV Splitsvilla</em> seasons 2, 4, 5 (solo) and co-hosted seasons 3 (with Deepti Gujral), 6 (with Sherlyn Chopra), and 7 (with Sunny Leone)</li><li>Judge on <em>MTV Roadies</em> seasons 4, 5, 7, and <em>Roadies Rising</em> (2017), later a recurring gang leader from Season 13 onward</li><li>Judged <em>Fame X</em> (2006, with Daler Mehndi and Ganesh Hegde), <em>MTV Rock On</em>, and <em>MTV Mashups</em></li><li>Co-hosted <em>India's Got Talent</em> season 2 with Ayushmann Khurrana</li></ul>"
         },
         {
-          "heading": "Music Career / Other Entertainment",
-          "html": "<ul><li><strong>DJ:</strong> One of India's pioneering electronic music DJs</li><li><strong>Festival Curator:</strong> Co-founded Submerge (electronic music festival brand); associated with Sunburn Festival</li></ul>"
+          "heading": "Film Career",
+          "html": "<ul><li><em>Snip!</em> (2000): Acting debut, drew controversy for explicit scenes with co-star Sophia Haque</li><li>Small appearances in <em>Dus</em> (2005), <em>Zinda</em> (2006), and <em>Om Shanti Om</em> (2007)</li></ul>"
+        },
+        {
+          "heading": "Professional Career (Outside Entertainment)",
+          "html": "<p>Co-founded Submerge in 2003 with wife Pearl and Hermit Sethi — one of India's largest EDM/dance-music companies, credited with laying the groundwork for the Sunburn festival; served as Festival Director of Sunburn Goa before parting ways with Percept Inc. in 2013. Widely credited as a pioneer of EDM culture in India, bringing artists like Swedish House Mafia, Tiësto, Above &amp; Beyond, and Armin van Buuren to India.</p>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Alliance India</em> (Prime Video, 2026): Contestant — paired with Mini Mathur; most seasoned media veterans on the roster</li></ul>"
+          "html": "<ul><li><em>Alliance</em> (2026): Contestant</li></ul>"
         },
         {
           "heading": "Awards & Recognition",
-          "html": "<ul><li>Pioneer of Indian youth television</li><li>Recognized as one of India's most influential music/media personalities</li></ul>"
+          "html": "<p>None formally documented; recognized as an EDM/nightlife industry pioneer in India.</p>"
         },
         {
           "heading": "Personal Life",
-          "html": "<p>Married to DJ Pearl. One daughter. Lives between Mumbai and Bangalore.</p>"
+          "html": "<p>Keen scuba diver and adventure sports enthusiast (flyboarding); has a tattoo of a magician's head on his right shoulder.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<p>His 2000 film <em>Snip!</em> drew controversy over explicit content.</p>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: @nikhilchinapa</li><li>YouTube: Not confirmed</li><li>Twitter/X: Active, large EDM-fan following</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>One of India's original MTV VJs</li><li>Decades of experience in reality TV — now competing as a contestant</li><li>Paired with Mini Mathur — bringing the most experience to the table</li><li>His past decision came under fire during Alliance's first major Arena test</li></ul>"
+          "html": "<p>Was one school year senior to former Indian cricketer Rahul Dravid; jokes that his parents still ask him when he'll get \"a real job\" despite his career success.</p>"
         }
       ]
     },
@@ -2128,39 +2920,47 @@ window.DB = {
       "bio": [
         {
           "heading": "Personal Details",
-          "html": "<ul><li><strong>Born:</strong> September 22, 1974 (age 51)</li><li><strong>Birthplace:</strong> Delhi, India</li><li><strong>Spouse:</strong> Kabir Khan (filmmaker — <em>Bajrangi Bhaijaan</em>, <em>83</em>)</li><li><strong>Children:</strong> 2 (son Vivaan, daughter Sairah)</li></ul>"
+          "html": "<ul><li>Born: 21 August 1972 (some sources cite 1976; 1972 is the most consistently reported and matches her Wikipedia entry)</li><li>Birthplace: New Delhi, India</li><li>Education: Delhi Public School, R.K. Puram; Bachelor's in English Literature, Lady Shri Ram College, Delhi University; MBA in Marketing, Institute of Management Technology (IMT), Ghaziabad</li><li>Languages: Hindi, English</li><li>Family: Chitraguptavanshi Kayastha family; mother Veena Mathur; father-in-law Rasheeduddin Khan (writer, political scientist, former nominated Rajya Sabha MP)</li><li>Other Names/Aliases: N/A</li><li>Spouse: Kabir Khan (film director — <em>Kabul Express</em>, <em>Ek Tha Tiger</em>, <em>Bajrangi Bhaijaan</em>, <em>83</em>, <em>Chandu Champion</em>; married for many years)</li><li>Children: Son Vivaan Khan and daughter Sairah (also referred to as Sanya) Khan</li></ul>"
         },
         {
           "heading": "Early Life & Career Beginnings",
-          "html": "<p>One of India's most iconic television hosts.</p>"
+          "html": "<p>Started her career as an advertising executive at J. Walter Thompson, New Delhi, via IMT campus placement; became the face of Ray-Ban sunglasses, which led to modelling offers and her first game show, <em>Tol Mol Ke Bol</em>. Became an MTV VJ after winning a competition impersonating Simi Garewal interviewing Mamta Kulkarni.</p>"
         },
         {
           "heading": "Television Career",
-          "html": "<ul><li><strong>Indian Idol</strong> (multiple seasons): Host — rose to fame as the face of the show</li><li><strong>MTV Shows</strong>: Early career hosting on MTV</li></ul>"
+          "html": "<ul><li><em>Indian Idol</em> (2004–2007, and returning for Season 6 in 2012): Host — her signature, career-defining role</li><li><em>Yeh Shaam Mastani</em>: Music interview series</li><li><em>Dilli Dil Se</em>: Interview show with politicians, industrialists, and opinion-makers</li><li><em>Iss Jungle Se Mujhe Bachao</em> (2009): Host, while her daughter was only six months old</li><li><em>Bombay Blush</em>: Cultural show for UK audiences, aired on BBC2 for two seasons</li><li><em>Sports Ka Superstar</em>: Sports quiz show host</li><li>Two seasons as an expert lifeline on <em>Kaun Banega Crorepati</em></li><li>Hosts <em>Discovery School Super League</em> on Discovery India</li></ul>"
         },
         {
           "heading": "Film Career",
-          "html": "<ul><li><em>Sab Kushal Mangal</em> (2020): Acting debut</li></ul>"
+          "html": "<ul><li><em>Dil Vil Pyar Vyar</em> (2002): Acting debut</li><li><em>I, Me Aur Main</em>: Supporting role</li></ul>"
         },
         {
           "heading": "Web Series / OTT Career",
-          "html": "<ul><li><em>Mind the Malhotras</em> (Amazon Prime Video, 2019, 2022): Shilpa Malhotra — lead role</li></ul>"
+          "html": "<ul><li><em>Mind the Malhotras</em> (2019, Amazon Prime Video): Shefali Malhotra, opposite Cyrus Sahukar — won seven Best Actor awards for this role</li></ul>"
         },
         {
           "heading": "Reality Television Journey",
-          "html": "<ul><li><em>Alliance India</em> (Prime Video, 2026): Contestant — paired with Nikhil Chinapa; one of the most experienced pairs in the show</li></ul>"
+          "html": "<ul><li><em>Jhalak Dikhhla Jaa</em> Season 2 (2007): Contestant</li><li>Produced and presented her own travel series, <em>Minime</em> (with her daughter), which aired on TLC, covering a 25-day, 15-city trip across seven European countries</li><li><em>Alliance</em> (2026): Contestant</li></ul>"
         },
         {
           "heading": "Awards & Recognition",
-          "html": "<ul><li>Recognized as one of India's top television hosts</li><li>Respected for wit, intelligence, and composed presence under pressure</li></ul>"
+          "html": "<p>Seven Best Actor awards for her role in <em>Mind the Malhotras</em>.</p>"
         },
         {
           "heading": "Personal Life",
-          "html": "<p>Married to filmmaker Kabir Khan. Two children. Known for her grounded, intelligent persona.</p>"
+          "html": "<p>Married to celebrated director Kabir Khan; has publicly discussed experiencing postnatal depression after childbirth. Kabir Khan used to send her postcards from his travels while they were dating, which she calls her most prized possession.</p>"
+        },
+        {
+          "heading": "Controversies / Notable Events",
+          "html": "<p>None major publicly documented.</p>"
+        },
+        {
+          "heading": "Social Media Presence",
+          "html": "<ul><li>Instagram: @minimathur</li><li>YouTube: Active channel</li><li>Twitter/X: @minimathur</li></ul>"
         },
         {
           "heading": "Trivia / Fun Facts",
-          "html": "<ul><li>One of India's most iconic television hosts (Indian Idol)</li><li>Married to <em>Bajrangi Bhaijaan</em> director Kabir Khan</li><li>Paired with Nikhil Chinapa — decades of combined media experience</li></ul>"
+          "html": "<p>Certified scuba diver who once ran out of oxygen and hit her head while diving in the Maldives; has eaten oysters, snails, and fried insects but never snake, monkey, or rabbit; owns a Siberian Husky named Blue Khan; describes herself as a \"closet stand-up comic.\"</p>"
         }
       ]
     }
@@ -2169,4 +2969,4 @@ window.DB = {
   "bb20": []
 };
 
-window.HIDDEN_SHOWS_INIT = ["traitors","kkk","bb20"];
+window.HIDDEN_SHOWS_INIT = ["traitors", "kkk", "bb20"];
